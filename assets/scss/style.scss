@@ -20,18 +20,18 @@
 // Scss main
 
 //--Main Variable--//
-@import "main/_variable";
+@import "base/_variable";
 //--Main mixins--//
-@import "main/_mixins";
+@import "base/_mixins";
 //--Main typography--//
-@import "main/_typography";
+@import "base/_typography";
 //--Main global--//
-@import "main/_global";
+@import "base/_global";
 
-// Scss Pages
+// components
+@import "components/_header";
 
-//--Pages Navbar--//
-@import "pages/_header";
+
 //--Pages Footer--//
 @import "pages/_footer";
 //--Pages Section--//

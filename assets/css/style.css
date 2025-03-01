@@ -15,47 +15,23 @@
 # Section Area
 # Footer Area
 ============================================*/
-@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   /* Font Family */
-  --body-font: "Prompt", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --sub-font: "Raleway", sans-serif;
   /* Transition */
   --transition: all 0.5s ease-in-out;
   /* Color styles */
-  --p1: #235CF2;
-  --p50: #e9effe;
-  --p75: #a5bcfa;
-  --p100: #7fa0f7;
-  --p200: #4878f4;
-  --p300: #235cf2;
-  --p400: #1940a9;
-  --p500: #153894;
-  --pra: #4A5551;
-  --s1: #FCB407;
-  --active: #235CF2;
-  --ratting: #FFC700;
-  --n0: #FFFFFF;
-  --n00: #070707;
-  --n10: #fafafa;
-  --n20: #f5f5f6;
-  --n30: #ebebec;
-  --n40: #dedfe0;
-  --n50: #bfc1c4;
-  --n60: #b0b2b6;
-  --n70: #a3a5aa;
-  --n80: #94969c;
-  --n90: #85878e;
-  --n100: #757880;
-  --n200: #666971;
-  --n300: #575a63;
-  --n400: #4a4e57;
-  --n500: #3b3f49;
-  --n600: #2e323d;
-  --n700: #1c212d;
-  --n800: #0d121f;
-  --n900: #000513;
-  --bg1: #F5F5F6;
-  --bg2: #fff;
+  --white-clr: #fff;
+  --black-clr: #090C10;
+  --primary-clr: #FFC83B;
+  --secondary-clr: #526250;
+  --paragraph-clr: #505255;
+  --border-clr: #DFDFE0;
+  --section-bg: #F5F5F5;
+  --foundation-green: #EEEFEE;
 }
 
 .display-one {
@@ -458,161 +434,12 @@ li {
     padding-bottom: 50px;
   }
 }
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.962);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.preloader .box p span {
-  font-size: 36px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.preloader .box p span:nth-child(1) {
-  animation: updown 1.5s linear infinite;
-  color: var(--p1);
-}
-.preloader .box p span:nth-child(2) {
-  animation: updown 2s linear infinite;
-  color: var(--p1);
-}
-.preloader .box p span:nth-child(3) {
-  animation: updown 2.5s linear infinite;
-  color: var(--p1);
-}
-.preloader .box p span:nth-child(4) {
-  animation: updown 3s linear infinite;
-  color: var(--p1);
-}
-.preloader .box p span:nth-child(5) {
-  animation: updown 3.5s linear infinite;
-  color: var(--p1);
-}
-.preloader .box p span:nth-child(6) {
-  animation: updown 2.5s linear infinite;
-}
-.preloader .box p span:nth-child(7) {
-  animation: updown 2s linear infinite;
-}
-.preloader .box p span:nth-child(8) {
-  animation: updown 1.5s linear infinite;
-}
-
-@keyframes pres1 {
-  100% {
-    left: 50%;
-  }
-}
-@keyframes pres2 {
-  100% {
-    right: 50%;
-  }
-}
-.black-vs {
-  border: 1px solid var(--n900);
-  transition: all 0.4s;
-}
-.black-vs:hover {
-  background: var(--p1);
-  border-color: var(--p1);
-}
-
-.badge-sub4 {
-  position: relative;
-  padding-left: 14px;
-}
-.badge-sub4::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 4px;
-  height: 70%;
-  background: var(--p1);
-}
-
-#popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s;
-}
-
-#popup-overlay.active {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
-}
-#popup-overlay.active .popup {
-  transform: translateY(0);
-}
-
-.hidden-newsletter .popup {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 884px;
-  transform: translateY(200px);
-  transition: all 0.6s;
-  display: flex;
-  align-items: center;
-}
-.hidden-newsletter .popup .newsletter-form-content {
-  max-width: 370px;
-  margin: 0 auto;
-  padding: 24px 20px;
-}
-.hidden-newsletter .popup .newsletter-form-content .email-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--n80);
-  padding: 1px 14px;
-  gap: 6px;
-}
-.hidden-newsletter .popup .newsletter-form-content .email-items i {
-  color: var(--n80);
-  font-size: 14px;
-}
-.hidden-newsletter .popup .newsletter-form-content .email-items input {
-  outline: none;
-  padding: 10px 0;
-  width: 100%;
-  border: unset;
-}
-.hidden-newsletter .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 16px;
-  font-size: 26px;
-  cursor: pointer;
-  color: #000;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   background: var(--s4);
   color: var(--n0);
   font-size: 18px;
@@ -637,6 +464,7 @@ label,
 li {
   margin: 0;
   font-weight: 400;
+  font-family: var(--body-font);
 }
 a i,
 p i,
@@ -672,13 +500,28 @@ h5 > a,
 h6,
 h6 > a,
 .display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   padding: 0;
   margin: 0;
   color: var(--n900);
   line-height: 128%;
   display: block;
   transition: var(--transition);
+}
+h1 a,
+h1 > a a,
+h2 a,
+h2 > a a,
+h3 a,
+h3 > a a,
+h4 a,
+h4 > a a,
+h5 a,
+h5 > a a,
+h6 a,
+h6 > a a,
+.display-one a, .display-two a, .display-three a, .display-four a, .display-five a, .display-six a, .heading a {
+  font-family: var(--heading-font);
 }
 h1 span,
 h1 > a span,
@@ -1694,6 +1537,133 @@ iframe {
 .w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.962);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader .box p span {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.preloader .box p span:nth-child(1) {
+  animation: updown 1.5s linear infinite;
+  color: var(--p1);
+}
+.preloader .box p span:nth-child(2) {
+  animation: updown 2s linear infinite;
+  color: var(--p1);
+}
+.preloader .box p span:nth-child(3) {
+  animation: updown 2.5s linear infinite;
+  color: var(--p1);
+}
+.preloader .box p span:nth-child(4) {
+  animation: updown 3s linear infinite;
+  color: var(--p1);
+}
+.preloader .box p span:nth-child(5) {
+  animation: updown 3.5s linear infinite;
+  color: var(--p1);
+}
+.preloader .box p span:nth-child(6) {
+  animation: updown 2.5s linear infinite;
+}
+.preloader .box p span:nth-child(7) {
+  animation: updown 2s linear infinite;
+}
+.preloader .box p span:nth-child(8) {
+  animation: updown 1.5s linear infinite;
+}
+
+@keyframes pres1 {
+  100% {
+    left: 50%;
+  }
+}
+@keyframes pres2 {
+  100% {
+    right: 50%;
+  }
+}
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+#popup-overlay.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+#popup-overlay.active .popup {
+  transform: translateY(0);
+}
+
+.hidden-newsletter .popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 884px;
+  transform: translateY(200px);
+  transition: all 0.6s;
+  display: flex;
+  align-items: center;
+}
+.hidden-newsletter .popup .newsletter-form-content {
+  max-width: 370px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+.hidden-newsletter .popup .newsletter-form-content .email-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--n80);
+  padding: 1px 14px;
+  gap: 6px;
+}
+.hidden-newsletter .popup .newsletter-form-content .email-items i {
+  color: var(--n80);
+  font-size: 14px;
+}
+.hidden-newsletter .popup .newsletter-form-content .email-items input {
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  border: unset;
+}
+.hidden-newsletter .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #000;
 }
 
 .header-section {
