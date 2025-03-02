@@ -255,7 +255,7 @@ document.querySelectorAll('.dropdown-menu li a').forEach((el) => {
 })
 
 // show hide newsletter
-const newsletter = document.querySelector('.newsletter')
+const newsletter = document.querySelector('.newsletters')
 const closeNewsletter = document.querySelector('.close-newsletter')
 if(newsletter) {
   setTimeout(() => {

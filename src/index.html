@@ -3,62 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Agriculturio is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
+    <meta name="description" content="WellHub is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper.min.css" />
     <link rel="stylesheet" href="./assets/css/glightbox.css" />
-    <title>Home - Agriculturio - Agriculture &amp; Organic Farm HTML Theme</title>
+    <title>Home - WellHub - Agriculture &amp; Organic Farm HTML Theme</title>
   </head>
 
   <body>
     <!-- loader  -->
     <include-loader />
-    <!-- topbar section start -->
-    <section class="px-3 bg-green-500 py-3 xl:py-4 xxl:py-5 max-[600px]:hidden">
-      <div class="max-w-[1700px] mx-auto justify-between items-center gap-3 md:gap-4 flex">
-        <div class="flex">
-          <div class="py-2 px-4 flex-wrap xl:px-6 rounded-full bg-green-400 flex items-center gap-3">
-            <p class="text-neutral-0">Welcome to Agriculturio</p>
-            <span class="text-yellow-200">•</span>
-            <p class="text-neutral-0">Agriculture &amp; Organic Farm</p>
-          </div>
-        </div>
-        <div class="flex justify-between max-xl:flex-wrap items-center gap-4 4xl:gap-10">
-          <div class="flex max-xl:flex-wrap items-center gap-3 text-neutral-0 max-[1100px]:hidden">
-            <a href="tel:+54136465454" class="flex items-center gap-2">
-              <i class="hgi-stroke hgi-call-ringing-04 text-xl text-yellow-200"></i>
-              <span>+54136465454</span>
-            </a>
-            <a href="mailto:example@mail.com" class="flex items-center gap-2">
-              <i class="hgi-stroke hgi-mail-01 text-xl text-yellow-200"></i>
-              <span>example@mail.com</span>
-            </a>
-            <p class="flex items-center gap-2">
-              <i class="hgi-stroke hgi-location-01 text-xl text-yellow-200"></i>
-              <span>734 H, Burlington, NC</span>
-            </p>
-          </div>
-          <div class="flex items-center gap-2">
-            <a href="#" aria-label="social site link" class="social-icon text-yellow-200 hover:bg-yellow-200 hover:text-neutral-900">
-              <i class="hgi-stroke hgi-facebook-01"></i>
-            </a>
-            <a href="#" aria-label="social site link" class="social-icon text-yellow-200 hover:bg-yellow-200 hover:text-neutral-900">
-              <i class="hgi-stroke hgi-twitter-square"></i>
-            </a>
-            <a href="#" aria-label="social site link" class="social-icon text-yellow-200 hover:bg-yellow-200 hover:text-neutral-900">
-              <i class="hgi-stroke hgi-instagram"></i>
-            </a>
-            <a href="#" aria-label="social site link" class="social-icon text-yellow-200 hover:bg-yellow-200 hover:text-neutral-900">
-              <i class="hgi-stroke hgi-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- topbar section end -->
 
     <!-- Mobile Menu -->
     <include-mobile-menu />
@@ -136,7 +93,7 @@
           </li>
         </ul>
         <div class="flex items-center gap-4">
-          <a href="contact-us.html" class="btn-primary max-xl:!hidden">Get In Touch!<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+          <a href="contact-us.html" class="btn-primary max-xl:!hidden group">Get In Touch!<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700 group-hover:rotate-[45deg] duration-300"></i></a>
           <div>
             <button aria-label="Search Button" class="topbar-btn search-btn"><i class="hgi-stroke hgi-search-01"></i></button>
             <div class="search-bar">
@@ -163,10 +120,35 @@
     <!-- header section end -->
 
     <!-- banner section start -->
+    <div class="banner">
+        <div class="banner-wrapper-one">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="relative after:absolute after:inset-0 after:h-full after:w-full after:opacity-70 after:bg-gradient-to-l after:from-[rgba(0,0,0,0.00)_36.57%] after:to-[#000_85.65%]">
+                        <img src="assets/images/home1/hero-slide1.png" alt="img">
+                        <div class="w-[1704px] mx-auto flex items-end justify-between bg-yellow-400 absolute bottom-0 z-10">
+                            <div>
+                                <h3 class="display-4 text-yellow-300 mb-1">YOUR HEALTH.</h3>
+                                <h2 class="display-2 uppercase fw-black text-neutral-0">our Priority.</h2>
+                            </div>
+                            <div class="flex gap-x-3 lg:gap-x-4">
+                                <a href="services.html" class="bg-yellow-300 text-base hover:text-neutral-0 leading-1 font-semibold uppercase  flex items-center gap-x-2 lg:gap-x-4 py-1.5 pe-2 ps-6 rounded-full learn-more duration-500 group hover:bg-neutral-600">
+                                    BOOK AN APPOINTMENT
+                                    <i class="hgi-stroke hgi-arrow-up-right-01 group-hover:text-neutral-600 duration-300 text-xl text-neutral-0 w-12 h-12 flex items-center justify-center bg-neutral-600 group-hover:bg-yellow-300 rounded-full"></i>
+                                </a>
+                                <a href="services.html" class="btn-primary learn-more">BOOK AN APPOINTMENT<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="max-w-[1800px] mx-auto max-4xl:px-3">
       <div class="banner-one flex overflow-hidden justify-between flex-wrap gap-4 rounded-2xl xxl:rounded-[40px] p-2 md:p-6 xl:p-8" data-bg="./assets/images/home1-banner.webp">
         <div class="bg-neutral-0 p-3 md:p-6 xl:p-8 xxl:p-14 rounded-[28px] max-w-[664px] box">
-          <p class="sub-heading mb-10 xxl:mb-[60px]">Welcome To Agriculturio</p>
+          <p class="sub-heading mb-10 xxl:mb-[60px]">Welcome To WellHub</p>
           <h2 class="display-3 font-playfair mb-4 xl:mb-6">Harvesting Nature, Delivering Freshness</h2>
           <p class="desc text-neutral-600 xl-text mb-12 lg:mb-20 xxl:mb-40">Relax and rejuvenate with our expert massage therapy</p>
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -313,7 +295,7 @@
           </div>
         </div>
         <div class="col-span-12 md:col-span-6 md:col-start-7">
-          <p class="sub-heading mb-4 fade_anim">About Agriculturio</p>
+          <p class="sub-heading mb-4 fade_anim">About WellHub</p>
           <h1 class="mb-4 xl:mb-6 title_anim" data-fade-from="right">Authentic Farming, Organic Excellence</h1>
           <p class="text-neutral-600 mb-6 xl:mb-8 fade_anim" data-fade-from="right" data-delay=".4">Experience the purity of nature with sustainable farming practices, delivering fresh, organic produce every day.</p>
           <div class="reveal_anim" data-reveal-from="right">
@@ -421,7 +403,7 @@
         <div class="relative h-[250px] overflow-hidden mb-10 xl:mb-14">
           <svg class="absolute w-full h-full">
             <clippath id="text-overlay">
-              <text x="50%" y="50%" dy="0.35em" text-anchor="middle" data-duration="1.5" data-reveal-from="left" class="reveal_anim font-roboto font-black uppercase text-[13vw] 4xl:text-[12vw]">Agriculturio</text>
+              <text x="50%" y="50%" dy="0.35em" text-anchor="middle" data-duration="1.5" data-reveal-from="left" class="reveal_anim font-roboto font-black uppercase text-[13vw] 4xl:text-[12vw]">WellHub</text>
             </clippath>
           </svg>
           <div class="absolute inset-0 overflow-hidden">
@@ -845,7 +827,7 @@
               <div>
                 <h4 class="mb-1">Michael Stone</h4>
                 <p class="text-sm font-medium mb-6">Client</p>
-                <p class="mb-4 text-neutral-500">Agriculturio’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
+                <p class="mb-4 text-neutral-500">WellHub’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
                 <div class="flex gap-1 text-yellow-200">
                   <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none" />
@@ -883,7 +865,7 @@
               <div>
                 <h4 class="mb-1">Charles Green</h4>
                 <p class="text-sm font-medium mb-6">Client</p>
-                <p class="mb-4 text-neutral-500">Agriculturio’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
+                <p class="mb-4 text-neutral-500">WellHub’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
                 <div class="flex gap-1 text-yellow-200">
                   <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none" />
@@ -921,7 +903,7 @@
               <div>
                 <h4 class="mb-1">Nelson Green</h4>
                 <p class="text-sm font-medium mb-6">Client</p>
-                <p class="mb-4 text-neutral-500">Agriculturio’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
+                <p class="mb-4 text-neutral-500">WellHub’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
                 <div class="flex gap-1 text-yellow-200">
                   <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none" />
@@ -959,7 +941,7 @@
               <div>
                 <h4 class="mb-1">Michael Stone</h4>
                 <p class="text-sm font-medium mb-6">Client</p>
-                <p class="mb-4 text-neutral-500">Agriculturio’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
+                <p class="mb-4 text-neutral-500">WellHub’s dedication to organic farming has elevated our harvest. Their techniques enhance crop quality and sustainability, helping us provide fresh produce to our customers.</p>
                 <div class="flex gap-1 text-yellow-200">
                   <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none" />
@@ -1035,7 +1017,7 @@
                   </div>
                   <div>
                     <p class="text-neutral-0 text-sm mb-1">Email Address</p>
-                    <p class="font-medium text-neutral-0">info@agriculturio.com</p>
+                    <p class="font-medium text-neutral-0">info@WellHub.com</p>
                   </div>
                 </div>
                 <div class="flex items-center gap-4">
@@ -1102,17 +1084,23 @@
     <section class="newsletter overflow-y-auto">
       <div class="cont f-center h-full my-10">
         <div class="max-w-[966px] mx-auto bg-neutral-0 overflow-y-auto rounded-2xl grid grid-cols-1 sm:grid-cols-2 items-center relative">
-          <button aria-label="close newsletter button" class="absolute top-4 right-4 close-newsletter"><i class="hgi-stroke hgi-cancel-01 text-2xl"></i></button>
-          <img src="./assets/images/newsletter.webp" class="rounded-s-2xl size-full max-sm:hidden" alt="" />
-          <form class="p-5 md:px-10 items-center text-neutral-700">
+          <button aria-label="close newsletter button" class="absolute top-4 left-4 close-newsletter"><i class="hgi-stroke hgi-cancel-01 text-2xl"></i></button>
+          <form class="p-5 md:px-10 text-center items-center text-neutral-700">
             <h2 class="mb-6">Newsletter</h2>
             <p class="mb-7 xl:mb-10">Regular chiropractic care prevents injuries and promotes long-term spinal health. Regular chiropractic care prevents injuries</p>
             <div class="mb-7 xl:mb-10">
-              <label for="email" class="block mb-3">Email</label>
+              <label for="email" class="block mb-3 text-left">Email</label>
               <input type="email" class="col-span-2 md:col-span-1 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Email Address" />
             </div>
-            <button class="btn-primary">Subscribe Now<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></button>
+            <button class="btn-primary">View All<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></button>
+            <div class="text-center mt-3 sm:mt-4 md:mt-6 lg:mt-8 xl:mt-10">
+                <span class="block text-neutral-400 text-lg">Have a Question? E-mail us at </span>
+                <a href="#0" class="text-neutral-400 text-lg">
+                    example@gmail.com
+                </a>
+            </div>
           </form>
+          <img src="./assets/images/newsletter.webp" class="rounded-e-2xl size-full max-sm:hidden" alt="" />
         </div>
       </div>
     </section>
