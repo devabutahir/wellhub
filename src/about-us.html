@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agriculturio is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/glightbox.css" />
+    <title>Home - Agriculturio - Agriculture &amp; Organic Farm HTML Theme</title>
+  </head>
+
+  <body>
+    <!-- loader  -->
+    <include-loader />
+    <!-- header section start -->
+    <include-header />
+    <!-- header section end -->
+    <!-- Mobile Menu -->
+    <include-mobile-menu />
+
+    <!-- banner section start -->
+    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
+      <div class="cont py-16 xl:py-20 flex justify-center text-center">
+        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
+          <h2 class="mb-5">About Us</h2>
+          <div class="font-semibold flex justify-center items-center gap-2">
+            <a href="index.html">Home</a> &gt;
+            <span class="text-yellow-200">About Us</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- About section start -->
+    <section class="py-120 relative bg-neutral-0 bg-no-repeat bg-right max-xl:!bg-none" data-bg="./assets/images/farmer-bg.png">
+      <div class="cont">
+        <div class="mb-10 xl:mb-14">
+          <img src="./assets/images/about-page.webp" class="reveal_anim img-fluid w-full rounded-2xl" alt="" />
+        </div>
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12 md:col-span-6 fade_anim">
+            <p class="sub-heading mb-3">About us</p>
+            <h2 class="mb-7 xl:mb-10">Growing Together Through Sustainable Farming</h2>
+            <a href="contact-us.html" class="btn-primary">Contact us <i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+          </div>
+          <div class="col-span-12 md:col-span-6 lg:col-span-5 lg:col-start-8">
+            <p class="text-neutral-600">Our journey began with a simple goal: to promote sustainable farming practices that benefit both the land and the people. By working closely with local farmers, we aim to create a community focused on eco-friendly agriculture, innovation, and ensuring a healthier future for all.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- counter section end -->
+    <section class="pt-10 xl:pt-20 pb-14 xl:pb-28">
+      <div class="max-w-[1800px] mx-auto">
+        <div class="relative h-[250px] overflow-hidden mb-10 xl:mb-14">
+          <svg class="absolute w-full h-full">
+            <clippath id="text-overlay">
+              <text x="50%" y="50%" dy="0.35em" text-anchor="middle" data-duration="1.5" data-reveal-from="left" class="reveal_anim font-roboto font-black uppercase text-[13vw]">Agriculturio</text>
+            </clippath>
+          </svg>
+          <video class="clipped-video w-full" muted loop autoplay>
+            <source src="./assets/images/home1-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="cont grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div class="max-w-[250px] fade_anim">
+            <div class="relative">
+              <span class="odometer-text"><span data-odometer-final="60" class="odometer">60</span>+</span>
+              <p class="font-medium text-base py-1 px-4 absolute right-5 top-1/2 -translate-y-1/2 bg-neutral-0">+ Acres Cultivated</p>
+            </div>
+            <p>At Pure Agriculture &amp; Organic Farm, we blend tradition</p>
+          </div>
+          <div class="max-w-[250px] fade_anim" data-delay=".2">
+            <div class="relative">
+              <span class="odometer-text"><span data-odometer-final="50" class="odometer">50</span>+</span>
+              <p class="font-medium text-base py-1 px-4 absolute right-5 top-1/2 -translate-y-1/2 bg-neutral-0">+ Products</p>
+            </div>
+            <p>At Pure Agriculture &amp; Organic Farm, we blend tradition</p>
+          </div>
+          <div class="max-w-[250px] fade_anim" data-delay=".4">
+            <div class="relative">
+              <span class="odometer-text"><span data-odometer-final="27" class="odometer">27</span>+</span>
+              <p class="font-medium text-base py-1 px-4 absolute right-5 top-1/2 -translate-y-1/2 bg-neutral-0">+ Years</p>
+            </div>
+            <p>At Pure Agriculture &amp; Organic Farm, we blend tradition</p>
+          </div>
+          <div class="max-w-[280px] fade_anim" data-delay=".6">
+            <div class="relative">
+              <span class="odometer-text"><span data-odometer-final="300" class="odometer">300</span>+</span>
+              <p class="font-medium text-base py-1 px-4 absolute right-5 top-1/2 -translate-y-1/2 bg-neutral-0">+ Happy Customers</p>
+            </div>
+            <p>Satisfied customers enjoying fresh, organic produce every day!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter section start -->
+
+    <!-- Feature section start -->
+    <section class="bg-neutral-20 py-120">
+      <div class="cont">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-6">
+          <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
+            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
+              <i class="hgi-stroke hgi-leaf-01 relative z-[1]"></i>
+            </div>
+            <h5 class="mb-4">Natural Farming</h5>
+            <p class="text-neutral-600">Growing crops with organic, eco-friendly farming methods.</p>
+          </div>
+          <div data-delay=".3" class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
+            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
+              <i class="hgi-stroke hgi-checkmark-badge-03 relative z-[1]"></i>
+            </div>
+            <h5 class="mb-4">Quality Products</h5>
+            <p class="text-neutral-600">Bringing you the freshest, highest-quality produce right to you.</p>
+          </div>
+          <div data-delay=".6" class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
+            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
+              <i class="hgi-stroke hgi-recycle-02 relative z-[1]"></i>
+            </div>
+            <h5 class="mb-4">Sustainable Process</h5>
+            <p class="text-neutral-600">Using sustainable techniques for long-term environmental health.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- Why Choose us section start -->
+    <section class="py-120 bg-neutral-0 bg-no-repeat bg-left max-lg:!bg-none" data-bg="./assets/images/farmer-bg.png">
+      <div class="cont grid grid-cols-12 gap-6 mb-10 xl:mb-14">
+        <div class="col-span-12 lg:col-span-5">
+          <p class="sub-heading mb-3 blur_anim">Why choose us</p>
+          <h2 class="reveal_anim">Our Crop Is Grown With Great Care</h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-7 xl:col-start-8 flex items-end">
+          <p>Experience the purity of nature with sustainable farming practices, delivering fresh, organic produce every</p>
+        </div>
+      </div>
+      <div class="cont grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 lg:col-span-5">
+          <img src="./assets/images/why-choose-2.webp" class="reveal_anim img-fluid rounded-2xl" alt="" />
+        </div>
+        <div class="col-span-12 lg:col-span-7 xl:pl-8">
+          <div class="flex justify-between max-sm:flex-wrap items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">01.</h2>
+              <h5>Schedule Your Experience</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">02.</h2>
+              <h5>Get Professional Advice</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">03.</h2>
+              <h5>Meet Our Expert Farmer</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap items-center">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">04.</h2>
+              <h5>Now Get a Best Products</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Harvest at peak freshness and deliver straight to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose us section end -->
+
+    <!-- Our Farmers section start -->
+    <section class="py-120 bg-neutral-20">
+      <div class="cont">
+        <div class="mb-10 xl:mb-14">
+          <p class="sub-heading mb-3 split_anim">Our Farmers</p>
+          <h2 class="h1 blur_anim">Meet Our Farmers</h2>
+        </div>
+        <div class="swiper ourFarmerSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center group text-center p-4 xl:p-6 relative after:w-full after:absolute after:h-[74%] after:bottom-0 after:left-0 after:right-0 after:rounded-2xl after:bg-neutral-0 after:-z-[1] overflow-hidden">
+                <div class="rounded-full overflow-hidden">
+                  <img src="./assets/images/farmer-1.webp" width="184" height="184" class="group-hover:scale-105 duration-500 rounded-full border-8 border-neutral-0" alt="" />
+                </div>
+                <div class="mt-8 xl:mt-10 bg-green-50 rounded-2xl p-4 xl:p-6 w-full">
+                  <h4 class="mb-2">Ethan Johnson</h4>
+                  <p class="mb-5">Vice President of Dairy Operations</p>
+                  <div class="flex items-center justify-center gap-2">
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-facebook-01"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-twitter-square"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center group text-center p-4 xl:p-6 relative after:w-full after:absolute after:h-[74%] after:bottom-0 after:left-0 after:right-0 after:rounded-2xl after:bg-neutral-0 after:-z-[1] overflow-hidden">
+                <div class="rounded-full overflow-hidden">
+                  <img src="./assets/images/farmer-2.webp" width="184" height="184" class="group-hover:scale-105 duration-500 rounded-full border-8 border-neutral-0" alt="" />
+                </div>
+                <div class="mt-8 xl:mt-10 bg-green-50 rounded-2xl p-4 xl:p-6 w-full">
+                  <h4 class="mb-2">Isabella Martinez</h4>
+                  <p class="mb-5">Cheese Production Manager</p>
+                  <div class="flex items-center justify-center gap-2">
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-facebook-01"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-twitter-square"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center group text-center p-4 xl:p-6 relative after:w-full after:absolute after:h-[74%] after:bottom-0 after:left-0 after:right-0 after:rounded-2xl after:bg-neutral-0 after:-z-[1] overflow-hidden">
+                <div class="rounded-full overflow-hidden">
+                  <img src="./assets/images/farmer-3.webp" width="184" height="184" class="group-hover:scale-105 duration-500 rounded-full border-8 border-neutral-0" alt="" />
+                </div>
+                <div class="mt-8 xl:mt-10 bg-green-50 rounded-2xl p-4 xl:p-6 w-full">
+                  <h4 class="mb-2">Ethan Johnson</h4>
+                  <p class="mb-5">Vice President of Dairy Operations</p>
+                  <div class="flex items-center justify-center gap-2">
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-facebook-01"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-twitter-square"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col items-center group text-center p-4 xl:p-6 relative after:w-full after:absolute after:h-[74%] after:bottom-0 after:left-0 after:right-0 after:rounded-2xl after:bg-neutral-0 after:-z-[1] overflow-hidden">
+                <div class="rounded-full overflow-hidden">
+                  <img src="./assets/images/farmer-2.webp" width="184" height="184" class="group-hover:scale-105 duration-500 rounded-full border-8 border-neutral-0" alt="" />
+                </div>
+                <div class="mt-8 xl:mt-10 bg-green-50 rounded-2xl p-4 xl:p-6 w-full">
+                  <h4 class="mb-2">Mia Patel</h4>
+                  <p class="mb-5">Yogurt Quality Assurance Specialist</p>
+                  <div class="flex items-center justify-center gap-2">
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-facebook-01"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-twitter-square"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="hgi-stroke hgi-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="farmer-pagination mt-10 xl:mt-14"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Farmers section end -->
+
+    <!-- Our story section start -->
+    <section class="pt-120 bg-neutral-0 bg-no-repeat bg-left">
+      <div class="cont grid grid-cols-12 gap-6 mb-10 xl:mb-14">
+        <div class="col-span-12 lg:col-span-5">
+          <p class="sub-heading mb-3 split_anim">Our Story</p>
+          <h2 class="reveal_anim">About Our Journey</h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-7 xl:col-start-8 flex items-end">
+          <p>We are dedicated to sustainable farming, offering high-quality products for a better future.</p>
+        </div>
+      </div>
+      <div class="cont tabs">
+        <div class="grid grid-cols-2 gap bg-neutral-20 p-2 rounded-full mb-5 xl:mb-6">
+          <button class="tab-link story-tab rounded-full active">Our Mission</button>
+          <button class="tab-link story-tab rounded-full">Our Vission</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-panel">
+            <div class="grid grid-cols-12 gap-6 xl:gap-10 xxl:gap-16 items-center">
+              <div class="col-span-12 md:col-span-5">
+                <img src="./assets/images/about-story1.webp" class="reveal_anim img-fluid w-full rounded-2xl" alt="" />
+              </div>
+              <div class="col-span-12 md:col-span-7">
+                <h2 class="mb-3 xl:mb-4 max-w-md">Growing with Purpose and Integrity</h2>
+                <p class="text-neutral-600 mb-7 xl:mb-10">
+                  At Agriculturio, our mission is to cultivate high-quality, sustainable crops while promoting eco-friendly farming practices. We are dedicated to providing fresh, healthy produce to our community, ensuring every step is environmentally responsible. By focusing on innovation, integrity, and care, we aim to inspire others to embrace
+                  sustainable farming, creating a greener, healthier future for generations to come.
+                </p>
+                <a href="contact-us.html" class="btn-primary">get in touch <i class="hgi-stroke hgi-arrow-up-right-01"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel hidden">
+            <div class="grid grid-cols-12 gap-6 xl:gap-10 xxl:gap-16 items-center">
+              <div class="col-span-12 md:col-span-5">
+                <img src="./assets/images/about-story2.webp" class="reveal_anim img-fluid w-full rounded-2xl" alt="" />
+              </div>
+              <div class="col-span-12 md:col-span-7">
+                <h2 class="mb-3 xl:mb-4 max-w-md">Sustainable Dairy, Nourishing the Future</h2>
+                <p class="text-neutral-600 mb-7 xl:mb-10">
+                  Our vision is to lead the dairy industry with sustainability, innovation and quality. We strive to provide fresh, nutritious dairy products while preserving the environment and supporting local farmers. Through ethical practices and continuous growth, we aim to create a healthier, more sustainable future for generations to come.
+                </p>
+                <a href="contact-us.html" class="btn-primary">get in touch <i class="hgi-stroke hgi-arrow-up-right-01"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our story section end -->
+
+    <!-- gallery section start -->
+    <div class="max-w-[1800px] mx-auto grid grid-cols-1 lg:grid-cols-2 pt-14 xl:pt-32 lg:rounded-xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="bg-yellow-50 flex items-center justify-center py-12 lg:rounded-tl-2xl reveal_anim">
+          <div class="text-center px-4 xxl:px-12">
+            <h4 class="mb-4">Experience the Beauty of Organic Agriculture</h4>
+            <a href="#" class="font-semibold flex items-center gap-2 justify-center">Learn More <i class="hgi-stroke hgi-arrow-right-02"></i></a>
+          </div>
+        </div>
+        <div><img src="./assets/images/gallery-1.webp" data-reveal-from="bottom" class="w-full object-cover object-center reveal_anim" alt="" /></div>
+        <div><img src="./assets/images/gallery-about-2.webp" class="w-full object-cover object-center lg:rounded-bl-2xl reveal_anim" alt="" /></div>
+        <div class="bg-green-50 flex items-center justify-center py-12 reveal_anim" data-reveal-from="top">
+          <div class="text-center px-4 xxl:px-12">
+            <h4 class="mb-4">Capturing Nature's Best in Every Frame</h4>
+            <a href="#" class="font-semibold flex items-center gap-2 justify-center">Learn More <i class="hgi-stroke hgi-arrow-right-02"></i></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/images/gallery-about-3.webp" data-reveal-from="right" class="reveal_anim size-full object-cover lg:rounded-e-2xl object-center" alt="" />
+      </div>
+    </div>
+    <!-- gallery section end -->
+
+    <!-- horizontal text animation start -->
+    <section class="relative z-[1] py-14 xl:py-28">
+      <div class="animated-text-strip reveal_anim" data-duration="1.5">
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+      </div>
+    </section>
+    <!-- horizontal text animation end -->
+
+    <!-- Testimonial section start -->
+    <section class="bg-neutral-20 py-120">
+      <div class="cont">
+        <div class="text-center mb-6 xl:mb-12">
+          <p class="sub-heading mb-3 mx-auto blur_anim">Happy Customers</p>
+          <h1 class="reveal_anim">Our Satisfied Clients</h1>
+        </div>
+        <div data-delay=".3" class="reveal_anim relative">
+          <div class="swiper clientSlider4">
+            <div class="swiper-wrapper pt-7">
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Excellent produce quality! The freshness and taste truly reflect the organic farming methods they use.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-1.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Mark Wilson</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Highly recommend! Their sustainable practices and ethical approach make them a trusted choice for my family.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-2.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">David Collins</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Exceptional service and top-notch organic products. The team truly cares about quality and sustainability.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-3.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Michael Reed</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Exceptional service and top-notch organic products. The team truly cares about quality and sustainability.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-1.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Mark Wilson</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 xl:mt-14">
+            <div class="client4-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Faq section srart -->
+    <section class="bg-neutral-0 py-120 relative">
+      <div class="cont">
+        <div class="text-center mb-10 xl:mb-14">
+          <p class="sub-heading mb-3 mx-auto reveal_anim">Frequently Asked Questions</p>
+          <h1 class="blur_anim">How Can We Help You?</h1>
+        </div>
+        <div class="grid grid-cols-12 gap-4 relative z-[2] xl:gap-6">
+          <div class="col-span-12 lg:col-span-7 fade_anim">
+            <div class="accordion w-full space-y-4">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>How are your products grown organically?</span>
+                  <button class="accordion-arrow">
+                    <i class="hgi-stroke hgi-plus-sign"></i>
+                    <i class="hgi-stroke hgi-minus-sign"></i>
+                  </button>
+                </div>
+                <div class="accordion-content">
+                  <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                    <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Do you offer farming consultation services?</span>
+                  <button class="accordion-arrow">
+                    <i class="hgi-stroke hgi-plus-sign"></i>
+                    <i class="hgi-stroke hgi-minus-sign"></i>
+                  </button>
+                </div>
+                <div class="accordion-content">
+                  <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                    <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>Are your products certified organic?</span>
+                  <button class="accordion-arrow">
+                    <i class="hgi-stroke hgi-plus-sign"></i>
+                    <i class="hgi-stroke hgi-minus-sign"></i>
+                  </button>
+                </div>
+                <div class="accordion-content">
+                  <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                    <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>What areas do you deliver to?</span>
+                  <button class="accordion-arrow">
+                    <i class="hgi-stroke hgi-plus-sign"></i>
+                    <i class="hgi-stroke hgi-minus-sign"></i>
+                  </button>
+                </div>
+                <div class="accordion-content">
+                  <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                    <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <span>How do I place an order?</span>
+                  <button class="accordion-arrow">
+                    <i class="hgi-stroke hgi-plus-sign"></i>
+                    <i class="hgi-stroke hgi-minus-sign"></i>
+                  </button>
+                </div>
+                <div class="accordion-content">
+                  <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                    <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-5 bg-green-50 rounded-xl p-4 md:p-6 xl:p-[52px] flex flex-col items-center text-center reveal_anim" data-reveal-from="right">
+            <img src="./assets/images/faq-icon.png" class="mb-7" alt="" />
+            <h3 class="mb-5 xl:mb-7">Check More Information</h3>
+            <p class="text-neutral-600 mb-10 xl:mb-14">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+            <a href="contact-us.html" class="btn-primary">Learn more <i class="hgi-stroke hgi-arrow-right-01"></i> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Faq section end -->
+
+    <!-- Contact section start -->
+    <section class="bg-neutral-20 py-16 xl:py-32 relative">
+      <div class="cont relative z-[1] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 items-center">
+        <form class="py-16 xl:py-32 px-5 md:px-10 lg:px-14 rounded-2xl border border-neutral-40 bg-neutral-0">
+          <p class="sub-heading mb-4 split_anim">Get In Touch</p>
+          <h2 class="mb-10 h1 xl:mb-14 blur_anim">Let's Connect</h2>
+          <div class="grid grid-cols-2 gap-4 xl:gap-6 mb-6 xl:mb-10">
+            <input type="text" class="col-span-2 md:col-span-1 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Full Name" />
+            <input type="email" class="col-span-2 md:col-span-1 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Email Address" />
+            <input type="number" class="col-span-2 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Phone Number" />
+            <textarea class="col-span-2 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Message..." rows="5"></textarea>
+          </div>
+          <button class="btn-primary">Send Message<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></button>
+        </form>
+        <div>
+          <div class="relative">
+            <img src="./assets/images/contact-about.webp" data-reveal-from="right" class="reveal_anim rounded-e-2xl" alt="" />
+            <div class="absolute left-6 bottom-6 lg:left-20 lg:bottom-10 p-5 xl:p-7 rounded-2xl backdrop-blur-[10px] md:max-w-[320px]">
+              <div class="flex items-center gap-4">
+                <div class="size-12 rounded-full bg-yellow-200 f-center text-3xl">
+                  <i class="hgi-stroke hgi-call"></i>
+                </div>
+                <div>
+                  <p class="text-neutral-0 text-lg font-semibold mb-1">+1 234 567 8901</p>
+                  <p class="text-sm text-neutral-0">Book a free visiting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <include-footer />
+    <!-- Footer section end -->
+  </body>
+</html>

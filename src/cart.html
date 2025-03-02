@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agriculturio is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
+    <title>Cart - Agriculturio - Agriculture &amp; Organic Farm HTML Theme</title>
+  </head>
+
+  <body>
+    <!-- loader  -->
+    <include-loader />
+
+    <!-- header section start -->
+    <include-header />
+    <!-- header section end -->
+
+    <!-- Mobile Menu -->
+    <include-mobile-menu />
+
+    <!-- banner section start -->
+    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
+      <div class="cont py-16 xl:py-20 flex justify-center text-center">
+        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
+          <h2 class="mb-5">Cart</h2>
+          <div class="font-semibold flex justify-center items-center gap-2">
+            <a href="index.html">Home</a> &gt;
+            <span class="text-yellow-200">Cart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- Contact section start -->
+    <section class="bg-neutral-0 py-16 xl:py-32">
+      <div class="cont grid grid-cols-12 gap-6">
+        <div class="col-span-12 lg:col-span-8">
+          <div class="flex justify-between items-center flex-wrap gap-4 mb-10 xl:mb-14">
+            <h2>My Cart</h2>
+            <button class="bg-green-50 rounded-full py-3 px-5 flex items-center gap-2">
+              <i class="hgi-stroke hgi-delete-02"></i>
+              Delete
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full">
+              <thead>
+                <tr class="border-b border-neutral-40">
+                  <th class="p-4 xl:p-6"><input type="checkbox" class="accent-green-500 scale-125" /></th>
+                  <th class="text-start py-3 min-w-[300px]">Product</th>
+                  <th class="text-center py-3">Quantity</th>
+                  <th class="text-center py-3">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-neutral-40">
+                  <td class="text-center p-4 xl:p-6"><input type="checkbox" class="accent-green-500 scale-125" /></td>
+                  <td class="p-4 xl:p-6">
+                    <a href="shop-details.html" class="flex items-center whitespace-nowrap gap-4 text-lg font-medium">
+                      <div class="p-3 bg-neutral-20 rounded-md f-center shrink-0">
+                        <img src="./assets/images/product-1.webp" class="size-14 object-cover" width="60" height="60" alt="" />
+                      </div>
+                      Wicker Basket
+                    </a>
+                  </td>
+                  <td class="p-4 xl:p-6">
+                    <div class="flex border border-neutral-40 rounded-md justify-center max-w-max divide-x divide-neutral-40 productQuantity">
+                      <button class="decrease size-12 f-center text-xl">-</button>
+                      <span class="quantity size-12 f-center">2</span>
+                      <button class="increase size-12 f-center text-xl">+</button>
+                    </div>
+                  </td>
+                  <td class="p-4 xl:p-6"><p class="font-medium text-2xl text-center">$48.00</p></td>
+                </tr>
+                <tr class="border-b border-neutral-40">
+                  <td class="text-center p-4 xl:p-6"><input type="checkbox" class="accent-green-500 scale-125" /></td>
+                  <td class="p-4 xl:p-6">
+                    <a href="shop-details.html" class="flex items-center gap-4 text-lg font-medium">
+                      <div class="p-3 bg-neutral-20 rounded-md f-center shrink-0">
+                        <img src="./assets/images/product-2.webp" class="size-14 object-cover" width="60" height="60" alt="" />
+                      </div>
+                      Bread
+                    </a>
+                  </td>
+                  <td class="p-4 xl:p-6">
+                    <div class="flex border border-neutral-40 rounded-md justify-center max-w-max divide-x divide-neutral-40 productQuantity">
+                      <button class="decrease size-12 f-center text-xl">-</button>
+                      <span class="quantity size-12 f-center">2</span>
+                      <button class="increase size-12 f-center text-xl">+</button>
+                    </div>
+                  </td>
+                  <td class="p-4 xl:p-6"><p class="font-medium text-2xl text-center">$48.00</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-4">
+          <div class="box">
+            <h4 class="mb-5 pb-5 border-b border-neutral-40">Total</h4>
+            <div class="space-y-4 border-b border-neutral-40 mb-5 pb-5">
+              <div class="flex justify-between items-center">
+                <p>Subtotal</p>
+                <p class="font-medium">$48.00</p>
+              </div>
+              <div class="flex justify-between items-center">
+                <p>Discount</p>
+                <p class="font-medium">-$10.00</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center mb-6 xl:mb-8">
+              <p class="font-semibold">Subtotal</p>
+              <p class="font-semibold">$68.00</p>
+            </div>
+            <a href="checkout.html" class="w-full flex justify-center rounded-full py-3 px-6 font-medium bg-green-500 text-neutral-0 uppercase">Proceed to checkout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- horizontal text animation start -->
+    <section class="relative z-[1] pb-14 xl:pb-28">
+      <div class="animated-text-strip reveal_anim" data-duration="1.5">
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+      </div>
+    </section>
+    <!-- horizontal text animation end -->
+
+    <!-- Footer section start -->
+    <include-footer />
+    <!-- Footer section end -->
+  </body>
+</html>

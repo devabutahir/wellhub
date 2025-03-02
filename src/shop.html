@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agriculturio is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/slim-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui-range.min.css" />
+    <title>Shop - Agriculturio - Agriculture &amp; Organic Farm HTML Theme</title>
+  </head>
+
+  <body>
+    <!-- Mobile Menu -->
+    <include-mobile-menu />
+    <!-- loader  -->
+    <include-loader />
+
+    <!-- header section start -->
+    <include-header />
+    <!-- header section end -->
+
+    <!-- banner section start -->
+    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
+      <div class="cont py-16 xl:py-20 flex justify-center text-center">
+        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
+          <h2 class="mb-5">Shop</h2>
+          <div class="font-semibold flex justify-center items-center gap-2">
+            <a href="index.html">Home</a> &gt;
+            <span class="text-yellow-200">Shop</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- Products section start -->
+    <section class="bg-neutral-0 py-120">
+      <div class="cont grid grid-cols-12 gap-6">
+        <div class="col-span-12 lg:col-span-8">
+          <div class="flex justify-between flex-wrap gap-4 items-center mb-6">
+            <div class="flex items-center flex-wrap gap-3">
+              <form class="px-5 py-2.5 max-w-[306px] rounded-md bg-green-50 border border-neutral-0 focus-within:border-green-500 flex items-center gap-2">
+                <input type="text" placeholder="Search" id="search" class="bg-transparent w-full py-0.5" />
+                <button><i class="hgi-stroke hgi-search-01"></i></button>
+              </form>
+              <p class="text-neutral-600">Showing 1-12 of 30 Result</p>
+            </div>
+            <select name="sort" id="sort" class="max-w-[200px] bg-neutral-20">
+              <option value="default">Default Sorting</option>
+              <option value="popular">Popular</option>
+              <option value="new">New</option>
+              <option value="price">Price</option>
+            </select>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-1.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Fresh cow milk</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$26.00</p>
+                    /
+                    <p class="font-medium">$22.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-2.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Chedder Cheese</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-3.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Organic Butter</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-4.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Fresh Cream</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-5.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Milk Powder</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-6.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Butter Milk</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-7.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Gloves</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="gradient-border group">
+              <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
+                <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
+                  <img src="./assets/images/product-8.webp" alt="" />
+                  <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
+                    <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                  </div>
+                  <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
+                  <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
+                </div>
+                <a href="shop-details.html" class="text-center mt-6 block">
+                  <h4 class="mb-2">Garden Basket</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <p class="text-neutral-100 line-through">$16.00</p>
+                    /
+                    <p class="font-medium">$12.00</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-4 space-y-4 xl:space-y-6">
+          <div class="box">
+            <h4 class="pb-4 xl:pb-6 text-2xl font-semibold">Search</h4>
+            <form class="px-4 py-2 w-full rounded-md bg-neutral-0 border border-neutral-0 focus-within:border-green-500 flex items-center gap-2">
+              <input type="text" placeholder="Search" class="bg-transparent w-full py-0.5" />
+              <button><i class="hgi-stroke hgi-search-01"></i></button>
+            </form>
+          </div>
+
+          <div class="box">
+            <p class="font-semibold text-2xl mb-5">Categories</p>
+            <div class="divide-y divide-neutral-40">
+              <a href="#" class="flex w-full justify-between rounded-none items-center duration-300 hover:bg-neutral-0 hover:px-4 py-3.5 hover:rounded-lg gap-3">
+                <p class="m-text font-medium">Agriculture</p>
+                <i class="hgi-stroke hgi-arrow-right-02 text-xl"></i>
+              </a>
+              <a href="#" class="flex w-full justify-between rounded-none items-center duration-300 hover:bg-neutral-0 hover:px-4 py-3.5 hover:rounded-lg gap-3">
+                <p class="m-text font-medium">Dairy Farm</p>
+                <i class="hgi-stroke hgi-arrow-right-02 text-xl"></i>
+              </a>
+              <a href="#" class="flex w-full justify-between rounded-none items-center duration-300 hover:bg-neutral-0 hover:px-4 py-3.5 hover:rounded-lg gap-3">
+                <p class="m-text font-medium">Organic Farm</p>
+                <i class="hgi-stroke hgi-arrow-right-02 ext-xl"></i>
+              </a>
+              <a href="#" class="flex w-full justify-between rounded-none items-center duration-300 hover:bg-neutral-0 hover:px-4 py-3.5 hover:rounded-lg gap-3">
+                <p class="m-text font-medium">Equipment Store</p>
+                <i class="hgi-stroke hgi-arrow-right-02 text-xl"></i>
+              </a>
+              <a href="#" class="flex w-full justify-between rounded-none items-center duration-300 hover:bg-neutral-0 hover:px-4 py-3.5 hover:rounded-lg gap-3">
+                <p class="m-text font-medium">Farm Shop</p>
+                <i class="hgi-stroke hgi-arrow-right-02 text-xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <p class="capitalize text-2xl font-semibold mb-5">Popular Products</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="size-21 bg-neutral-0 rounded-md f-center shrink-0">
+                  <img src="./assets/images/product-1.webp" width="60" class="rounded-md" alt="" />
+                </div>
+                <div>
+                  <p class="text-lg font-medium mb-1">Fresh Milk</p>
+                  <p class="text-sm text-neutral-600 mb-3">$12.00</p>
+                  <a href="shop-details.html" class="flex items-center text-sm text-green-500 gap-2 font-semibold">Shop Now<i class="hgi-stroke hgi-arrow-right-02"></i></a>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="size-21 bg-neutral-0 rounded-md f-center shrink-0">
+                  <img src="./assets/images/product-2.webp" width="60" class="rounded-md" alt="" />
+                </div>
+                <div>
+                  <p class="text-lg font-medium mb-1">Chedder Cheese</p>
+                  <p class="text-sm text-neutral-600 mb-3">$12.00</p>
+                  <a href="shop-details.html" class="flex items-center text-sm text-green-500 gap-2 font-semibold">Shop Now<i class="hgi-stroke hgi-arrow-right-02"></i></a>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="size-21 bg-neutral-0 rounded-md f-center shrink-0">
+                  <img src="./assets/images/product-3.webp" width="60" class="rounded-md" alt="" />
+                </div>
+                <div>
+                  <p class="text-lg font-medium mb-1">Butter</p>
+                  <p class="text-sm text-neutral-600 mb-3">$12.00</p>
+                  <a href="shop-details.html" class="flex items-center text-sm text-green-500 gap-2 font-semibold">Shop Now<i class="hgi-stroke hgi-arrow-right-02"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p class="capitalize text-2xl font-semibold mb-5">Filter by Price</p>
+            <div class="range-slider" data-ticks-position="top" style="--min: 0; --max: 1000; --value-a: 200; --value-b: 400; --text-value-a: '200'; --text-value-b: '400'">
+              <input id="min" type="range" min="0" max="1000" value="200" oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))" />
+              <input id="max" type="range" min="0" max="1000" value="400" oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))" />
+              <div class="range-slider__progress"></div>
+            </div>
+            <div class="mt-2 flex justify-center gap-2">
+              <p class="minprice">$100</p>
+              <p>-</p>
+              <p class="maxprice">$1000</p>
+            </div>
+          </div>
+          <div class="box">
+            <p class="capitalize text-2xl font-semibold mb-5">popular tags</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">FarmTips</a>
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">Soil</a>
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">Organic</a>
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">Farm</a>
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">Agrotech</a>
+              <a href="#" class="py-2 px-5 bg-neutral-0 rounded-full capitalize font-medium text-sm">GreenFarm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products section end -->
+
+    <!-- instagram image section start -->
+    <section>
+      <div class="swiper instagramImgSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
+                </div>
+                <div class="flip-card-back">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
+                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
+                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
+                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
+                    <p class="text-sm mb-1">Make a Call:</p>
+                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- instagram image section end -->
+
+    <!-- Footer section start -->
+    <include-footer />
+    <!-- Footer section end -->
+  </body>
+</html>

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agriculturio is a modern agriculture and organic farm theme designed for farmers, agribusiness, and organic food websites. Get a responsive, SEO-friendly design with farming-focused features." />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/glightbox.css" />
+    <title>Home - Agriculturio - Agriculture &amp; Organic Farm HTML Theme</title>
+  </head>
+
+  <body>
+    <!-- Mobile Menu -->
+    <include-mobile-menu />
+    <!-- loader  -->
+    <include-loader />
+
+    <!-- header section start -->
+    <header class="z-10 py-3 lg:py-4 xxl:py-6 w-full px-3 fixed top-0 header-four">
+      <div class="max-w-[1800px] mx-auto flex justify-between items-center">
+        <a href="./index.html">
+          <img src="./assets/images/logo.png" class="max-sm:hidden" alt="" />
+          <img src="./assets/images/icon.png" class="sm:hidden" alt="" />
+        </a>
+        <ul class="menu">
+          <a class="flex mb-4 lg:hidden" href="index.html">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Home <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="index.html">Agriculture</a></li>
+              <li><a class="menu-link" href="index-2.html">Agro Service</a></li>
+              <li><a class="menu-link" href="index-3.html">Dairy Farm</a></li>
+              <li><a class="menu-link" href="index-4.html">Organic Farm</a></li>
+              <li><a class="menu-link" href="index-5.html">Equipment Store</a></li>
+              <li><a class="menu-link" href="index-6.html">Farm Shop</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu-link" href="about-us.html">About</a>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Services <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="services.html">Service</a></li>
+              <li><a class="menu-link" href="service-details.html">Service Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Portfoio <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="portfolio-1.html">Portfolio 1</a></li>
+              <li><a class="menu-link" href="portfolio-2.html">Portfolio 2</a></li>
+              <li><a class="menu-link" href="portfolio-details.html">Portfolio Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Shop <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="shop.html">Shop</a></li>
+              <li><a class="menu-link" href="shop-details.html">Shop Details</a></li>
+              <li><a class="menu-link" href="wishlist.html">Wishlist</a></li>
+              <li><a class="menu-link" href="cart.html">Cart</a></li>
+              <li><a class="menu-link" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Pages <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="blogs.html">Blogs</a></li>
+              <li><a class="menu-link" href="blog-details.html">Blog Details</a></li>
+              <li><a class="menu-link" href="farmers.html">Farmers</a></li>
+              <li><a class="menu-link" href="faqs.html">Faqs</a></li>
+              <li><a class="menu-link" href="pricing.html">Pricing</a></li>
+              <li><a class="menu-link" href="contact-us.html">Contact</a></li>
+              <li><a class="menu-link" href="request-quote.html">Request Quote</a></li>
+              <li><a class="menu-link" href="privacy-policy.html">Privacy Policy</a></li>
+
+              <li><a class="menu-link" href="sign-up.html">Sign Up</a></li>
+              <li><a class="menu-link" href="sign-in.html">Sign In</a></li>
+              <li><a class="menu-link" href="404.html">404</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="flex items-center gap-4">
+          <a href="contact-us.html" class="btn-primary max-xl:!hidden">Get In Touch!<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+          <div>
+            <button class="topbar-btn search-btn bg-neutral-0/5 backdrop-blur-md border-neutral-30"><i class="hgi-stroke hgi-search-01"></i></button>
+            <div class="search-bar">
+              <button class="absolute top-4 right-4 search-bar-close">
+                <i class="hgi-stroke hgi-cancel-01 text-2xl"></i>
+              </button>
+              <div class="px-4 flex items-center justify-center cont w-full">
+                <div class="flex items-center gap-4 w-full h-12">
+                  <input type="text" class="w-full h-full py-3.5 px-4 rounded-lg border border-neutral-40 focus:border-green-300" placeholder="Search" />
+                  <button class="bg-green-300 py-3 px-6 text-neutral-0 rounded-lg xl:px-8">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative topbar-btn bg-neutral-0/5 backdrop-blur-md">
+            <a href="cart.html" class="f-center"><i class="hgi-stroke hgi-shopping-cart-01"></i></a>
+          </div>
+          <button class="topbar-btn bg-green-500 text-neutral-0 border-green-500 lg:!hidden menu-btn">
+            <i class="hgi-stroke hgi-menu-01"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- banner section start -->
+    <section class="relative max-lg:px-3 pt-20 xl:pt-28">
+      <div class="size-[300px] absolute -top-5 -left-5 bg-green-300 blur-[280px]"></div>
+      <div class="max-w-[1800px] mx-auto px-3">
+        <div class="grid grid-cols-12 items-center mb-10 xl:mb-20 pt-10 xl:pt-14 gap-4">
+          <div class="col-span-12 md:col-span-6">
+            <h1 class="text-6xl lg:text-7xl font-bold 4xl:text-[108px] uppercase reveal_anim">Farming with Purpose</h1>
+          </div>
+          <div class="col-span-12 lg:col-span-6 xl:col-span-5 xl:col-start-8">
+            <div class="reveal_anim" data-delay="0" data-reveal-from="right">
+              <p class="text-neutral-600 text-xl mb-10">Empowering communities with sustainable farming practices, delivering pure, fresh, and healthy produce straight to you.</p>
+              <div class="flex items-center gap-3">
+                <div class="flex justify-center">
+                  <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -mr-2">
+                    <img src="./assets/images/user-2.png" class="rounded-full" alt="" />
+                  </div>
+                  <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -mr-2">
+                    <img src="./assets/images/user-3.png" class="rounded-full" alt="" />
+                  </div>
+                  <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -mr-2">
+                    <img src="./assets/images/user-4.webp" class="rounded-full" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <p class="text-2xl font-semibold text-green-500">24k+</p>
+                  <p>Happy Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="f-center rounded-full size-40 bg-green-500 border-2 z-[2] xl:border-4 border-neutral-0 top-5 absolute sm:-top-[88px] right-[12%]">
+            <a href="services.html" class="circular-text-big f-center bg-yellow-200">
+              <p class="text" data-text="Our Services - Our Services - "></p>
+              <div class="size-12 absolute rounded-full f-center">
+                <button class="size-8 rounded-full text-neutral-700 f-center text-2xl">
+                  <i class="hgi-stroke hgi-arrow-up-right-02"></i>
+                </button>
+              </div>
+            </a>
+          </div>
+          <img src="./assets/images/hero4.webp" data-delay=".3" class="reveal_anim rounded-2xl w-full min-h-[250px] object-cover object-center" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- About section start -->
+    <section class="bg-neutral-0 py-120 relative bg-no-repeat bg-right max-xl:!bg-none" data-bg="./assets/images/farmer-bg.png">
+      <div class="cont">
+        <div class="grid grid-cols-12 gap-4 items-center xl:gap-6">
+          <div class="col-span-12 md:col-span-5 relative">
+            <div class="size-[174px] rounded-full bg-green-500 f-center absolute top-1/2 z-[2] left-5 lg:left-0 3xl:-translate-x-1/2 -translate-y-1/2 text-center outline-dashed outline-green-500/60 outline-offset-[14px]">
+              <div class="relative after:absolute lg:after:size-[250px] after:bg-green-500/20 after:rounded-full after:-top-[90px] after:-left-[88px] after:block">
+                <p class="text-[40px] font-bold text-yellow-300">35+</p>
+                <p class="font-medium text-neutral-0">
+                  Years <br />
+                  Experience
+                </p>
+              </div>
+            </div>
+
+            <img src="./assets/images/about4-1.webp" class="reveal_anim rounded-2xl" alt="" />
+            <img src="./assets/images/about4-2.webp" data-reveal-from="right" class="reveal_anim rounded-2xl border-2 border-neutral-0 absolute bottom-0 lg:-bottom-5 right-0" alt="" />
+          </div>
+          <div class="col-span-12 md:col-span-6 md:col-start-7">
+            <p class="sub-heading mb-3 blur_anim">About Agriculturio</p>
+            <h1 class="mb-4 reveal_anim">Your Trusted Partner in Agro Excellence</h1>
+            <p class="text-neutral-600 mb-7 xl:mb-10">We are committed to empowering farmers with innovative solutions, sustainable practices, and reliable support, ensuring growth and prosperity for agricultural communities worldwide.</p>
+            <div class="space-y-6 mb-10 xl:mb-14">
+              <div class="flex items-center gap-4 max-w-lg">
+                <span class="text-5xl text-green-300">
+                  <i class="hgi-stroke hgi-idea-01"></i>
+                </span>
+                <div>
+                  <p class="text-neutral-900 mb-2 text-2xl font-medium">Innovative Techniques</p>
+                  <p class="text-neutral-600">Boost productivity with modern farming innovations for sustainable agricultural success.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 max-w-lg">
+                <span class="text-5xl text-green-300">
+                  <i class="hgi-stroke hgi-chart-line-data-01"></i>
+                </span>
+                <div>
+                  <p class="text-neutral-900 mb-2 text-2xl font-medium">Sustainable Growth</p>
+                  <p class="text-neutral-600">Ensuring long-term prosperity through responsible and eco-friendly farming practices.</p>
+                </div>
+              </div>
+            </div>
+            <a href="about-us.html" class="btn-primary">More About us <i class="hgi-stroke hgi-arrow-up-right-01"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Why Choose us section start -->
+    <section class="py-120 bg-neutral-20">
+      <div class="cont grid grid-cols-12 gap-6 mb-10 xl:mb-14">
+        <div class="col-span-12 lg:col-span-5">
+          <p class="sub-heading mb-3 split_anim">Why choose us</p>
+          <h2 class="reveal_anim">Why Our Organic Farm Stands Out</h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6 xl:col-span-5 lg:col-start-7 xl:col-start-8 flex items-end">
+          <p>Experience sustainable farming with pure, organic produce grown with care and passion.</p>
+        </div>
+      </div>
+      <div class="cont grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-12 lg:col-span-7 xl:pl-8">
+          <div class="flex justify-between max-sm:flex-wrap gap-3 items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">01.</h2>
+              <h5>Schedule Your Experience</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap gap-3 items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">02.</h2>
+              <h5>Get Professional Advice</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap gap-3 items-center pb-5 mb-5 xl:pb-7 xl:mb-7 border-b border-neutral-30">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">03.</h2>
+              <h5>Meet Our Expert Farmer</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Enrich soil with nutrients for healthy crop growth.</p>
+          </div>
+          <div class="flex justify-between max-sm:flex-wrap gap-3 items-center">
+            <div class="flex items-center gap-4 xl:gap-8">
+              <h2 class="text-green-500/20 font-normal font-roboto text-5xl xl:text-[64px]">04.</h2>
+              <h5>Now Get a Best Products</h5>
+            </div>
+            <p class="text-lg text-neutral-600">Harvest at peak freshness and deliver straight to you.</p>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5">
+          <img src="./assets/images/why-choose-3.webp" data-reveal-from="right" class="reveal_anim img-fluid rounded-2xl" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose us section end -->
+
+    <!-- What we do section start -->
+    <section class="bg-neutral-0 py-120">
+      <div class="cont">
+        <div class="text-center mb-10 xl:mb-14">
+          <p class="sub-heading mb-3 mx-auto split_anim">What We Do</p>
+          <h1 class="reveal_anim">Delivering Farm Freshness</h1>
+        </div>
+        <div class="relative">
+          <div class="swiper serviceSlider4">
+            <div class="swiper-wrapper md:p-4">
+              <div class="swiper-slide">
+                <div class="p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.04)]">
+                  <div class="flex items-center gap-4 mb-6">
+                    <img src="./assets/images/fertizer.png" alt="" />
+                    <h4>Organic Fertilizers</h4>
+                  </div>
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="./assets/images/whatdo4-1.webp" class="hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
+                    <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.04)]">
+                  <div class="flex items-center gap-4 mb-6">
+                    <img src="./assets/images/crop.png" alt="" />
+                    <h4>Crop Cultivation</h4>
+                  </div>
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="./assets/images/whatdo4-2.webp" class="hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">We grow fresh crops using eco-friendly techniques.</p>
+                    <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.04)]">
+                  <div class="flex items-center gap-4 mb-6">
+                    <img src="./assets/images/fertizer.png" alt="" />
+                    <h4>Organic Fertilizers</h4>
+                  </div>
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="./assets/images/whatdo4-1.webp" class="hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
+                    <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.04)]">
+                  <div class="flex items-center gap-4 mb-6">
+                    <img src="./assets/images/soil.png" alt="" />
+                    <h4>Soil Testing</h4>
+                  </div>
+                  <div class="overflow-hidden rounded-2xl">
+                    <img src="./assets/images/whatdo4-3.webp" class="hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Enhancing growth by assessing soil quality effectively.</p>
+                    <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-xxl:flex gap-4 justify-center max-xxl:my-6">
+            <button class="service-prev navigation-btn xxl:absolute xxl:top-1/2 xxl:-translate-y-1/2 z-[2] xxl:-left-12 3xl:-left-20">
+              <i class="hgi-stroke hgi-arrow-left-01"></i>
+            </button>
+            <button class="service-next navigation-btn xxl:absolute xxl:top-1/2 xxl:-translate-y-1/2 z-[2] xxl:-right-12 3xl:-right-20">
+              <i class="hgi-stroke hgi-arrow-right-01"></i>
+            </button>
+          </div>
+          <div class="flex justify-center mt-7 xl:mt-10">
+            <a href="services.html" class="btn-primary">View All Services <i class="hgi-stroke hgi-arrow-right-01"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What we do section end -->
+
+    <!-- Our Farmers section start -->
+    <section class="py-120 bg-neutral-20">
+      <div class="cont">
+        <div class="grid grid-cols-12 gap-6 mb-10 xl:mb-14">
+          <div class="col-span-12 lg:col-span-6">
+            <p class="sub-heading mb-3 split_anim">Our Farmers</p>
+            <h2 class="blur_anim">Meet Our Farmers</h2>
+          </div>
+          <div class="col-span-12 lg:col-span-6 flex lg:justify-end items-center">
+            <a href="farmers.html" class="btn-primary">View All Farmers <i class="hgi-stroke hgi-arrow-right-01"></i></a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="swiper farmerSlider4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pb-2 group">
+                  <div class="relative mb-5 rounded-2xl overflow-hidden">
+                    <img src="./assets/images/farmer-1.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl" alt="" />
+                    <div class="p-2 space-y-2 group-hover:bg-yellow-200 duration-300 bg-green-500 z-[-1] group-hover:z-[1] rounded-b-sm rounded-t-3xl absolute -bottom-1.5 left-12">
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-facebook-01"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-twitter-square"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-2xl mb-2 font-semibold">John Carter</p>
+                    <p class="text-neutral-600">Lead Organic Specialist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pb-2 group">
+                  <div class="relative mb-5 rounded-2xl overflow-hidden">
+                    <img src="./assets/images/farmer-2.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl" alt="" />
+                    <div class="p-2 space-y-2 group-hover:bg-yellow-200 duration-300 bg-green-500 z-[-1] group-hover:z-[1] rounded-b-sm rounded-t-3xl absolute -bottom-1.5 left-12">
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-facebook-01"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-twitter-square"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-2xl mb-2 font-semibold">Emily Harper</p>
+                    <p class="text-neutral-600">Soil Health Expert</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pb-2 group">
+                  <div class="relative mb-5 rounded-2xl overflow-hidden">
+                    <img src="./assets/images/farmer-3.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl" alt="" />
+                    <div class="p-2 space-y-2 group-hover:bg-yellow-200 duration-300 bg-green-500 z-[-1] group-hover:z-[1] rounded-b-sm rounded-t-3xl absolute -bottom-1.5 left-12">
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-facebook-01"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-twitter-square"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-2xl mb-2 font-semibold">John Carter</p>
+                    <p class="text-neutral-600">Lead Organic Specialist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pb-2 group">
+                  <div class="relative mb-5 rounded-2xl overflow-hidden">
+                    <img src="./assets/images/farmer-1.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl" alt="" />
+                    <div class="p-2 space-y-2 group-hover:bg-yellow-200 duration-300 bg-green-500 z-[-1] group-hover:z-[1] rounded-b-sm rounded-t-3xl absolute -bottom-1.5 left-12">
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-facebook-01"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-twitter-square"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-2xl mb-2 font-semibold">Sophia Reed</p>
+                    <p class="text-neutral-600">Horticulture Specialist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pb-2 group">
+                  <div class="relative mb-5 rounded-2xl overflow-hidden">
+                    <img src="./assets/images/farmer-2.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl" alt="" />
+                    <div class="p-2 space-y-2 group-hover:bg-yellow-200 duration-300 bg-green-500 z-[-1] group-hover:z-[1] rounded-b-sm rounded-t-3xl absolute -bottom-1.5 left-12">
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-facebook-01"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-twitter-square"></i>
+                      </a>
+                      <a href="#" class="size-10 rounded-full bg-neutral-0/40 text-[22px] f-center text-neutral-900">
+                        <i class="hgi-stroke hgi-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-2xl mb-2 font-semibold">Daniel Turner</p>
+                    <p class="text-neutral-600">Water Resource Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-xxl:flex gap-4 justify-center max-xxl:my-6">
+            <button class="farmer-prev navigation-btn xxl:absolute xxl:top-1/2 xxl:-translate-y-1/2 z-[2] xxl:-left-12 3xl:-left-20">
+              <i class="hgi-stroke hgi-arrow-left-01"></i>
+            </button>
+            <button class="farmer-next navigation-btn xxl:absolute xxl:top-1/2 xxl:-translate-y-1/2 z-[2] xxl:-right-12 3xl:-right-20">
+              <i class="hgi-stroke hgi-arrow-right-01"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Farmers section end -->
+
+    <!-- Feature section start -->
+    <section class="py-120 bg-neutral-0">
+      <div class="cont">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 text-center">
+          <div class="p-4 md:p-6 xl:p-8 flex flex-col items-center border border-neutral-40 rounded-2xl fade_anim">
+            <span class="mb-5 xl:mb-6 text-7xl text-green-500">
+              <i class="hgi-stroke hgi-security-check"></i>
+            </span>
+            <h4 class="mb-3">Satisfaction Guarantee</h4>
+            <p class="text-neutral-600">Ensuring premium quality and satisfaction with every purchase.</p>
+          </div>
+          <div class="p-4 md:p-6 xl:p-8 flex flex-col items-center border border-neutral-40 rounded-2xl fade_anim" data-delay=".3">
+            <span class="mb-5 xl:mb-6 text-7xl text-green-500">
+              <i class="hgi-stroke hgi-shipping-truck-01"></i>
+            </span>
+            <h4 class="mb-3">Free Shipping</h4>
+            <p class="text-neutral-600">Free shipping guaranteed on every order, always fresh!</p>
+          </div>
+          <div class="p-4 md:p-6 xl:p-8 flex flex-col items-center border border-neutral-40 rounded-2xl fade_anim" data-delay=".6">
+            <span class="mb-5 xl:mb-6 text-7xl text-green-500">
+              <i class="hgi-stroke hgi-promotion"></i>
+            </span>
+            <h4 class="mb-3">Daily Discount</h4>
+            <p class="text-neutral-600">Grab fresh dairy products at unbeatable daily discounts!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- Testimonial section start -->
+    <section class="bg-neutral-20 py-120">
+      <div class="cont">
+        <div class="text-center mb-6 xl:mb-12">
+          <p class="sub-heading mb-3 mx-auto blur_anim">Happy Customers</p>
+          <h1 class="explode_anim">Our Satisfied Clients</h1>
+        </div>
+        <div class="relative">
+          <div class="swiper clientSlider4">
+            <div class="swiper-wrapper pt-7">
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Excellent produce quality! The freshness and taste truly reflect the organic farming methods they use.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-1.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Mark Wilson</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Highly recommend! Their sustainable practices and ethical approach make them a trusted choice for my family.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-2.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">David Collins</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Exceptional service and top-notch organic products. The team truly cares about quality and sustainability.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-3.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Michael Reed</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-2xl bg-neutral-0 p-4 md:p-6 xl:p-7 relative">
+                  <div class="size-14 bg-yellow-200 f-center text-3xl rounded-full absolute right-6 top-0 -translate-y-1/2">
+                    <i class="hgi-stroke hgi-quote-up"></i>
+                  </div>
+                  <div class="mb-5 xl:mb-7">
+                    <p class="mb-4 xl:mb-7 text-neutral-600 lg:text-lg">Exceptional service and top-notch organic products. The team truly cares about quality and sustainability.</p>
+                    <div class="flex items-center gap-4">
+                      <div class="relative shrink-0">
+                        <img src="./assets/images/client-1.png" class="rounded-full size-14 object-cover object-center shrink-0" width="60" height="60" alt="" />
+                      </div>
+                      <span class="w-px h-7 block bg-neutral-40"></span>
+                      <div>
+                        <p class="mb-2 h4">Mark Wilson</p>
+                        <p class="text-sm font-medium">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-1 text-yellow-200">
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none" />
+                      <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 xl:mt-14">
+            <div class="client4-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Gallery section start -->
+    <section class="bg-neutral-0 py-120">
+      <div class="max-w-[1800px] mx-auto px-3 grid grid-cols-12 gap-4 xl:gap-6">
+        <div class="overflow-hidden rounded-2xl col-span-12 reveal_anim">
+          <img src="./assets/images/gallery4-1.webp" class="hover:scale-105 duration-500 img-fluid rounded-2xl w-fit" alt="" />
+        </div>
+        <div class="col-span-12 reveal_anim md:col-span-4 xl:col-span-3">
+          <div class="p-4 md:p-6 xl:p-14 bg-yellow-75 rounded-2xl h-full">
+            <h1 class="mb-4 xl:mb-6">Open Hours</h1>
+            <p class="mb-7 xl:mb-10">At Purely Fresh Dairy, we prioritize quality, sustainability, and freshness,</p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-green-500">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.75 22.5C5.81294 22.5 1 17.6871 1 11.75C1 5.81294 5.81294 1 11.75 1C17.6871 1 22.5 5.81294 22.5 11.75C22.5 17.6871 17.6871 22.5 11.75 22.5ZM16.5182 9.39018C16.8718 8.9659 16.8145 8.33534 16.3902 7.98177C15.9659 7.62821 15.3353 7.68553 14.9818 8.10981L10.6828 13.2686L8.45711 11.0429C8.06658 10.6524 7.43342 10.6524 7.04289 11.0429C6.65237 11.4334 6.65237 12.0666 7.04289 12.4571L10.0429 15.4571C10.2416 15.6558 10.5146 15.7617 10.7953 15.749C11.076 15.7362 11.3384 15.606 11.5182 15.3902L16.5182 9.39018Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>Mon-Fri: 10am - 6 pm</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-green-500">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.75 22.5C5.81294 22.5 1 17.6871 1 11.75C1 5.81294 5.81294 1 11.75 1C17.6871 1 22.5 5.81294 22.5 11.75C22.5 17.6871 17.6871 22.5 11.75 22.5ZM16.5182 9.39018C16.8718 8.9659 16.8145 8.33534 16.3902 7.98177C15.9659 7.62821 15.3353 7.68553 14.9818 8.10981L10.6828 13.2686L8.45711 11.0429C8.06658 10.6524 7.43342 10.6524 7.04289 11.0429C6.65237 11.4334 6.65237 12.0666 7.04289 12.4571L10.0429 15.4571C10.2416 15.6558 10.5146 15.7617 10.7953 15.749C11.076 15.7362 11.3384 15.606 11.5182 15.3902L16.5182 9.39018Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>Weekend brunch: 9am - 2pm</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-green-500">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.75 22.5C5.81294 22.5 1 17.6871 1 11.75C1 5.81294 5.81294 1 11.75 1C17.6871 1 22.5 5.81294 22.5 11.75C22.5 17.6871 17.6871 22.5 11.75 22.5ZM16.5182 9.39018C16.8718 8.9659 16.8145 8.33534 16.3902 7.98177C15.9659 7.62821 15.3353 7.68553 14.9818 8.10981L10.6828 13.2686L8.45711 11.0429C8.06658 10.6524 7.43342 10.6524 7.04289 11.0429C6.65237 11.4334 6.65237 12.0666 7.04289 12.4571L10.0429 15.4571C10.2416 15.6558 10.5146 15.7617 10.7953 15.749C11.076 15.7362 11.3384 15.606 11.5182 15.3902L16.5182 9.39018Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>Locally sourced ingredients</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl col-span-12 reveal_anim md:col-span-4 xl:col-span-6" data-reveal-from="bottom">
+          <img src="./assets/images/gallery4-2.webp" class="hover:scale-105 duration-500 rounded-2xl size-full object-center object-cover" alt="" />
+        </div>
+        <div class="col-span-12 reveal_anim md:col-span-4 xl:col-span-3" data-reveal-from="right">
+          <div class="p-4 md:p-6 xl:p-14 bg-green-75 rounded-2xl h-full text-center">
+            <h1 class="mb-4 xl:mb-6">Try Organic</h1>
+            <p class="mb-7 xl:mb-10">At Purely Fresh Dairy, we prioritize quality, sustainability, and freshness,</p>
+            <a href="#" class="btn-primary">contact us <i class="hgi-stroke hgi-arrow-right-01"></i></a>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl col-span-12 reveal_anim md:col-span-6">
+          <img src="./assets/images/gallery4-3.webp" class="hover:scale-105 duration-500 img-fluid rounded-2xl w-fit" alt="" />
+        </div>
+        <div class="overflow-hidden rounded-2xl col-span-12 reveal_anim md:col-span-6" data-reveal-from="right">
+          <img src="./assets/images/gallery4-4.webp" class="hover:scale-105 duration-500 img-fluid rounded-2xl w-fit" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Gallery section end -->
+
+    <!-- horizontal text animation start -->
+    <section class="relative z-[1]">
+      <div class="animated-text-strip reveal_anim" data-duration="1.5">
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+        <span class="marquee big-text">AgriculturioAgriculturio</span>
+      </div>
+    </section>
+    <!-- horizontal text animation end -->
+
+    <!-- Faq section srart -->
+    <section class="bg-neutral-0 py-120 relative">
+      <div class="cont">
+        <div class="text-center mb-10 xl:mb-14">
+          <p class="sub-heading mb-3 mx-auto reveal_anim">Frequently Asked Questions</p>
+          <h1 class="blur_anim">How Can We Help You?</h1>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 relative z-[2] gap-8 xl:gap-12">
+          <div class="accordion w-full">
+            <div class="accordion-item rounded-b-none">
+              <div class="accordion-header">
+                <span>How are your products grown organically?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-none">
+              <div class="accordion-header">
+                <span>Do you offer farming consultation services?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-none">
+              <div class="accordion-header">
+                <span>Are your products certified organic?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-t-none">
+              <div class="accordion-header">
+                <span>What areas do you deliver to?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion w-full">
+            <div class="accordion-item rounded-b-none">
+              <div class="accordion-header">
+                <span>How do you handle product packaging?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-none">
+              <div class="accordion-header">
+                <span>Can I visit your organic farm?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-none">
+              <div class="accordion-header">
+                <span>Do you use any chemical fertilizers?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-t-none">
+              <div class="accordion-header">
+                <span>How do you support sustainable farming?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Faq section end -->
+
+    <!-- Contact section start -->
+    <section class="bg-neutral-0 py-16 xl:py-32 relative after:absolute after:h-full after:left-0 after:top-0 after:bg-neutral-20 after:xl:w-[45%]">
+      <div class="cont relative z-[1] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0 items-center">
+        <div class="relative">
+          <img src="./assets/images/contact4.webp" class="reveal_anim rounded-e-2xl w-full" alt="" />
+          <div class="absolute right-6 bottom-6 lg:left-10 lg:bottom-10 p-5 xl:p-7 rounded-2xl backdrop-blur-[10px] md:max-w-[290px]">
+            <div class="flex items-center gap-4">
+              <div class="size-10 rounded-full bg-yellow-200 f-center text-2xl">
+                <i class="hgi-stroke hgi-call"></i>
+              </div>
+              <div>
+                <p class="text-neutral-0 text-sm mb-1">Phone Number</p>
+                <p class="font-medium text-neutral-0">+1 234 567 8901</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="py-16 xl:py-32 px-5 md:px-10 lg:px-14 rounded-2xl bg-neutral-0">
+          <p class="sub-heading mb-4 split_anim">Get In Touch</p>
+          <h2 class="mb-10 h1 xl:mb-14 blur_anim">Let's Connect</h2>
+          <div class="grid grid-cols-2 gap-4 xl:gap-6 mb-6 xl:mb-10">
+            <input type="text" class="col-span-2 md:col-span-1 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Full Name" />
+            <input type="email" class="col-span-2 md:col-span-1 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Email Address" />
+            <input type="number" class="col-span-2 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Phone Number" />
+            <textarea class="col-span-2 py-3 px-4 w-full rounded-lg border bg-neutral-10 border-neutral-40 focus:border-green-300" placeholder="Message..." rows="5"></textarea>
+          </div>
+          <button class="btn-primary">Send Message<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <include-footer />
+    <!-- Footer section end -->
+  </body>
+</html>
