@@ -1,29 +1,56 @@
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules';
 
+
 if (document.querySelector('.brandslider')) {
-    new Swiper('.brandslider', {
+  new Swiper('.brandslider', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      pauseOnMouseEnter: true,
+      reverseDirection: true
+    },
+    speed: 6000,
+    modules: [Autoplay],
+    allowTouchMove: false,
+    breakpoints: {
+      1024: {
+        spaceBetween: 48
+      },
+      1200: {
+        spaceBetween: 60
+      },
+    }
+  })
+}
+
+if (document.querySelector('.banner-wrapper-one')) {
+    new Swiper('.banner-wrapper-one', {
       slidesPerView: 'auto',
       spaceBetween: 24,
       loop: true,
+      effect:"fade",
+      modules: [Navigation, Autoplay,EffectFade],
       autoplay: {
-        delay: 1,
+        delay: .5,
         pauseOnMouseEnter: true,
-        reverseDirection: true
+        reverseDirection: false
       },
-      speed: 6000,
-      modules: [Autoplay],
-      allowTouchMove: false,
+      speed: 4000,
+      allowTouchMove: true,
       breakpoints: {
         1024: {
-          spaceBetween: 48
+          spaceBetween: 0
         },
         1200: {
-          spaceBetween: 60
+          spaceBetween: 0
         },
       }
     })
   }
+
   if (document.querySelector('.processSlider')) {
     new Swiper('.processSlider', {
       slidesPerView:1,
