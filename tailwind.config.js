@@ -15,6 +15,8 @@ module.exports = {
             400:'#394538',
             500:'#323C31',
             600:'#113528',
+            700:'#EDECEC',
+            800:'#E1E0E0',
           },      
           yellow:{
             50:'#fef9ed',
@@ -45,6 +47,7 @@ module.exports = {
           }
         },
         screens: {
+          xs: '420px',
           sm: '576px',
           md: '768px',
           lg: '992px',

@@ -258,33 +258,16 @@
 
     <!-- about section start -->
     <section class="py-120">
-      <div class="cont grid grid-cols-12 gap-4">
-        <div class="col-span-12 md:col-span-5 flex gap-4 lg:gap-6 items-start relative">
-          <div class="exp rounded-b-lg p-4 xxl:p-6 flex flex-col items-center gap-3 fade_anim" data-fade-from="top">
-            <p class="font-medium xl:text-lg [writing-mode:vertical-lr] rotate-180">
-              Years of <br />
-              Experience
-            </p>
-            <span class="h-px w-6 bg-neutral-50 inline-block"></span>
-            <span class="font-bold text-green-500 text-4xl xl:text-5xl [writing-mode:vertical-lr] rotate-180">35+</span>
-          </div>
-          <img data-fade-from="right" data-delay=".4" src="./assets/images/about1.png" class="fade_anim rounded-xl w-full h-auto max-w-[200px] sm:max-w-[90%] xl:max-w-full" alt="" />
-          <div data-delay=".6" class="fade_anim p-4 xl:p-6 absolute left-0 bottom-20 xl:bottom-24 rounded-xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex justify-center mb-3">
-              <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -ml-2">
-                <img src="./assets/images/user-2.png" class="rounded-full" alt="" />
-              </div>
-              <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -ml-2">
-                <img src="./assets/images/user-3.png" class="rounded-full" alt="" />
-              </div>
-              <div class="flex items-center size-12 border-2 border-neutral-0 rounded-full -ml-2 text-xl text-neutral-0 f-center bg-green-500">
-                <i class="hgi-stroke hgi-plus-sign"></i>
-              </div>
+      <div class="cont grid grid-cols-12 lg:gap-4 gap-7">
+        <div class="col-span-12 lg:col-span-6 xl:col-span-5 relative xs:flex lg:justify-end">          
+            <div class="fade_anim" data-fade-from="right" data-delay=".4">
+              <img src="assets/images/about/about-big1.webp" class="rounded-xl w-full h-auto lg:max-w-[416px] max-w-[100%]" alt="" />          
+              <span class="bg-yellow-300 pb-4 pt-7 mt-[-10px] xxl:px-10 sm:px-5 px-3 w-full text-end block rounded-b-2xl sm:text-md text-sm lg:max-w-[416px] max-w-[100%]">2K+ | satisfied clients</span>
             </div>
-            <p class="font-semibold text-sm"><span class="text-green-500 text-base">3500+</span> satisfied people</p>
-          </div>
+            <img src="assets/images/about/about-small1.webp" class="fade_anim border-4 border-neutral-0 bg-neutral-0 lg:absolute bottom-0 left-0 rounded-2xl h-auto lg:max-w-[272px] xs:w-[50%] w-full" alt="about-thumb">
+            <img src="assets/images/about/about-element.png" alt="img" class="absolute top-9 left-0 animate-zoomRotateGlow z-[-1]">
         </div>
-        <div class="col-span-12 md:col-span-6 md:col-start-7">
+        <div class="col-span-12 lg:col-span-6 lg:col-start-7">
           <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> ABOUT US</p>
           <h1 class="mb-4 xl:mb-6 title_anim" data-fade-from="right">Empowering You to Live Pain-Free and Active</h1>
           <p class="text-neutral-600 mb-6 xl:mb-8 fade_anim" data-fade-from="right" data-delay=".4">At WellHub, we combine expertise and compassion to deliver tailored physiotherapy solutions.</p>
@@ -373,6 +356,158 @@
         </div>
       </div>
     </section>
+
+    <!-- Services section start -->
+    <section class="py-120 bg-neutral-20">
+      <div class="cont">
+        <div class="flex justify-between flex-wrap items-end gap-5 mb-10 xl:mb-14">
+          <div class="max-w-[500px] fade_anim">
+            <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> TRY TODAY</p>
+            <h2>Exceptional experience Service</h2>
+          </div>
+          <div class="flex items-center gap-4">
+            <button class="client-prev navigation-btn">
+              <i class="hgi-stroke hgi-arrow-left-02"></i>
+            </button>
+            <button class="client-next navigation-btn">
+              <i class="hgi-stroke hgi-arrow-right-02"></i>
+            </button>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="swiper clientSlider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <img src="assets/images/services/ser-neek.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neck Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Effective neck pain relief through personalized physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <img src="assets/images/services/ser-shoulder.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Shoulder Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Relieve shoulder pain with targeted physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">03</span>
+                  <img src="assets/images/services/ser-knee.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Knee Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Relieve knee pain with targeted physiotherapy treatments today.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <img src="assets/images/services/ser-neek.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neck Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Effective neck pain relief through personalized physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <!-- Services section end -->
+
+    <!-- Offer section Start -->
+    <section class="py-120">
+      <div class="cont">
+        <div class="flex justify-between flex-wrap items-end gap-5 mb-10 xl:mb-14">
+          <div class="max-w-[636px] fade_anim">
+            <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> WHAT WE OFFER</p>
+            <h2>Outstanding Physiotherapy for Your Health</h2>
+          </div>
+          <div class="flex items-center gap-4">
+            <a href="about-us.html" class="btn-primary">VIEW ALL <i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+            <div class="border-b border-green-50 xl:pb-10 lg:pb-8 pb-8 lg:flex grid lg:gap-0 gap-5 items-center lg:justify-between justify-center lg:text-start text-center relative group hover:cursor-pointer">
+                <h4 class="lg:w-[280px]">Supportive Community</h4>
+                <span class="border-l border-green-50 border-1 h-[64px] lg:block hidden"></span>
+                <p class="text-green-400 max-w-[526px]">Connect with others, share experiences, and grow together in a welcoming and judgment-free environment.</p>
+                <a href="#0" class="group-hover:bg-green-300 group-hover:text-neutral-0 duration-300 lg:m-0 m-auto w-[60px] h-[60px] rounded-full flex items-center justify-center border-[1px] border-green-50"><i class="hgi-stroke hgi-arrow-up-right-01 text-xl"></i></a>
+                <!-- Hover Ele -->
+                <img src="assets/images/global/offer-thumb.png" alt="img" class="-rotate-[30deg] absolute end-80 duration-700 opacity-0 group-hover:opacity-100 xxl:w-[200px] w-[120px] lg:block hidden">
+            </div>
+            <div class="border-b border-green-50 xl:pb-10 lg:pb-8 pb-8 lg:flex grid lg:gap-0 gap-5 items-center lg:justify-between justify-center lg:text-start text-center relative group hover:cursor-pointer">
+                <h4 class="lg:w-[280px]">Expert Guidance</h4>
+                <span class="border-l border-green-50 border-1 h-[64px] lg:block hidden"></span>
+                <p class="text-green-400 max-w-[526px]">Receive personalized support from experienced therapists who guide group discussions and foster meaningful growth.</p>
+                <a href="#0" class="group-hover:bg-green-300 group-hover:text-neutral-0 duration-300 lg:m-0 m-auto w-[60px] h-[60px] rounded-full flex items-center justify-center border-[1px] border-green-50"><i class="hgi-stroke hgi-arrow-up-right-01 text-xl"></i></a>
+                <!-- Hover Ele -->
+                <img src="assets/images/global/offer-thumb.png" alt="img" class="-rotate-[30deg] absolute end-80 duration-700 opacity-0 group-hover:opacity-100 xxl:w-[200px] w-[120px] lg:block hidden">
+            </div>
+            <div class="border-b border-green-50 xl:pb-10 lg:pb-8 pb-8 lg:flex grid lg:gap-0 gap-5 items-center lg:justify-between justify-center lg:text-start text-center relative group hover:cursor-pointer">
+                <h4 class="lg:w-[280px]">Shared Growth</h4>
+                <span class="border-l border-green-50 border-1 h-[64px] lg:block hidden"></span>
+                <p class="text-green-400 max-w-[526px]">Experience mutual support and personal development by connecting with others on similar healing journeys.</p>
+                <a href="#0" class="group-hover:bg-green-300 group-hover:text-neutral-0 duration-300 lg:m-0 m-auto w-[60px] h-[60px] rounded-full flex items-center justify-center border-[1px] border-green-50"><i class="hgi-stroke hgi-arrow-up-right-01 text-xl"></i></a>
+                <!-- Hover Ele -->
+                <img src="assets/images/global/offer-thumb.png" alt="img" class="-rotate-[30deg] absolute end-80 duration-700 opacity-0 group-hover:opacity-100 xxl:w-[200px] w-[120px] lg:block hidden">
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Offer section end -->
+
+    <!-- Counter section Start -->
+    <div class="py-120 relative after:absolute after:w-full after:h-full after:top-0 after:start-0 after:bg-neutral-900 after:opacity-80" data-bg="./assets/images/global/counter-bg1.webp">
+      <div class="cont flex gap-5 flex-wrap justify-between relative z-10">  
+          <div class="reveal_anim" data-delay=".3s">
+            <span class="w-2 h-2 bg-yellow-300 block lg:mb-4 mb-3"></span>
+            <h5 class="text-neutral-0 font-roboto xxl:mb-20 xl:mb-12 md:mb-8 mb-3 block">A dedicated team of</h5>
+            <h1 class="display-1 text-neutral-0 font-roboto">02</h1>
+          </div>
+          <div class="reveal_anim h-100 md:border-l border-gray-600 lg:ps-8 md:ps-2" data-delay=".3s">
+            <span class="w-2 h-2 bg-yellow-300 block lg:mb-4 mb-3"></span>
+            <h5 class="text-neutral-0 font-roboto xxl:mb-20 xl:mb-12 md:mb-8 mb-3 block">Years of experience</h5>
+            <h1 class="display-1 text-neutral-0 font-roboto">16+</h1>
+          </div>
+          <div class="reveal_anim h-100 md:border-l border-gray-600 lg:ps-8 md:ps-2" data-delay=".3s">
+            <span class="w-2 h-2 bg-yellow-300 block lg:mb-4 mb-3"></span>
+            <h5 class="text-neutral-0 font-roboto xxl:mb-20 xl:mb-12 md:mb-8 mb-3 block">Active clients</h5>
+            <h1 class="display-1 text-neutral-0 font-roboto">52</h1>
+          </div>
+          <div class="reveal_anim h-100 md:border-l border-gray-600 lg:ps-8 md:ps-2" data-delay=".3s">
+            <span class="w-2 h-2 bg-yellow-300 block lg:mb-4 mb-3"></span>
+            <h5 class="text-neutral-0 font-roboto xxl:mb-20 xl:mb-12 md:mb-8 mb-3 block">Successful strategies this year</h5>
+            <h1 class="display-1 text-neutral-0 font-roboto">16</h1>
+          </div>
+      </div>
+    </div>
+    <!-- Counter section end -->
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="max-w-[1800px] mx-auto max-4xl:px-3">
       <div class="banner-one flex overflow-hidden justify-between flex-wrap gap-4 rounded-2xl xxl:rounded-[40px] p-2 md:p-6 xl:p-8" data-bg="./assets/images/home1-banner.webp">
