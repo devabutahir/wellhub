@@ -754,3 +754,22 @@ footer {
     }
   }
 }
+
+
+//rot animation 
+.rots{
+  animation: rotates 2s linear infinite;
+}
+@keyframes rotates {
+  50%{
+    transform: rotate(20deg);
+  }
+}
+
+//Testimonila
+.client-item-cont{
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(30px);
+}
+//Testimonila

@@ -472,7 +472,7 @@
 
     <!-- Counter section Start -->
     <div class="py-120 relative after:absolute after:w-full after:h-full after:top-0 after:start-0 after:bg-neutral-900 after:opacity-80" data-bg="./assets/images/global/counter-bg1.webp">
-      <div class="cont flex gap-5 flex-wrap justify-between relative z-10">  
+      <div class="cont flex gap-5 flex-wrap justify-between relative z-[1]">  
           <div class="reveal_anim" data-delay=".3s">
             <span class="w-2 h-2 bg-yellow-300 block lg:mb-4 mb-3"></span>
             <h5 class="text-neutral-0 font-roboto xxl:mb-20 xl:mb-12 md:mb-8 mb-3 block">A dedicated team of</h5>
@@ -498,12 +498,12 @@
     <!-- Counter section end -->
 
     <!-- Contact Video section Start -->
-    <section class="contact-video">
-        <div class="cont">
-            <div class="flex items-center justify-center max-w-[526px] h-[630px] bg-green-300 xxl:px-10 px-5 py-10">
+    <section class="contact-video relative">
+        <div class="md:flex items-end">
+            <div class="flex items-center justify-center md:max-w-[526px] xl:h-[630px] md:absolute bottom-0 xxl:start-[16%] z-[1] bg-green-300 xxl:px-10 px-5 py-10">
               <div class="text-center">
                   <p class="sub-heading m-auto bg-yellow-300 border-yellow-300 mb-4 text-neutral-800 fade_anim"><span class="bg-neutral-800 w-2 h-2 block rounded-full"></span> CONTACT</p>
-                  <h1 class="text-neutral-0 xl:mb-10 lg:mb-8 mb-7">If you need any Help?</h1>
+                  <h1 class="text-neutral-0 blur_anim xl:mb-10 lg:mb-8 mb-7 xxl:px-20">If you need any Help?</h1>
                   <img src="assets/images/element/contact-ele.png" alt="img" class="xl:mb-10 lg:mb-8 mb-7 text-center m-auto">
                   <a href="services.html" class="bg-neutral-0 text-base hover:text-neutral-0 leading-1 font-semibold uppercase  inline-flex items-center gap-x-2 lg:gap-x-4 py-1.5 pe-2 ps-6 rounded-full learn-more duration-500 group hover:bg-neutral-600">
                     CONTACT US
@@ -511,9 +511,276 @@
                   </a>
               </div>
             </div>
-        </div>    
+            <div class="help-watching max-w-[1310px] ml-auto flex justify-end relative after:absolute after:w-full after:h-full after:top-0 after:start-0 after:bg-neutral-900 after:opacity-60">
+              <div class="flex items-center justify-center w-full h-full">
+                <img src="assets/images/global/help-wather.webp" alt="img" class="w-full">
+                <div class="absolute top-[50%] start-[50%] translate-[-50%,-50%] z-[1]">
+                  <div class="flex gap-8 sm:block hidden">
+                    <h5 class="uppercase text-neutral-0 font-semibold mb-1">WATCH VEDIO</h5>
+                    <img src="assets/images/element/watch-element.png" alt="img" class="rots">
+                  </div>
+                  <a href="https://www.youtube-nocookie.com/embed/wY8DMF8nlw0" class="topbar-btn bg-neutral-0 pulse-effect relative z-[3] text-neutral-900 ml-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path fill="currentColor" d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Ele -->    
+        <img src="assets/images/element/line-ele.png" alt="img" class="absolute bottom-0 start-0 xl:block hidden">
     </section>
     <!-- Contact Video section end -->
+
+    <!-- Blog section start -->
+    <section class="py-120 bg-neutral-0 relative overflow-hidden z-[1]">
+      <div class="cont">
+        <div class="mb-10 xl:mb-14 text-center">
+          <p class="sub-heading m-auto mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span>BLOGS</p>
+          <h2>News & Article</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6">
+          <div class="bg-neutral-0 border border-neutral-30 group fade_anim" data-delay=".3">
+            <a href="blog-details.html" class="relative block overflow-hidden">
+              <img src="./assets/images/blog/article1.webp" class="group-hover:scale-105 duration-500 w-full" alt="" />
+            </a>
+            <div class="p-4 xl:p-6">
+              <div class="border-b border-neutral-30 xl:pb-6 pb-5 xl:mb-6 mb-5">
+                <a href="blog-details.html" class="h4 mb-3 block">The Link Between Rehabilitation and Restored Movement</a>
+                <p class="text-lg text-neutral-600 line-clamp-2">Rehabilitation helps restore strength, flexibility, and movement for recovery.</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-neutral-600 text-lg">November 20, 2025</p>
+                <button type="button" class="flex items-center gap-1 text-neutral-600 text-lg rounded-full py-1 px-2 bg-green-50">
+                    <i class="hgi-stroke hgi-wechat"></i> 0
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-neutral-0 border border-neutral-30 group fade_anim" data-delay=".5">
+            <a href="blog-details.html" class="relative block overflow-hidden">
+              <img src="./assets/images/blog/article2.webp" class="group-hover:scale-105 duration-500 w-full" alt="" />
+            </a>
+            <div class="p-4 xl:p-6">
+              <div class="border-b border-neutral-30 xl:pb-6 pb-5 xl:mb-6 mb-5">
+                <a href="blog-details.html" class="h4 mb-3 block">5 Key Benefits of Physiotherapy for Faster Injury Recovery   </a>
+                <p class="text-lg text-neutral-600 line-clamp-2">Discover physiotherapy's role in healing injuries quickly and effectively.</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-neutral-600 text-lg">November 20, 2025</p>
+                <button type="button" class="flex items-center gap-1 text-neutral-600 text-lg rounded-full py-1 px-2 bg-green-50">
+                    <i class="hgi-stroke hgi-wechat"></i> 0
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-neutral-0 border border-neutral-30 group fade_anim" data-delay=".7">
+            <a href="blog-details.html" class="relative block overflow-hidden">
+              <img src="./assets/images/blog/article3.webp" class="group-hover:scale-105 duration-500 w-full" alt="" />
+            </a>
+            <div class="p-4 xl:p-6">
+              <div class="border-b border-neutral-30 xl:pb-6 pb-5 xl:mb-6 mb-5">
+                <a href="blog-details.html" class="h4 mb-3 block">Top Exercises to Strengthen Your Core Muscles</a>
+                <p class="text-lg text-neutral-600 line-clamp-2">Improve stability and balance with these core-strengthening exercises today.</p>
+              </div>
+              <div class="flex items-center justify-between">
+                <p class="text-neutral-600 text-lg">November 20, 2025</p>
+                <button type="button" class="flex items-center gap-1 text-neutral-600 text-lg rounded-full py-1 px-2 bg-green-50">
+                    <i class="hgi-stroke hgi-wechat"></i> 0
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 xl:mt-14 flex justify-center">
+          <a href="blogs.html" class="btn-primary">EXPLORE MORE <i class="hgi-stroke hgi-arrow-up-right-01"></i></a>
+        </div>
+      </div>
+      <!-- Element -->
+      <img src="assets/images/element/article-ele.png" alt="img" class="absolute end-0 top-[150px] rots z-[-1]">
+    </section>
+    <!-- Gallery section end -->    
+
+    <!-- slider section start -->
+    <section class="bg-green-300 py-5 xl:py-7 reveal_anim" data-reveal-from="right">
+      <div class="swiper brandslider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text1-pain.png" alt="icon" />
+              <h2 class="capitalize">Experience Total Relaxation </h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text11.png" alt="icon" />
+              <h2 class="capitalize">Our Massage Center</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text3-therapy.png" alt="icon" />
+              <h2 class="capitalize"> Book Your Appointment Today</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text4-expert.png" alt="icon" />
+              <h2 class="capitalize">Expert Care</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text5-personalized.png" alt="icon" />
+              <h2 class="capitalize">Personalized Treatment</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text6-muscle.png" alt="icon" />
+              <h2 class="capitalize">Muscle Strength</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text7-rehabilitation.png" alt="icon" />
+              <h2 class="capitalize">Rehabilitation Support</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text8-injury.png" alt="icon" />
+              <h2 class="capitalize">Injury Recovery </h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text9-physical.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text10-joint.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider section end -->    
+
+    <!-- Testimonial section Start -->  
+    <section class="py-120 relative after:absolute after:w-full after:h-full after:top-0 after:start-0 after:bg-neutral-900 after:opacity-80 bg-cover bg-center" data-bg="./assets/images/testimonial/testimonial-bg1.png">
+      <div class="cont z-[1] relative">
+        <div class="flex justify-between flex-wrap items-end gap-5 mb-10 xl:mb-14">
+          <div class="max-w-[500px] fade_anim">
+            <p class="sub-heading border-green-300 mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> TESTIMONIALS</p>
+            <h2 class="text-neutral-0">What Our Clients Say About Us!</h2>
+          </div>
+          <div class="flex items-center gap-4">
+            <button class="client-prev navigation-btn group hover:!border-green-300">
+              <i class="hgi-stroke hgi-arrow-left-02 text-neutral-0"></i>
+            </button>
+            <button class="client-next navigation-btn group hover:!border-green-300">
+              <i class="hgi-stroke hgi-arrow-right-02 text-neutral-0"></i>
+            </button>
+          </div>
+        </div>
+        <div class="client-slider1 swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="grid grid-cols-12">
+                <div class="lg:col-span-4 md:col-span-5 col-span-12">
+                    <img src="assets/images/testimonial/testimonial-thumb1.png" alt="img" class="w-full h-full">
+                </div>
+                <div class="lg:col-span-8 md:col-span-7 col-span-12">
+                  <div class="client-item-cont h-full flex items-center lg:py-10 xs:py-9 py-7 lg:px-12 xs:px-6 px-5 md:!border-l-0">
+                      <div>
+                        <div class="flex items-center justify-between">
+                          <span class="xl:mb-6 lg:mb-5 mb-4 bg-green-300 inline-block text-center rounded-full py-2 px-3 uppercase text-neutral-0 xs:font-semibold font-medium xs:text-xs text-[10px]">JOINED 3 MONTH AGO</span>
+                          <div class="flex ratting gap-1">
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <p class="font-medium text-neutral-0 xxl:text-2xl xl:text-xl text-lg xxl:mb-9 xl:mb-8 mb-6">
+                            With their expert care and personalized treatment, I experienced a remarkable recovery. The team’s dedication and support truly made a difference in my healing journey.
+                        </p>
+                        <div class="flex justify-between">
+                          <div>
+                            <h3 class="text-neutral-0 xx:mb-2 mb-1">Emily Roberts</h3>
+                            <span class="xl:text-lg text-base text-neutral-0 font-medium">Senior Physiotherapist</span>
+                          </div>
+                          <img src="assets/images/element/quote.png" alt="img" class="xl:w-[114px] w-[50px] xl:h-[85px] h-[40px]">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="grid grid-cols-12">
+                <div class="lg:col-span-4 md:col-span-5 col-span-12">
+                    <img src="assets/images/testimonial/testimonial-thumb1.png" alt="img" class="w-full h-full">
+                </div>
+                <div class="lg:col-span-8 md:col-span-7 col-span-12">
+                  <div class="client-item-cont h-full flex items-center lg:py-10 xs:py-9 py-7 lg:px-12 xs:px-6 px-5 md:!border-l-0">
+                      <div>
+                        <div class="flex items-center justify-between">
+                          <span class="xl:mb-6 lg:mb-5 mb-4 bg-green-300 inline-block text-center rounded-full py-2 px-3 uppercase text-neutral-0 xs:font-semibold font-medium xs:text-xs text-[10px]">JOINED 3 MONTH AGO</span>
+                          <div class="flex ratting gap-1">
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                            <span class="text-yellow-300 text-lg">
+                              <i class="hgi-stroke hgi-star"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <p class="font-medium text-neutral-0 xxl:text-2xl xl:text-xl text-lg xxl:mb-9 xl:mb-8 mb-6">
+                            With their expert care and personalized treatment, I experienced a remarkable recovery. The team’s dedication and support truly made a difference in my healing journey.
+                        </p>
+                        <div class="flex justify-between">
+                          <div>
+                            <h3 class="text-neutral-0 xx:mb-2 mb-1">Emily Roberts</h3>
+                            <span class="xl:text-lg text-base text-neutral-0 font-medium">Senior Physiotherapist</span>
+                          </div>
+                          <img src="assets/images/element/quote.png" alt="img" class="xl:w-[114px] w-[50px] xl:h-[85px] h-[40px]">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Testimonial section end -->    
 
 
 

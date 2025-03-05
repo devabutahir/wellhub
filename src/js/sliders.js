@@ -28,28 +28,51 @@ if (document.querySelector('.brandslider')) {
 
 if (document.querySelector('.banner-wrapper-one')) {
     new Swiper('.banner-wrapper-one', {
-      slidesPerView: 'auto',
-      spaceBetween: 24,
-      loop: true,
-      effect:"fade",
-      modules: [Navigation, Autoplay,EffectFade],
-      autoplay: {
-        delay: .5,
-        pauseOnMouseEnter: true,
-        reverseDirection: false
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    loop: true,
+    effect:"fade",
+    modules: [Navigation, Autoplay,EffectFade],
+    autoplay: {
+      delay: .5,
+      pauseOnMouseEnter: true,
+      reverseDirection: false
+    },
+    speed: 4000,
+    allowTouchMove: true,
+    breakpoints: {
+      1024: {
+        spaceBetween: 0
       },
-      speed: 4000,
-      allowTouchMove: true,
-      breakpoints: {
-        1024: {
-          spaceBetween: 0
-        },
-        1200: {
-          spaceBetween: 0
-        },
-      }
-    })
-  }
+      1200: {
+        spaceBetween: 0
+      },
+    }
+  })
+}
+
+if (document.querySelector('.client-slider1')) {
+    new Swiper('.client-slider1', {
+    slidesPerView: 'auto',
+    spaceBetween: 24,
+    loop: true,
+    modules: [Navigation],
+    speed: 2000,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".client-next",
+      prevEl: ".client-prev",
+    },
+    breakpoints: {
+      1024: {
+        spaceBetween: 0
+      },
+      1200: {
+        spaceBetween: 0
+      },
+    }
+  })
+}
 
   if (document.querySelector('.processSlider')) {
     new Swiper('.processSlider', {
