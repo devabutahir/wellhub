@@ -144,6 +144,15 @@
   }
 }
 
+//newsletter-one
+.newsletter-one{
+  @media screen and (min-width: 991px) {
+    &::after{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 11% 100%);
+    }
+  }
+}
+
 @layer utilities {
   .btn {
     @apply inline-flex items-center ease-linear justify-center gap-2 rounded-full p-2 font-semibold text-neutral-0 transition-all duration-300 cursor-pointer;
@@ -270,7 +279,7 @@
   }
 
   .accordion-item {
-    @apply bg-neutral-20 border border-neutral-30 rounded-2xl overflow-hidden;
+    @apply bg-neutral-0 border border-neutral-30 rounded-2xl overflow-hidden;
   }
   .accordion-header {
     @apply cursor-pointer p-4 xl:p-6 flex justify-between items-center;
@@ -288,7 +297,7 @@
     @apply transition-all duration-300 ease-in-out;
   }
   .accordion-item.active {
-    @apply bg-green-50 border-green-500;
+    @apply bg-neutral-20 border-neutral-50;
     .accordion-header {
       @apply xl:pb-4;
       button {
@@ -681,12 +690,12 @@
 
 footer {
   ul li a.link {
-    @apply xl:text-neutral-60 inline-flex relative duration-300;
+    @apply xl:text-neutral-400 inline-flex relative duration-300;
     &::after {
-      @apply duration-300 size-1.5 bg-yellow-200  absolute left-0 top-1/2 -translate-y-1/2 rounded-full opacity-0 content-[''];
+      @apply duration-300 size-1.5 bg-green-300  absolute left-0 top-1/2 -translate-y-1/2 rounded-full opacity-0 content-[''];
     }
     &:hover {
-      @apply text-yellow-200 pl-3;
+      @apply text-green-300 pl-3;
       &::after {
         @apply opacity-100;
       }
