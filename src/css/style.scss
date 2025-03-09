@@ -676,7 +676,7 @@
 .range-slider {
   --show-min-max: none;
   --thumb-size: 20px;
-  --thumb-color: #557224;
+  --thumb-color: #0c1301;
   --thumb-radius: 100px;
   --step: 1;
   --ticks-thickness: 0.01;
@@ -710,6 +710,22 @@ footer {
   }
 }
 
+.updown{
+  animation: updown 2s linear infinite;
+}
+.circle{
+  animation: circles 10s linear infinite;
+}
+@keyframes circles {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes updown {
+  50% {
+    transform: translateY(10px);
+  }
+}
 .screen_loader.hide {
   animation: fadeOut 0.3s forwards;
 }
