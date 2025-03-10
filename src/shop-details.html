@@ -15,28 +15,212 @@
   </head>
 
   <body>
+
+    <!-- header section start -->
+    <header class="z-10 py-3 lg:py-4 xxl:py-6 w-full px-3 absolute top-0">
+      <div class="max-w-[1800px] mx-auto flex justify-between items-center">
+        <a href="./index.html" aria-label="site logo">
+          <img src="./assets/images/logo.png" class="max-sm:hidden" alt="" />
+          <img src="./assets/images/favicon-black.png" class="sm:hidden" alt="" />
+        </a>
+        <ul class="menu">
+          <a class="flex mb-4 lg:hidden" href="index.html">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Home <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="index.html">Physiotherapy</a></li>
+              <li><a class="menu-link" href="index-2.html">Agro Service</a></li>
+              <li><a class="menu-link" href="index-3.html">Dairy Farm</a></li>
+              <li><a class="menu-link" href="index-4.html">Organic Farm</a></li>
+              <li><a class="menu-link" href="index-5.html">Equipment Store</a></li>
+              <li><a class="menu-link" href="index-6.html">Farm Shop</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="py-2 inline-flex uppercase font-semibold" href="about-us.html">About</a>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Services <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="services.html">Service</a></li>
+              <li><a class="menu-link" href="service-details.html">Service Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Portfoio <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="portfolio-1.html">Portfolio 1</a></li>
+              <li><a class="menu-link" href="portfolio-2.html">Portfolio 2</a></li>
+              <li><a class="menu-link" href="portfolio-details.html">Portfolio Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Shop <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="shop.html">Shop</a></li>
+              <li><a class="menu-link" href="shop-details.html">Shop Details</a></li>
+              <li><a class="menu-link" href="wishlist.html">Wishlist</a></li>
+              <li><a class="menu-link" href="cart.html">Cart</a></li>
+              <li><a class="menu-link" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Pages <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="blogs.html">Blogs</a></li>
+              <li><a class="menu-link" href="blog-details.html">Blog Details</a></li>
+              <li><a class="menu-link" href="farmers.html">Farmers</a></li>
+              <li><a class="menu-link" href="faqs.html">Faqs</a></li>
+              <li><a class="menu-link" href="pricing.html">Pricing</a></li>
+              <li><a class="menu-link" href="contact-us.html">Contact</a></li>
+              <li><a class="menu-link" href="request-quote.html">Request Quote</a></li>
+              <li><a class="menu-link" href="privacy-policy.html">Privacy Policy</a></li>
+
+              <li><a class="menu-link" href="sign-up.html">Sign Up</a></li>
+              <li><a class="menu-link" href="sign-in.html">Sign In</a></li>
+              <li><a class="menu-link" href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li class="xl:block hidden">
+            <div class="relative">
+              <a href="cart.html" aria-label="Cart Link" class="f-center">
+                <i class="hgi hgi-stroke hgi-sharp hgi-shopping-bag-02 text-2xl"></i>
+              </a>
+              <span class="cart-count absolute bottom-[-4px] end-[-2px] w-[18px] h-[18px] bg-green-300 rounded-full flex justify-center items-center text-[12px] text-neutral-0">0</span>
+            </div>
+          </li>
+          <li class="xl:block hidden">
+            <div class="mt-1">
+              <button aria-label="Search Button" class="search-btn"><i class="hgi-stroke hgi-search-01 text-2xl"></i></button>              
+            </div>
+          </li>
+        </ul>
+        <div class="flex items-center xl:gap-4 sm:gap-3 gap-2">
+          <a href="#" class="sm:flex hidden items-center xxl:gap-3 gap-2 text-base text-neutral-900 font-medium pe-4">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2753 1.55575C11.3008 1.46056 11.3447 1.37133 11.4047 1.29315C11.4647 1.21496 11.5394 1.14935 11.6248 1.10008C11.7101 1.0508 11.8043 1.01882 11.902 1.00596C11.9996 0.993095 12.0989 0.999608 12.1941 1.02512C13.5844 1.38789 14.853 2.11473 15.869 3.13078C16.8851 4.14684 17.6119 5.41537 17.9747 6.80575C18.0002 6.90092 18.0067 7.00018 17.9939 7.09786C17.981 7.19555 17.949 7.28974 17.8997 7.37506C17.8505 7.46039 17.7849 7.53516 17.7067 7.59512C17.6285 7.65508 17.5393 7.69904 17.4441 7.7245C17.3807 7.74114 17.3155 7.74964 17.25 7.74981C17.0847 7.74981 16.9241 7.69521 16.793 7.59451C16.662 7.4938 16.5679 7.35263 16.5253 7.19293C16.2295 6.05792 15.6363 5.02235 14.8069 4.19296C13.9775 3.36356 12.9419 2.77036 11.8069 2.4745C11.7116 2.44914 11.6223 2.40525 11.544 2.34533C11.4657 2.28542 11.4 2.21066 11.3506 2.12533C11.3013 2.04 11.2692 1.94577 11.2563 1.84803C11.2433 1.7503 11.2498 1.65098 11.2753 1.55575ZM11.0569 5.4745C12.3497 5.8195 13.1803 6.65012 13.5253 7.94293C13.5679 8.10263 13.662 8.2438 13.793 8.34451C13.9241 8.44521 14.0847 8.49981 14.25 8.49981C14.3155 8.49964 14.3807 8.49114 14.4441 8.4745C14.5393 8.44904 14.6285 8.40508 14.7067 8.34512C14.7849 8.28516 14.8505 8.21039 14.8997 8.12506C14.949 8.03974 14.981 7.94555 14.9939 7.84786C15.0067 7.75018 15.0002 7.65092 14.9747 7.55575C14.4947 5.7595 13.2403 4.50512 11.4441 4.02512C11.3489 3.9997 11.2497 3.99327 11.152 4.0062C11.0544 4.01913 10.9602 4.05117 10.8749 4.10049C10.7897 4.1498 10.7149 4.21543 10.655 4.29363C10.5951 4.37182 10.5512 4.46105 10.5258 4.55622C10.5004 4.65138 10.4939 4.75063 10.5069 4.84828C10.5198 4.94593 10.5518 5.04008 10.6012 5.12535C10.6505 5.21062 10.7161 5.28534 10.7943 5.34525C10.8725 5.40516 10.9617 5.44907 11.0569 5.4745ZM18.7388 14.4136C18.5716 15.6839 17.9477 16.85 16.9837 17.6939C16.0196 18.5379 14.7813 19.0021 13.5 18.9998C6.05626 18.9998 8.4831e-06 12.9436 8.4831e-06 5.49981C-0.00228837 4.21852 0.461903 2.98021 1.30588 2.01615C2.14986 1.05209 3.31592 0.428223 4.58626 0.26106C4.9075 0.221836 5.2328 0.287556 5.51362 0.448409C5.79444 0.609262 6.0157 0.856621 6.14438 1.15356L8.12438 5.57387V5.58512C8.2229 5.81242 8.26359 6.06058 8.24281 6.30744C8.22204 6.5543 8.14044 6.79217 8.00532 6.99981C7.98845 7.02512 7.97063 7.04856 7.95188 7.072L6.00001 9.38575C6.7022 10.8126 8.1947 12.292 9.64032 12.9961L11.9222 11.0545C11.9446 11.0357 11.9681 11.0181 11.9925 11.002C12.2 10.8636 12.4387 10.7792 12.687 10.7562C12.9353 10.7333 13.1854 10.7727 13.4147 10.8707L13.4269 10.8764L17.8434 12.8554C18.1409 12.9837 18.3889 13.2047 18.5503 13.4856C18.7116 13.7664 18.7778 14.092 18.7388 14.4136ZM17.25 14.2261C17.25 14.2261 17.2434 14.2261 17.2397 14.2261L12.8334 12.2526L10.5506 14.1942C10.5285 14.2129 10.5053 14.2305 10.4813 14.2467C10.2654 14.3907 10.0159 14.4762 9.75708 14.495C9.49828 14.5137 9.23904 14.465 9.0047 14.3536C7.24876 13.5051 5.49845 11.7679 4.64907 10.0307C4.5366 9.79811 4.48613 9.54037 4.50255 9.28249C4.51898 9.02462 4.60174 8.77536 4.74282 8.55887C4.75872 8.53345 4.77659 8.50932 4.79626 8.48668L6.75001 6.17012L4.78126 1.76387C4.78089 1.76013 4.78089 1.75636 4.78126 1.75262C3.87212 1.87122 3.03739 2.31715 2.43339 3.00692C1.8294 3.69668 1.49755 4.58297 1.50001 5.49981C1.50348 8.68134 2.76888 11.7316 5.01856 13.9813C7.26825 16.2309 10.3185 17.4963 13.5 17.4998C14.4163 17.503 15.3023 17.1723 15.9925 16.5696C16.6827 15.9669 17.1297 15.1335 17.25 14.2251V14.2261Z" fill="#505255"/>
+            </svg>
+            <span class="xxl:block hidden">+6846541631564</span>
+          </a>
+          <a href="services.html" class="learn-more bg-green-300 py-3 px-7 sm:flex hidden items-center text-neutral-0 justify-center group hover:bg-green-500 duration-500 font-semibold">Let’s Talk</a>
+          <div>
+            <div class="search-bar">
+              <button aria-label="search bar close button" class="absolute top-4 right-4 search-bar-close">
+                <i class="hgi-stroke hgi-cancel-01 text-2xl"></i>
+              </button>
+              <div class="px-4 flex items-center justify-center cont w-full">
+                <div class="flex items-center gap-4 w-full h-12">
+                  <input type="text" class="w-full h-full py-3.5 px-4 rounded-lg border border-neutral-40 focus:border-green-300" placeholder="Search" />
+                  <button class="bg-green-300 py-3 px-6 text-neutral-0 rounded-lg xl:px-8">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative topbar-btn xl:hidden flex">
+            <a href="cart.html" aria-label="Cart Link" class="f-center"><i class="hgi-stroke hgi-shopping-cart-01"></i></a>
+          </div>
+          <button aria-label="Menu Button" class="topbar-btn bg-green-500 text-neutral-0 border-green-500 lg:!hidden menu-btn">
+            <i class="hgi-stroke hgi-menu-01"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+
     <!-- Mobile Menu -->
     <include-mobile-menu />
+
     <!-- loader  -->
     <include-loader />
 
-    <!-- header section start -->
-    <include-header />
-    <!-- header section end -->
-
     <!-- banner section start -->
-    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
+    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative" data-bg="assets/images/home1/breadcrumb-banner.png">
       <div class="cont py-16 xl:py-20 flex justify-center text-center">
-        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
-          <h2 class="mb-5">Shop Details</h2>
+        <div class="text-neutral-900 relative z-[1] reveal_anim" data-reveal-from="bottom">
+          <h2 class="mb-5">SHOP DETAILS</h2>
           <div class="font-semibold flex justify-center items-center gap-2">
             <a href="index.html" class="uppercase">Home</a> <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
-            <span class="text-yellow-200 uppercase">Shop Details</span>
+            <span class="text-yellow-200 uppercase">SHOP DETAILS</span>
           </div>
         </div>
       </div>
     </section>
     <!-- banner section end -->
+
+    <!-- slider section start -->
+    <section class="bg-green-300 py-5 xl:py-7 reveal_anim" data-reveal-from="right">
+      <div class="swiper brandslider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text1-pain.png" alt="icon" />
+              <h2 class="capitalize">Pain Relief</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text2-mobility.png" alt="icon" />
+              <h2 class="capitalize">Mobility Restoration</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text3-therapy.png" alt="icon" />
+              <h2 class="capitalize">Therapy Plans</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text4-expert.png" alt="icon" />
+              <h2 class="capitalize">Expert Care</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text5-personalized.png" alt="icon" />
+              <h2 class="capitalize">Personalized Treatment</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text6-muscle.png" alt="icon" />
+              <h2 class="capitalize">Muscle Strength</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text7-rehabilitation.png" alt="icon" />
+              <h2 class="capitalize">Rehabilitation Support</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text8-injury.png" alt="icon" />
+              <h2 class="capitalize">Injury Recovery </h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text9-physical.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text10-joint.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider section end -->     
 
     <!-- Product Details section start -->
     <section class="bg-neutral-0 py-120">
@@ -47,23 +231,23 @@
               <div class="swiper productSlider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4 xl:p-8">
-                      <img src="./assets/images/basket-big-1.webp" class="rounded-xl" alt="" />
+                    <div class="f-center">
+                      <img src="./assets/images/global/product-big-thumbnail1.webp" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4 xl:p-8">
-                      <img src="./assets/images/basket-big-1.webp" class="rounded-xl" alt="" />
+                    <div class="f-center">
+                      <img src="./assets/images/global/product-big-thumbnail2.webp" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4 xl:p-8">
-                      <img src="./assets/images/basket-big-1.webp" class="rounded-xl" alt="" />
+                    <div class="f-center">
+                      <img src="./assets/images/global/product-big-thumbnail3.webp" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4 xl:p-8">
-                      <img src="./assets/images/basket-big-1.webp" class="rounded-xl" alt="" />
+                    <div class="f-center">
+                      <img src="./assets/images/global/product-big-thumbnail1.webp" alt="" />
                     </div>
                   </div>
                 </div>
@@ -71,23 +255,23 @@
               <div class="swiper thumbSlider mt-4 lg:mt-6 xl:mt-8">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4">
-                      <img src="./assets/images/basket-big-1.webp" class="size-auto" alt="" />
+                    <div class="f-center bg-neutral-20">
+                      <img src="./assets/images/global/product-thumnail1.webp" class="size-auto" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4">
-                      <img src="./assets/images/basket-big-1.webp" class="size-auto" alt="" />
+                    <div class="f-center bg-neutral-20">
+                      <img src="./assets/images/global/product-thumnail2.webp" class="size-auto" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4">
-                      <img src="./assets/images/basket-big-1.webp" class="size-auto" alt="" />
+                    <div class="f-center bg-neutral-20">
+                      <img src="./assets/images/global/product-thumnail3.webp" class="size-auto" alt="" />
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="f-center bg-neutral-20 rounded-xl p-4">
-                      <img src="./assets/images/basket-big-1.webp" class="size-auto" alt="" />
+                    <div class="f-center bg-neutral-20">
+                      <img src="./assets/images/global/product-thumnail3.webp" class="size-auto" alt="" />
                     </div>
                   </div>
                 </div>
@@ -95,8 +279,8 @@
             </div>
           </div>
           <div class="col-span-12 lg:col-span-5 xl:col-start-8">
-            <span class="inline-block py-2 bg-green-50 px-6 rounded-full border border-dashed border-green-500 text-green-500 font-medium mb-2">Up To - 25%</span>
-            <h1 class="mb-4">Wicker Basket</h1>
+            <span class="inline-block py-2 bg-green-300 px-6 rounded-full text-neutral-0 font-medium mb-2">Up To - 25%</span>
+            <h1 class="mb-4">Healing Oil</h1>
             <div class="flex items-center gap-3 mb-6">
               <div class="flex gap-1 text-yellow-200">
                 <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -121,16 +305,14 @@
                   ></path>
                 </svg>
               </div>
-              <p class="font-medium">4.8/05 (Clients Reviews)</p>
+              <p class="text-neutral-400">4.8/05 (Clients Reviews)</p>
             </div>
-            <h2 class="mb-6"><span class="text-green-500">$12.00</span> USD</h2>
-            <p>
-              The <span class="font-medium">Wicker Basket</span> is a durable and eco-friendly solution for your storage and carrying needs. Handcrafted from high-quality natural materials, it combines traditional craftsmanship with modern utility. Perfect for holding fruits, vegetables, or farming essentials, this basket is lightweight, sturdy,
-              and versatile. Its natural aesthetic adds charm to any setting while supporting sustainable practices.
+            <h2 class="mb-6"><span class="text-green-500">$79</span> USD</h2>
+            <p class="xxl:mb-8 xl:mb-6 mb-4">
+              Our <span class="font-medium">Healing Oil</span> is crafted with natural, soothing ingredients to relieve pain, reduce inflammation, and promote relaxation. Perfect for massages or daily use, it nourishes your skin and enhances overall wellness.
             </p>
-            <br /><br />
-            <p>Ideal for farms, gardens, or homes, the Wicker Basket is a timeless addition to your daily essentials.</p>
-            <div class="flex mt-6 xl:mt-10 gap-4 flex-wrap mb-5 xl:mb-8">
+            <p class="text-neutral-400"> Additionally, its calming aroma provides a therapeutic experience, helping to reduce stress and improve mood.</p>
+            <div class="flex mt-6 xl:mt-10 gap-4 flex-wrap mb-5 xl:mb-8 color-patel">
               <div class="flex border border-neutral-40 rounded-md divide-x divide-neutral-40 productQuantity">
                 <button class="decrease size-12 f-center text-xl">-</button>
                 <span class="quantity size-12 f-center">2</span>
@@ -152,36 +334,36 @@
             <a href="#" class="btn-primary">Add to cart <i class="hgi-stroke hgi-arrow-up-right-01"></i></a>
             <div class="mt-8 xl:mt-12 mb-6 pb-6 xl:mb-10 xl:pb-10 border-b border-neutral-40 space-y-4">
               <div class="flex items-center gap-4">
-                <div class="flex items-center min-w-[120px] justify-between font-medium text-2xl">
+                <div class="flex items-center min-w-[120px] justify-between font-medium text-xl">
                   <span>Category</span>
                   <span>:</span>
                 </div>
-                <p class="text-xl">Eco-friendly Products</p>
+                <p class="md:text-lg text-base text-green-300">Wellness Products</p>
               </div>
               <div class="flex items-center gap-4">
-                <div class="flex items-center min-w-[120px] justify-between font-medium text-2xl">
+                <div class="flex items-center min-w-[120px] justify-between font-medium text-xl">
                   <span>Tags</span>
                   <span>:</span>
                 </div>
-                <p class="text-xl">#FarmSupplies, #NaturalMaterials</p>
+                <p class="md:text-lg text-base text-green-300">HealingOil, MassageTherapy</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
-              <div class="flex items-center min-w-[120px] justify-between font-medium text-2xl">
+              <div class="flex items-center sm:min-w-[120px] justify-between font-medium text-2xl">
                 <span>Share</span>
                 <span>:</span>
               </div>
               <div class="flex items-center justify-center gap-2">
-                <a href="#" class="social-icon">
+                <a href="#" class="social-icon text-lg">
                   <i class="hgi-stroke hgi-facebook-01"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="#" class="social-icon text-lg">
                   <i class="hgi-stroke hgi-twitter-square"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="#" class="social-icon text-lg">
                   <i class="hgi-stroke hgi-instagram"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="#" class="social-icon text-lg">
                   <i class="hgi-stroke hgi-youtube"></i>
                 </a>
               </div>
@@ -191,32 +373,47 @@
         <div class="grid grid-cols-12 gap-6 mt-10 xl:mt-14">
           <div class="col-span-12 lg:col-span-8 tabs">
             <div class="flex justify-between flex-wrap gap-3 mb-5 xl:mb-8">
-              <button class="tab-link product-details-tab active">Description</button>
-              <button class="tab-link product-details-tab">Additional Information</button>
-              <button class="tab-link product-details-tab">Reviews(2)</button>
+              <button class="tab-link product-details-tab p-0 pb-1 active">Description</button>
+              <button class="tab-link product-details-tab p-0 pb-1">Additional Information</button>
+              <button class="tab-link product-details-tab p-0 pb-1">Reviews(2)</button>
             </div>
             <div class="tab-content">
               <div class="tab-panel">
                 <p class="mb-6 xl:mb-8">
-                  The <span class="font-medium">Wicker Basket</span> is a durable and eco-friendly solution for your storage and carrying needs. Handcrafted from high-quality natural materials, it combines traditional craftsmanship with modern utility. Perfect for holding fruits, vegetables, or farming essentials, this basket is lightweight,
-                  sturdy, and versatile. Its natural aesthetic adds charm to any setting while supporting sustainable practices.
+                  Discover the soothing benefits of Healing Oil, a natural blend designed to alleviate pain, reduce inflammation, and promote deep relaxation. Perfect for therapeutic massages or daily application, it nourishes and hydrates your skin while providing a calming aromatic experience. Ideal for stress relief, its gentle formula is crafted to support overall well-being. Elevate your self-care routine with this versatile oil, designed to restore balance and enhance your physical and emotional wellness. Read More
                 </p>
-                <ul class="list-disc space-y-3 list-inside">
-                  <li><strong>Eco-Friendly &amp; Sustainable:</strong> Made from high-quality wicker, promoting a greener environment.</li>
-                  <li><strong>Lightweight &amp; Sturdy:</strong> Perfect for carrying fruits, vegetables, or essentials with ease.</li>
-                  <li><strong>Versatile Usage:</strong> Ideal for farms, gardens, home décor, or even as a gift basket.</li>
-                  <li><strong>Natural Aesthetic:</strong> Adds a warm, natural touch to any space.</li>
-                  <li><strong>Sustainable Practices:</strong> Supports eco-friendly practices, reducing waste and promoting sustainability.</li>
-                  <li><strong>Handcrafted with Love:</strong> Crafted with love and attention to detail.</li>
-                  <li><strong>Quality Guarantee:</strong> High-quality wicker, ensuring durability and longevity.</li>
-                  <li><strong>Customer Satisfaction:</strong> Our products are designed to meet your needs and exceed your expectations.</li>
-                  <li><strong>Supporting Local Farmers:</strong> We support local farmers and encourage sustainable Physiotherapy practices.</li>
-                </ul>
+                <div class="p-4 md:p-6 xl:p-8 rounded-2xl bg-neutral-20">
+                  <div class="mb-6">
+                    <h4 class="mb-2">Leave a Reply</h4>
+                    <span class="text-neutral-400">Leave a Reply</span>
+                  </div>
+                  <div class="col-span-12 md:col-span-6 grid grid-cols-2 gap-4 lg:gap-6 xxl:gap-y-8">
+                    <div class="col-span-2 md:col-span-1">
+                      <label for="name" class="s-text font-semibold mb-2 block">Name*</label>
+                      <input type="text" placeholder="Enter Name " class="p-3 lg:px-4 bg-neutral-0 border border-neutral-0 focus:border-green-500 rounded-lg w-full block" />
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                      <label for="name" class="s-text font-semibold mb-2 block">Email*</label>
+                      <input type="email" placeholder="Enter Name " class="p-3 lg:px-4 bg-neutral-0 border border-neutral-0 focus:border-green-500 rounded-lg w-full block" />
+                    </div>
+                    <div class="col-span-2">
+                      <label for="name" class="s-text font-semibold mb-2 block">Phone Number*</label>
+                      <input type="number" placeholder="Phone Number " class="p-3 lg:px-4 bg-neutral-0 border border-neutral-0 focus:border-green-500 rounded-lg w-full block" />
+                    </div>
+                    <div class="col-span-2">
+                      <label for="name" class="s-text font-semibold mb-2 block">Review*</label>
+                      <textarea rows="4" placeholder="Your Review" class="p-3 lg:px-4 bg-neutral-0 border border-neutral-0 focus:border-green-500 rounded-lg w-full block"></textarea>
+                    </div>
+                    <div class="col-span-2">
+                      <button class="btn-primary">LEAVE A COMMENT <i class="hgi-stroke hgi-arrow-up-right-01"></i></button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="tab-panel hidden">
                 <p lang="text-xl font-medium">Product Specifications:</p>
                 <ul class="list-disc space-y-3 list-inside my-6">
-                  <li><strong>Material:</strong> 100% Natural Wicker</li>
+                  <li><strong>Healing Oil:</strong> 100% Natural Wicker</li>
                   <li><strong>Dimensions:</strong> (Specify size options, e.g., 12” x 10” x 8”)</li>
                   <li><strong>Weight:</strong> Lightweight and easy to carry</li>
                   <li><strong>Color Options: </strong> (List available colors, if applicable)</li>
@@ -228,7 +425,7 @@
               <div class="tab-panel hidden">
                 <div class="mb-10 xl:mb-14 divide-y divide-neutral-40">
                   <div class="flex items-start gap-4 xl:gap-6 py-6 xl:py-10">
-                    <img src="./assets/images/client-1.png" width="80" height="80" class="rounded-full" alt="" />
+                    <img src="./assets/images/testimonial/client-1.png" width="80" height="80" class="rounded-full" alt="" />
                     <div>
                       <p class="text-2xl font-medium mb-1">John Doe</p>
                       <p class="text-lg mb-4">April 01, 2024</p>
@@ -259,7 +456,7 @@
                     </div>
                   </div>
                   <div class="flex items-start gap-4 xl:gap-6 py-6 xl:py-10">
-                    <img src="./assets/images/client-2.png" width="80" height="80" class="rounded-full" alt="" />
+                    <img src="./assets/images/testimonial/client-2.png" width="80" height="80" class="rounded-full" alt="" />
                     <div>
                       <p class="text-2xl font-medium mb-1">Sarah Smith</p>
                       <p class="text-lg mb-4">April 01, 2024</p>
@@ -318,12 +515,10 @@
             </div>
           </div>
           <div class="col-span-12 lg:col-span-4">
-            <div class="bg-green-500 rounded-2xl f-center py-20 border-b-8 border-yellow-200 relative">
-              <div class="size-[158px] absolute -bottom-[30%] rounded-full -right-[20%] bg-neutral-0/10"></div>
-              <div class="size-[158px] absolute -top-[30%] rounded-full -left-[20%] bg-neutral-0/10"></div>
+            <div class="py-20 lg:h-[440px] relative after:absolute after:w-full after:h-full after:top-0 after:start-0 after:bg-neutral-900 after:opacity-50 bg-cover after:z-[-1] z-[1]" data-bg="assets/images/global/product-big-thumbnail1.webp">
               <div class="flex flex-col items-center">
-                <h1 class="text-neutral-0 mb-6">WellHub</h1>
-                <a href="shop.html" class="btn-primary !bg-neutral-0 !text-neutral-900">Shop Now <i class="hgi-stroke hgi-arrow-right-01"></i></a>
+                <h1 class="text-neutral-0 lg:mb-14 mb-10">WellHub</h1>
+                <a href="shop.html" class="btn-primary !bg-neutral-0 !text-neutral-900">Shop Now <i class="hgi-stroke hgi-arrow-right-01 !text-neutral-0 !bg-green-300"></i></a>
               </div>
             </div>
           </div>
@@ -333,108 +528,222 @@
     <!-- Product Details section end -->
 
     <!-- Related Product section start -->
-    <section class="bg-neutral-20 py-120">
+    <section class="py-120 bg-cover" data-bg="assets/images/element/reladed-bg.webp">
       <div class="cont">
-        <div class="text-center mb-10 xl:mb-14">
-          <p class="sub-heading mb-3 mx-auto">Related Products</p>
-          <h1>You May Also Like</h1>
+        <div class="flex items-end justify-between flex-wrap gap-3 mb-10 xl:mb-14">
+          <h1 class="font-playfair">Related products</h1>
+          <a href="shop.html" class="btn-primary !bg-neutral-0 !text-neutral-900">View All <i class="hgi-stroke hgi-arrow-right-01 !text-neutral-0 !bg-green-300"></i></a>
         </div>
         <div class="relative">
           <div class="swiper serviceSlider4">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="gradient-border group">
-                  <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
-                    <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
-                      <img src="./assets/images/product-1.webp" alt="" />
-                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-1.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
                       </div>
-                      <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
-                      <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
                     </div>
-                    <a href="shop-details.html" class="text-center mt-6 block">
-                      <h4 class="mb-2">Fresh cow milk</h4>
-                      <div class="flex items-center justify-center gap-2">
-                        <p class="text-neutral-100 line-through">$26.00</p>
-                        /
-                        <p class="font-medium">$22.00</p>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Massage Roller</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
                       </div>
-                    </a>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A portable tool for deep tissue massage, easing tension and improving circulation.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $129 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gradient-border group">
-                  <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
-                    <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
-                      <img src="./assets/images/product-3.webp" alt="" />
-                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-2.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
                       </div>
-                      <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
-                      <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
                     </div>
-                    <a href="shop-details.html" class="text-center mt-6 block">
-                      <h4 class="mb-2">Organic Butter</h4>
-                      <div class="flex items-center justify-center gap-2">
-                        <p class="text-neutral-100 line-through">$16.00</p>
-                        /
-                        <p class="font-medium">$12.00</p>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Wellness Tea</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
                       </div>
-                    </a>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A herbal blend that promotes relaxation and supports overall wellness with every sip.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $40 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gradient-border group">
-                  <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
-                    <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
-                      <img src="./assets/images/product-4.webp" alt="" />
-                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-3.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
                       </div>
-                      <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
-                      <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
                     </div>
-                    <a href="shop-details.html" class="text-center mt-6 block">
-                      <h4 class="mb-2">Fresh Cream</h4>
-                      <div class="flex items-center justify-center gap-2">
-                        <p class="text-neutral-100 line-through">$16.00</p>
-                        /
-                        <p class="font-medium">$12.00</p>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Heat Pack</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
                       </div>
-                    </a>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A therapeutic heat pack that helps relax muscles and reduce pain and stiffness.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $180 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="gradient-border group">
-                  <div class="relative rounded-xl text-center p-4 border border-neutral-40 bg-neutral-0 group-hover:border-neutral-0">
-                    <div class="bg-neutral-20 rounded-2xl f-center w-full relative min-h-[274px] border border-neutral-40">
-                      <img src="./assets/images/product-6.webp" alt="" />
-                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2] rounded-2xl">
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-900"></i></button>
-                        <button class="size-12 rounded-full bg-yellow-200 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-900"></i></button>
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-1.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
                       </div>
-                      <span class="absolute top-4 left-4 inline-flex px-3 py-2 rounded-md bg-yellow-100 text-neutral-900 text-sm">Sale 12%</span>
-                      <span class="absolute top-4 right-4 inline-flex px-3 py-2 rounded-md bg-green-100 text-neutral-900 text-sm">New</span>
                     </div>
-                    <a href="shop-details.html" class="text-center mt-6 block">
-                      <h4 class="mb-2">Butter Milk</h4>
-                      <div class="flex items-center justify-center gap-2">
-                        <p class="text-neutral-100 line-through">$16.00</p>
-                        /
-                        <p class="font-medium">$12.00</p>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Massage Roller</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
                       </div>
-                    </a>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A portable tool for deep tissue massage, easing tension and improving circulation.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $129 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-2.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
+                      </div>
+                    </div>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Wellness Tea</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
+                      </div>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A herbal blend that promotes relaxation and supports overall wellness with every sip.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $40 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="group">
+                  <div class="relative border-neutral-40 bg-neutral-0 group-hover:border-green-300">
+                    <div class="relative">
+                      <img src="assets/images/shop/related-3.webp" alt=""/>
+                      <button class="size-12 rounded-full bg-neutral-0 absolute top-5 start-5 f-center text-2xl"><i class="hgi-stroke hgi-favourite text-lg text-neutral-900"></i></button>
+                      <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-0 bg-green-500/50 flex justify-center items-center gap-2 z-[2]">
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-shopping-cart-01 text-lg text-neutral-0"></i></button>
+                        <button class="size-12 rounded-full bg-green-300 f-center text-2xl"><i class="hgi-stroke hgi-arrow-left-right text-lg text-neutral-0"></i></button>
+                      </div>
+                    </div>
+                    <div class="xl:py-8 py-6 xxl:px-8 xl:px-6 px-5 border border-neutral-40 border-t-0">
+                      <div class="flex items-center justify-between flex-wrap gap-3 xl:mb-3 mb-3">
+                          <h4 class="font-playfair"><a href="#0" class="text-neutral-900 font-playfair">Heat Pack</a></h4>
+                          <div class="flex gap-1 items-center">
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                              <span class="text-yellow-300 text-xl"><i class="hgi hgi-stroke hgi-star"></i></span>
+                          </div>
+                      </div>
+                      <p class="text-neutral-400 xxl:text-lg text-base xl:mb-6 mb-4">
+                        A therapeutic heat pack that helps relax muscles and reduce pain and stiffness.
+                      </p>
+                      <a href="#0" class="flex items-center gap-2 xl:text-lg text-base text-neutral-900 xl:font-semibold font-medium">
+                        $180 USD
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 7.5H15M15 7.5L9 13.5M15 7.5L9 1.5" stroke="#090C10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                          
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -453,161 +762,187 @@
     </section>
     <!-- Related Blog section end -->
 
-    <!-- instagram image section start -->
-    <section class="overflow-x-hidden">
-      <div class="swiper instagramImgSlider">
+    <!-- slider section start -->
+    <section class="bg-green-300 py-5 xl:py-7 reveal_anim" data-reveal-from="right">
+      <div class="swiper brandslider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text1-pain.png" alt="icon" />
+              <h2 class="capitalize">Pain Relief</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text2-mobility.png" alt="icon" />
+              <h2 class="capitalize">Mobility Restoration</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text3-therapy.png" alt="icon" />
+              <h2 class="capitalize">Therapy Plans</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text4-expert.png" alt="icon" />
+              <h2 class="capitalize">Expert Care</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text5-personalized.png" alt="icon" />
+              <h2 class="capitalize">Personalized Treatment</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text6-muscle.png" alt="icon" />
+              <h2 class="capitalize">Muscle Strength</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text7-rehabilitation.png" alt="icon" />
+              <h2 class="capitalize">Rehabilitation Support</h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
-                </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
-                  </div>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text8-injury.png" alt="icon" />
+              <h2 class="capitalize">Injury Recovery </h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text9-physical.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text10-joint.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- instagram image section end -->
+    <!-- slider section end -->
 
     <!-- Footer section start -->
-    <include-footer />
+    <footer class="bg-neutral-20 pt-120 relative overflow-hidden z-[1]">
+      <div class="cont border-b border-neutral-40 lg:pb-14 pb-10">
+          <div class="flex justify-between md:flex-nowrap flex-wrap gap-5">
+              <div class="md:max-w-[637px] ">
+                <h2 class="h1 reveal_anim lg:mb-3 mb-2 text-neutral-900">Reach Out Anytime for Expert Support</h2>
+                <p class="xl:mb-8 lg:mb-6 mb-5 md:text-lg text-base text-gray-800">Our team is here to assist you with personalized care, expert guidance, and support whenever you need it.</p>
+                <a href="#0" type="submit" class="btn-primary">GET IN TOUCH<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+              </div>
+              <div class="md:max-w-[384px] w-full">
+                <h4 class="xl:mb-5 lg:mb-4 mb-4">Operational Hour</h4>
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">Monday - Friday</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">07AM - 11PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SATURDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">09AM - 10PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SUNBDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">CLOSED</span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="cont grid grid-cols-12 lg:gap-4 gap-7 relative z-[2] pb-12 xl:pb-20 pt-120">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 reveal_anim" data-reveal-from="right">
+          <img src="./assets/images/logo.png" class="mb-4" alt="" />
+          <p class="mb-6 max-w-[348px] md:text-lg text-base text-neutral-400">Welcome to WellHub, your space for healing, growth, and personalized mental health support.</p>
+          <div class="flex items-center gap-2 lg:mb-10 md:mb-8 sm:mb-6 mb-5">
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-facebook-01"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-twitter-square"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-instagram"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-youtube"></i>
+            </a>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="assets/images/sponsor/visa.png" alt="img">
+            <img src="assets/images/sponsor/shopify.png" alt="img">
+            <img src="assets/images/sponsor/mastercard.png" alt="img">
+            <img src="assets/images/sponsor/paypal.png" alt="img">
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-2 reveal_anim">
+          <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Quick Links</p>
+          <ul class="space-y-4">
+            <li><a href="index.html" class="link xxl:text-lg text-base" >Home</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >About Us</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >Services</a></li>
+            <li><a href="blogs.html" class="link xxl:text-lg text-base" >Blogs</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Shop</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Contact Us</a></li>
+          </ul>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Services</p>
+            <ul class="space-y-4">
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Physiotherapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Rehabilitation Center</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Massage Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Group Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Chiropractic Care</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Psychological Counseling</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim xs:me-0 me-4">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Newsletter</p>
+            <p class="text-base text-neutral-900 xl:mb-8 mb-6">Stay informed with cargolog by subscribing to our newsletter.</p>
+            <form action="#0" class="fade_anim bg-neutral-0 border border-neutral-40 flex items-center justify-between p-2">
+              <div class="flex items-center gap-2 ps-3">
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 0.5H1C0.801088 0.5 0.610322 0.579018 0.46967 0.71967C0.329018 0.860322 0.25 1.05109 0.25 1.25V14C0.25 14.3978 0.408035 14.7794 0.68934 15.0607C0.970644 15.342 1.35218 15.5 1.75 15.5H18.25C18.6478 15.5 19.0294 15.342 19.3107 15.0607C19.592 14.7794 19.75 14.3978 19.75 14V1.25C19.75 1.05109 19.671 0.860322 19.5303 0.71967C19.3897 0.579018 19.1989 0.5 19 0.5ZM18.25 14H1.75V2.95531L9.49281 10.0531C9.63118 10.1801 9.81217 10.2506 10 10.2506C10.1878 10.2506 10.3688 10.1801 10.5072 10.0531L18.25 2.95531V14Z" fill="#505255"/>
+                  </svg>                  
+                  <input type="email" placeholder="Enter Email.." class="border-none py-3 w-full text-neutral-900 bg-transparent placeholder:text-neutral-900 border border-neutral-40 rounded-full" />
+              </div>
+              <button type="submit" class="w-[46px] h-[46px] min-w-[46px] flex items-center justify-center bg-green-300 hover:bg-green-500 duration-300"><i class="hgi hgi-stroke hgi-arrow-up-right-01 duration-300 text-xl text-neutral-0"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 xl:py-6 border-t border-neutral-40">
+        <div class="cont">
+          <div class="grid sm:flex sm:justify-between justify-center gap-y-2 sm:gap-y-0">
+            <p>Copyright © <span id="year"></span> <a href="index.html" class="text-green-500 font-semibold underline">WellHub</a> All Rights Reserved</p>
+            <div class="flex sm:justify-start justify-center gap-x-3 md:gap-x-5">
+              <a href="privacy-policy.html" class="link">Privacy Policy</a>
+              <a href="terms-conditions.html" class="link">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ele -->
+      <img src="assets/images/element/dots-ele.png" alt="img" class="absolute start-0 bottom-[140px] updown z-[-1] xxl:block hidden">
+      <img src="assets/images/element/flower-circle.png" alt="img" class="absolute max-w-[250px] end-[-80px] bottom-[220px] circle z-[-1]">
+      <img src="assets/images/element/footer-ele.png" alt="img" class="absolute xxl:block hidden start-[-0px] top-[150px] z-[-1]">
+    </footer>
     <!-- Footer section end -->
+
   </body>
 </html>

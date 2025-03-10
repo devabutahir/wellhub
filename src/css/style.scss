@@ -355,9 +355,9 @@
     @apply content-[''] absolute block top-full left-0 size-0 border-[22px] xl:border-[24px] border-b-transparent border-r-yellow-200 border-l-yellow-200 !border-t-0;
   }
   .product-details-tab {
-    @apply text-2xl font-semibold border-b-2 border-transparent px-5;
+    @apply text-2xl font-semibold border-b-[1px] border-transparent px-5;
     &.active {
-      @apply border-green-500 text-green-500;
+      @apply border-green-300 text-green-300;
     }
   }
   .section-link {
@@ -601,6 +601,24 @@
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+}
+
+.color-patel{
+  .ss-main{
+    border: 1px solid #DFDFE0 !important;
+    .ss-values{
+      .ss-single{
+        color: #505255 !important;
+      }
+    }
+    .ss-deselect{
+      svg{
+        path{
+          stroke: #505255 !important;
+        }
+      }
+    }
+  }
 }
 
 /* Position the front and back side */
