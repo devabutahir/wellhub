@@ -303,7 +303,7 @@ if (document.querySelector('.projectSlider')) {
   if (document.querySelector('.instagramImgSlider')) {
     new Swiper('.instagramImgSlider', {
       slidesPerView: 'auto',
-      spaceBetween: 0,
+      spaceBetween: 24,
       loop: true, 
       autoplay:false,
       modules:[Autoplay],

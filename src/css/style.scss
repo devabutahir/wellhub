@@ -363,7 +363,7 @@
   .section-link {
     @apply font-medium py-4 px-8 block duration-300 hover:bg-green-50 w-full text-start;
     &.active {
-      @apply bg-green-50;
+      @apply bg-green-50 border-l border-l-green-300 text-green-500;
     }
   }
 }
@@ -590,7 +590,7 @@
 }
 
 .flip-card {
-  @apply bg-transparent h-[290px] md:h-[384px] w-[300px] md:w-[408px] overflow-x-hidden;
+  @apply bg-transparent md:h-[300px] h-[220px] w-[300px] md:w-[416px] overflow-x-hidden;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 /* This container is needed to position the front and back side */
