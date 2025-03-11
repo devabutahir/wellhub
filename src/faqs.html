@@ -9,303 +9,593 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="./assets/css/glightbox.css" />
-    <title>Faqs - WellHub - Physiotherapy &amp; Psychology Rehabilitation HTML Theme</title>
+    <title>Sign Up - WellHub - Physiotherapy &amp; Psychology Rehabilitation HTML Theme</title>
   </head>
 
   <body>
+
     <!-- header section start -->
-    <include-header />
+    <header class="z-10 py-3 lg:py-4 xxl:py-6 w-full px-3 absolute top-0">
+      <div class="max-w-[1800px] mx-auto flex justify-between items-center">
+        <a href="./index.html" aria-label="site logo">
+          <img src="./assets/images/logo.png" class="max-sm:hidden" alt="" />
+          <img src="./assets/images/favicon-black.png" class="sm:hidden" alt="" />
+        </a>
+        <ul class="menu">
+          <a class="flex mb-4 lg:hidden" href="index.html">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Home <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="index.html">Physiotherapy</a></li>
+              <li><a class="menu-link" href="index-2.html">Agro Service</a></li>
+              <li><a class="menu-link" href="index-3.html">Dairy Farm</a></li>
+              <li><a class="menu-link" href="index-4.html">Organic Farm</a></li>
+              <li><a class="menu-link" href="index-5.html">Equipment Store</a></li>
+              <li><a class="menu-link" href="index-6.html">Farm Shop</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="py-2 inline-flex uppercase font-semibold" href="about-us.html">About</a>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Services <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="services.html">Service</a></li>
+              <li><a class="menu-link" href="service-plan.html">Service Plan</a></li>
+              <li><a class="menu-link" href="service-details.html">Service Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Portfoio <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="portfolio-1.html">Portfolio 1</a></li>
+              <li><a class="menu-link" href="portfolio-2.html">Portfolio 2</a></li>
+              <li><a class="menu-link" href="portfolio-details.html">Portfolio Details</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Shop <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="shop.html">Shop</a></li>
+              <li><a class="menu-link" href="shop-details.html">Shop Details</a></li>
+              <li><a class="menu-link" href="wishlist.html">Wishlist</a></li>
+              <li><a class="menu-link" href="cart.html">Cart</a></li>
+              <li><a class="menu-link" href="checkout.html">Checkout</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown-item">
+            <button class="dropdown-btn">Pages <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+            <ul class="dropdown-menu">
+              <li><a class="menu-link" href="blogs.html">Blogs</a></li>
+              <li><a class="menu-link" href="blog-details.html">Blog Details</a></li>
+              <li><a class="menu-link" href="farmers.html">Farmers</a></li>
+              <li><a class="menu-link" href="faqs.html">Faqs</a></li>
+              <li><a class="menu-link" href="pricing.html">Pricing</a></li>
+              <li><a class="menu-link" href="contact-us.html">Contact</a></li>
+              <li><a class="menu-link" href="request-quote.html">Request Quote</a></li>
+              <li><a class="menu-link" href="privacy-policy.html">Privacy Policy</a></li>
+
+              <li><a class="menu-link" href="sign-up.html">Sign Up</a></li>
+              <li><a class="menu-link" href="sign-in.html">Sign In</a></li>
+              <li><a class="menu-link" href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li class="xl:block hidden">
+            <div class="relative">
+              <a href="cart.html" aria-label="Cart Link" class="f-center">
+                <i class="hgi hgi-stroke hgi-sharp hgi-shopping-bag-02 text-2xl"></i>
+              </a>
+              <span class="cart-count absolute bottom-[-4px] end-[-2px] w-[18px] h-[18px] bg-green-300 rounded-full flex justify-center items-center text-[12px] text-neutral-0">0</span>
+            </div>
+          </li>
+          <li class="xl:block hidden">
+            <div class="mt-1">
+              <button aria-label="Search Button" class="search-btn"><i class="hgi-stroke hgi-search-01 text-2xl"></i></button>              
+            </div>
+          </li>
+        </ul>
+        <div class="flex items-center xl:gap-4 sm:gap-3 gap-2">
+          <a href="#" class="sm:flex hidden items-center xxl:gap-3 gap-2 text-base text-neutral-900 font-medium pe-4">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.2753 1.55575C11.3008 1.46056 11.3447 1.37133 11.4047 1.29315C11.4647 1.21496 11.5394 1.14935 11.6248 1.10008C11.7101 1.0508 11.8043 1.01882 11.902 1.00596C11.9996 0.993095 12.0989 0.999608 12.1941 1.02512C13.5844 1.38789 14.853 2.11473 15.869 3.13078C16.8851 4.14684 17.6119 5.41537 17.9747 6.80575C18.0002 6.90092 18.0067 7.00018 17.9939 7.09786C17.981 7.19555 17.949 7.28974 17.8997 7.37506C17.8505 7.46039 17.7849 7.53516 17.7067 7.59512C17.6285 7.65508 17.5393 7.69904 17.4441 7.7245C17.3807 7.74114 17.3155 7.74964 17.25 7.74981C17.0847 7.74981 16.9241 7.69521 16.793 7.59451C16.662 7.4938 16.5679 7.35263 16.5253 7.19293C16.2295 6.05792 15.6363 5.02235 14.8069 4.19296C13.9775 3.36356 12.9419 2.77036 11.8069 2.4745C11.7116 2.44914 11.6223 2.40525 11.544 2.34533C11.4657 2.28542 11.4 2.21066 11.3506 2.12533C11.3013 2.04 11.2692 1.94577 11.2563 1.84803C11.2433 1.7503 11.2498 1.65098 11.2753 1.55575ZM11.0569 5.4745C12.3497 5.8195 13.1803 6.65012 13.5253 7.94293C13.5679 8.10263 13.662 8.2438 13.793 8.34451C13.9241 8.44521 14.0847 8.49981 14.25 8.49981C14.3155 8.49964 14.3807 8.49114 14.4441 8.4745C14.5393 8.44904 14.6285 8.40508 14.7067 8.34512C14.7849 8.28516 14.8505 8.21039 14.8997 8.12506C14.949 8.03974 14.981 7.94555 14.9939 7.84786C15.0067 7.75018 15.0002 7.65092 14.9747 7.55575C14.4947 5.7595 13.2403 4.50512 11.4441 4.02512C11.3489 3.9997 11.2497 3.99327 11.152 4.0062C11.0544 4.01913 10.9602 4.05117 10.8749 4.10049C10.7897 4.1498 10.7149 4.21543 10.655 4.29363C10.5951 4.37182 10.5512 4.46105 10.5258 4.55622C10.5004 4.65138 10.4939 4.75063 10.5069 4.84828C10.5198 4.94593 10.5518 5.04008 10.6012 5.12535C10.6505 5.21062 10.7161 5.28534 10.7943 5.34525C10.8725 5.40516 10.9617 5.44907 11.0569 5.4745ZM18.7388 14.4136C18.5716 15.6839 17.9477 16.85 16.9837 17.6939C16.0196 18.5379 14.7813 19.0021 13.5 18.9998C6.05626 18.9998 8.4831e-06 12.9436 8.4831e-06 5.49981C-0.00228837 4.21852 0.461903 2.98021 1.30588 2.01615C2.14986 1.05209 3.31592 0.428223 4.58626 0.26106C4.9075 0.221836 5.2328 0.287556 5.51362 0.448409C5.79444 0.609262 6.0157 0.856621 6.14438 1.15356L8.12438 5.57387V5.58512C8.2229 5.81242 8.26359 6.06058 8.24281 6.30744C8.22204 6.5543 8.14044 6.79217 8.00532 6.99981C7.98845 7.02512 7.97063 7.04856 7.95188 7.072L6.00001 9.38575C6.7022 10.8126 8.1947 12.292 9.64032 12.9961L11.9222 11.0545C11.9446 11.0357 11.9681 11.0181 11.9925 11.002C12.2 10.8636 12.4387 10.7792 12.687 10.7562C12.9353 10.7333 13.1854 10.7727 13.4147 10.8707L13.4269 10.8764L17.8434 12.8554C18.1409 12.9837 18.3889 13.2047 18.5503 13.4856C18.7116 13.7664 18.7778 14.092 18.7388 14.4136ZM17.25 14.2261C17.25 14.2261 17.2434 14.2261 17.2397 14.2261L12.8334 12.2526L10.5506 14.1942C10.5285 14.2129 10.5053 14.2305 10.4813 14.2467C10.2654 14.3907 10.0159 14.4762 9.75708 14.495C9.49828 14.5137 9.23904 14.465 9.0047 14.3536C7.24876 13.5051 5.49845 11.7679 4.64907 10.0307C4.5366 9.79811 4.48613 9.54037 4.50255 9.28249C4.51898 9.02462 4.60174 8.77536 4.74282 8.55887C4.75872 8.53345 4.77659 8.50932 4.79626 8.48668L6.75001 6.17012L4.78126 1.76387C4.78089 1.76013 4.78089 1.75636 4.78126 1.75262C3.87212 1.87122 3.03739 2.31715 2.43339 3.00692C1.8294 3.69668 1.49755 4.58297 1.50001 5.49981C1.50348 8.68134 2.76888 11.7316 5.01856 13.9813C7.26825 16.2309 10.3185 17.4963 13.5 17.4998C14.4163 17.503 15.3023 17.1723 15.9925 16.5696C16.6827 15.9669 17.1297 15.1335 17.25 14.2251V14.2261Z" fill="#505255"/>
+            </svg>
+            <span class="xxl:block hidden">+6846541631564</span>
+          </a>
+          <a href="services.html" class="learn-more bg-green-300 py-3 px-7 sm:flex hidden items-center text-neutral-0 justify-center group hover:bg-green-500 duration-500 font-semibold">Let’s Talk</a>
+          <div>
+            <div class="search-bar">
+              <button aria-label="search bar close button" class="absolute top-4 right-4 search-bar-close">
+                <i class="hgi-stroke hgi-cancel-01 text-2xl"></i>
+              </button>
+              <div class="px-4 flex items-center justify-center cont w-full">
+                <div class="flex items-center gap-4 w-full h-12">
+                  <input type="text" class="w-full h-full py-3.5 px-4 rounded-lg border border-neutral-40 focus:border-green-300" placeholder="Search" />
+                  <button class="bg-green-300 py-3 px-6 text-neutral-0 rounded-lg xl:px-8">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative topbar-btn xl:hidden flex">
+            <a href="cart.html" aria-label="Cart Link" class="f-center"><i class="hgi-stroke hgi-shopping-cart-01"></i></a>
+          </div>
+          <button aria-label="Menu Button" class="topbar-btn bg-green-500 text-neutral-0 border-green-500 lg:!hidden menu-btn">
+            <i class="hgi-stroke hgi-menu-01"></i>
+          </button>
+        </div>
+      </div>
+    </header>
     <!-- header section end -->
 
     <!-- Mobile Menu -->
     <include-mobile-menu />
+
     <!-- loader  -->
     <include-loader />
 
     <!-- banner section start -->
-    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
+    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative" data-bg="assets/images/home1/breadcrumb-banner.png">
       <div class="cont py-16 xl:py-20 flex justify-center text-center">
-        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
-          <h2 class="mb-5">Faqs</h2>
+        <div class="text-neutral-900 relative z-[1] reveal_anim" data-reveal-from="bottom">
+          <h2 class="mb-5">FAQs</h2>
           <div class="font-semibold flex justify-center items-center gap-2">
             <a href="index.html" class="uppercase">Home</a> <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
-            <span class="text-yellow-200 uppercase">Faqs</span>
+            <span class="text-yellow-200 uppercase">FAQs</span>
           </div>
         </div>
       </div>
     </section>
     <!-- banner section end -->
 
-    <!-- Faq section srart -->
-    <section class="bg-neutral-10 py-120 relative after:absolute after:h-full after:left-0 after:top-0 after:bg-green-500 after:xl:w-[38%]">
-      <div class="cont grid grid-cols-1 lg:grid-cols-2 relative z-[2] gap-6 xxl:gap-14 items-center">
-        <div class="relative">
-          <img src="./assets/images/faq-bg.webp" class="reveal_anim img-fluid w-full border-2 border-neutral-0 rounded-2xl" alt="" />
-          <div class="absolute right-6 bottom-6 lg:right-20 lg:bottom-10 p-5 xl:p-7 rounded-2xl backdrop-blur-[10px] md:max-w-[320px]">
-            <div class="flex items-center gap-4">
-              <div class="size-12 rounded-full bg-yellow-200 f-center text-3xl">
-                <i class="hgi-stroke hgi-call"></i>
-              </div>
-              <div>
-                <p class="text-sm text-neutral-0 mb-1">Phone Number</p>
-                <p class="text-neutral-0 text-lg font-semibold">+1 234 567 8901</p>
-              </div>
+    <!-- slider section start -->
+    <section class="bg-green-300 py-5 xl:py-7 reveal_anim" data-reveal-from="right">
+      <div class="swiper brandslider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text1-pain.png" alt="icon" />
+              <h2 class="capitalize">Pain Relief</h2>
             </div>
           </div>
-        </div>
-        <div>
-          <p class="sub-heading mb-3 reveal_anim">Frequently Asked Questions</p>
-          <h2 class="blur_anim mb-10 xl:mb-14">How Can We Help You?</h2>
-          <div class="accordion w-full space-y-4">
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>How are your products grown organically?</span>
-                <button class="accordion-arrow">
-                  <i class="hgi-stroke hgi-plus-sign"></i>
-                  <i class="hgi-stroke hgi-minus-sign"></i>
-                </button>
-              </div>
-              <div class="accordion-content">
-                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
-                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
-                </div>
-              </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text2-mobility.png" alt="icon" />
+              <h2 class="capitalize">Mobility Restoration</h2>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>Do you offer farming consultation services?</span>
-                <button class="accordion-arrow">
-                  <i class="hgi-stroke hgi-plus-sign"></i>
-                  <i class="hgi-stroke hgi-minus-sign"></i>
-                </button>
-              </div>
-              <div class="accordion-content">
-                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
-                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
-                </div>
-              </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text3-therapy.png" alt="icon" />
+              <h2 class="capitalize">Therapy Plans</h2>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>Are your products certified organic?</span>
-                <button class="accordion-arrow">
-                  <i class="hgi-stroke hgi-plus-sign"></i>
-                  <i class="hgi-stroke hgi-minus-sign"></i>
-                </button>
-              </div>
-              <div class="accordion-content">
-                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
-                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
-                </div>
-              </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text4-expert.png" alt="icon" />
+              <h2 class="capitalize">Expert Care</h2>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>What areas do you deliver to?</span>
-                <button class="accordion-arrow">
-                  <i class="hgi-stroke hgi-plus-sign"></i>
-                  <i class="hgi-stroke hgi-minus-sign"></i>
-                </button>
-              </div>
-              <div class="accordion-content">
-                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
-                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
-                </div>
-              </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text5-personalized.png" alt="icon" />
+              <h2 class="capitalize">Personalized Treatment</h2>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>How do I place an order?</span>
-                <button class="accordion-arrow">
-                  <i class="hgi-stroke hgi-plus-sign"></i>
-                  <i class="hgi-stroke hgi-minus-sign"></i>
-                </button>
-              </div>
-              <div class="accordion-content">
-                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
-                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
-                </div>
-              </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text6-muscle.png" alt="icon" />
+              <h2 class="capitalize">Muscle Strength</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text7-rehabilitation.png" alt="icon" />
+              <h2 class="capitalize">Rehabilitation Support</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text8-injury.png" alt="icon" />
+              <h2 class="capitalize">Injury Recovery </h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text9-physical.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
+            </div>
+          </div>
+          <div class="swiper-slide max-w-max">
+            <div class="inline-flex items-center gap-4">
+              <img src="./assets/images/icon/text10-joint.png" alt="icon" />
+              <h2 class="capitalize">Physical Health</h2>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- slider section end --> 
+
+    <!-- Faq section srart -->
+    <section class="bg-neutral-0 relative overflow-hidden md:py-0 py-16">
+      <div class="cont grid grid-cols-1 md:grid-cols-2 relative z-[2] gap-6 xxl:gap-14 items-center">        
+        <div class="md:py-20 py-2">
+          <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> FAQ</p>
+          <h2 class="blur_anim mb-8 xl:mb-10">Frequently Asked Questions</h2>
+          <div class="accordion w-full space-y-5">
+            <div class="accordion-item rounded-[0px]">
+              <div class="accordion-header">
+                <span class="font-playfair">01 What is group therapy about?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Group therapy provides a supportive space for individuals to share, connect, and grow together through guided discussions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-[0px]">
+              <div class="accordion-header">
+                <span class="font-playfair">02 Who can join group therapy sessions?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-[0px]">
+              <div class="accordion-header">
+                <span class="font-playfair">03 What are the therapy benefits?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-[0px]">
+              <div class="accordion-header">
+                <span class="font-playfair">04 How do I get started?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-[0px]">
+              <div class="accordion-header">
+                <span class="font-playfair">06 How do I place an order?</span>
+                <button class="accordion-arrow">
+                  <i class="hgi-stroke hgi-plus-sign"></i>
+                  <i class="hgi-stroke hgi-minus-sign"></i>
+                </button>
+              </div>
+              <div class="accordion-content">
+                <div class="px-4 pb-4 xl:pb-6 xl:px-6">
+                  <p class="text-neutral-600">Our products are grown using natural fertilizers, eco-friendly methods, and without harmful chemicals, ensuring purity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative xxl:w-[838px] xxl:h-1005px xxl:ml-[94px]">
+          <img src="assets/images/contact/faq1.png" alt="img" class="w-full h-full">
+        </div>
+      </div>
+      <img src="assets/images/element/flower-circle.png" alt="img" class="absolute top-[180px] circle start-[-140px] max-w-[300px] xl:block hidden">
     </section>
     <!-- Faq section end -->
 
-    <!-- Testimonial section start -->
-    <section class="bg-neutral-0 py-120">
+    <!-- Testimonial section srart -->
+    <section class="relative py-120 bg-neutral-20 z-[1]">
       <div class="cont">
-        <div class="text-center mb-6 xl:mb-12">
-          <p class="sub-heading mb-3 mx-auto split_anim">Happy Customers</p>
-          <h1 class="reveal_anim">Hear From Satisfied Clients</h1>
-        </div>
-        <div class="relative">
-          <div class="swiper clientSlider6">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="flex max-sm:flex-wrap items-center justify-center gap-6 xxl:gap-10 max-w-[1080px] mx-auto">
-                  <div class="flex flex-col sm:flex-row items-center gap-4 shrink-0">
-                    <div class="relative shrink-0">
-                      <img src="./assets/images/client-1.png" class="rounded-full size-[100px] object-cover object-center shrink-0" width="100" height="100" alt="" />
+        <div class="mb-8 lg:mb-10">
+          <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> TESTIMONIALS</p>
+          <h2 class="blur_anim">Our happy clients</h2>
+        </div> 
+        <div class="grid items-center grid-cols-12 lg:gap-12 gap-8 pb-120">
+          <div class="col-span-7 relative">
+            <div class="swiper testimonial-slidem">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 xxl:mb-5 xl:mb-4 mb-4">
+                      <div class="bg-neutral-0 font-medium inline-flex items-center justify-center rounded-full py-1 px-4 text-center text-base uppercase text-neutral-900">
+                        JOINED 3 MONTH AGO
+                      </div>
+                      <div class="flex gap-1">
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                      </div>
                     </div>
-                    <div>
-                      <p class="mb-1 text-2xl">Mark Wilson</p>
-                      <p class="text-neutral-600">April 8, 2023</p>
+                    <p class="lg:text-lg text-base text-neutral-400 xxl:mb-14 xl:mb-9 lg:mb-7 mb-6">
+                      “The care and attention I received at the Massage Center was exceptional. My pain has significantly reduced, and I feel more relaxed than ever. Highly recommend their services for anyone seeking relief!”
+                    </p>
+                    <div class="flex items-center xl:gap-6 gap-4">
+                      <img src="assets/images/testimonial/zeta-small1.png" alt="img" class="rounded-full">
+                      <div>
+                        <h4 class="text-neutral-900 font-semibold mb-1">Nora Bennett</h4>
+                        <span class="text-base text-neutral-400">Happy Client</span>
+                      </div>
                     </div>
-                  </div>
-                  <span class="h-36 max-sm:hidden w-px block bg-neutral-40"></span>
-                  <div class="max-w-[600px]">
-                    <div class="flex gap-1 text-yellow-200 mb-5">
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-neutral-900 font-medium lg:text-xl">With WellHub’s guidance, we’ve seen a significant improvement in crop production. Their eco-friendly practices and organic focus have allowed us to offer top-With WellHub’s guidance, we’ve seen</p>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex max-sm:flex-wrap items-center justify-center gap-6 xxl:gap-10 max-w-[1080px] mx-auto">
-                  <div class="flex flex-col sm:flex-row items-center gap-4 shrink-0">
-                    <div class="relative shrink-0">
-                      <img src="./assets/images/client-2.png" class="rounded-full size-[100px] object-cover object-center shrink-0" width="100" height="100" alt="" />
+                <div class="swiper-slide">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 xxl:mb-5 xl:mb-4 mb-4">
+                      <div class="bg-neutral-0 font-medium inline-flex items-center justify-center rounded-full py-1 px-4 text-center text-base uppercase text-neutral-900">
+                        JOINED 3 MONTH AGO
+                      </div>
+                      <div class="flex gap-1">
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                        <span class="text-xl text-yellow-300">
+                          <i class="hgi hgi-stroke hgi-star"></i>
+                        </span>
+                      </div>
                     </div>
-                    <div>
-                      <p class="mb-1 text-2xl">Mark Wilson</p>
-                      <p class="text-neutral-600">April 8, 2023</p>
+                    <p class="lg:text-lg text-base text-neutral-400 xxl:mb-14 xl:mb-9 lg:mb-7 mb-6">
+                      “The care and attention I received at the Massage Center was exceptional. My pain has significantly reduced, and I feel more relaxed than ever. Highly recommend their services for anyone seeking relief!”
+                    </p>
+                    <div class="flex items-center xl:gap-6 gap-4">
+                      <img src="assets/images/testimonial/zeta-small1.png" alt="img" class="rounded-full">
+                      <div>
+                        <h4 class="text-neutral-900 font-semibold mb-1">Nora Bennett</h4>
+                        <span class="text-base text-neutral-400">Happy Client</span>
+                      </div>
                     </div>
-                  </div>
-                  <span class="h-36 max-sm:hidden w-px block bg-neutral-40"></span>
-                  <div class="max-w-[600px]">
-                    <div class="flex gap-1 text-yellow-200 mb-5">
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-neutral-900 font-medium lg:text-xl">With WellHub’s guidance, we’ve seen a significant improvement in crop production. Their eco-friendly practices and organic focus have allowed us to offer top-With WellHub’s guidance, we’ve seen</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="flex max-sm:flex-wrap items-center justify-center gap-6 xxl:gap-10 max-w-[1080px] mx-auto">
-                  <div class="flex flex-col sm:flex-row items-center gap-4 shrink-0">
-                    <div class="relative shrink-0">
-                      <img src="./assets/images/client-2.png" class="rounded-full size-[100px] object-cover object-center shrink-0" width="100" height="100" alt="" />
-                    </div>
-                    <div>
-                      <p class="mb-1 text-2xl">Emily Harper</p>
-                      <p class="text-neutral-600">April 8, 2023</p>
-                    </div>
-                  </div>
-                  <span class="h-36 max-sm:hidden w-px block bg-neutral-40"></span>
-                  <div class="max-w-[600px]">
-                    <div class="flex gap-1 text-yellow-200 mb-5">
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg width="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                        <rect width="256" height="256" fill="none" />
-                        <path fill="currentColor" d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 256 256">
-                        <path
-                          d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.4,16.4,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-14.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65A8,8,0,0,0,128,181.1V32c.24,0,.27.08.35.26L153,91.86a8,8,0,0,0,6.75,4.92l63.91,5.16c.16,0,.25,0,.34.29S224,102.63,223.84,102.73Z"
-                        ></path>
-                      </svg>
-                    </div>
-                    <p class="text-neutral-900 font-medium lg:text-xl">With WellHub’s guidance, we’ve seen a significant improvement in crop production. Their eco-friendly practices and organic focus have allowed us to offer top-With WellHub’s guidance, we’ve seen</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="flex items-center gap-2 absolute end-0 bottom-4 z-[1]">
+              <button class="client-prev w-[46px] h-[46px] rounded-full text-xl f-center bg-neutral-0 border border-neutral-40 text-neutral-900 duration-300 hover:bg-green-300 hover:text-neutral-0 hover:border-green-300">
+                <i class="hgi hgi-stroke hgi-arrow-left-01"></i>
+              </button>
+              <button class="client-next w-[46px] h-[46px] rounded-full text-xl f-center bg-neutral-0 border border-neutral-40 text-neutral-900 duration-300 hover:bg-green-300 hover:text-neutral-0 hover:border-green-300">
+                <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
+              </button>
+            </div>
           </div>
-          <div class="mt-10 xl:mt-14">
-            <div class="client4-pagination"></div>
+          <div class="col-span-5">
+            <div class="relative max-w-[526px]">
+              <img src="assets/images/testimonial/testimonial-zeta1.png" alt="img" class="rounded-full w-full">
+              <div class="bg-yellow-300 rounded-full f-center xl:w-[100px] md:w-[70px] w-[50px] xl:h-[100px] md:h-[70px] h-[50px] absolute top-4 start-4">
+                <svg class="xl:w-[60px] md:w-[40px] w-[28px]" viewBox="0 0 52 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 0H4C2.93913 0 1.92172 0.421427 1.17157 1.17157C0.421427 1.92172 0 2.93913 0 4V20C0 21.0609 0.421427 22.0783 1.17157 22.8284C1.92172 23.5786 2.93913 24 4 24H19V26C19 28.1217 18.1571 30.1566 16.6569 31.6569C15.1566 33.1571 13.1217 34 11 34C10.4696 34 9.96086 34.2107 9.58579 34.5858C9.21071 34.9609 9 35.4696 9 36C9 36.5304 9.21071 37.0391 9.58579 37.4142C9.96086 37.7893 10.4696 38 11 38C14.1816 37.9967 17.2319 36.7313 19.4816 34.4816C21.7313 32.2319 22.9967 29.1816 23 26V4C23 2.93913 22.5786 1.92172 21.8284 1.17157C21.0783 0.421427 20.0609 0 19 0ZM19 20H4V4H19V20ZM48 0H33C31.9391 0 30.9217 0.421427 30.1716 1.17157C29.4214 1.92172 29 2.93913 29 4V20C29 21.0609 29.4214 22.0783 30.1716 22.8284C30.9217 23.5786 31.9391 24 33 24H48V26C48 28.1217 47.1571 30.1566 45.6569 31.6569C44.1566 33.1571 42.1217 34 40 34C39.4696 34 38.9609 34.2107 38.5858 34.5858C38.2107 34.9609 38 35.4696 38 36C38 36.5304 38.2107 37.0391 38.5858 37.4142C38.9609 37.7893 39.4696 38 40 38C43.1816 37.9967 46.2319 36.7313 48.4816 34.4816C50.7313 32.2319 51.9967 29.1816 52 26V4C52 2.93913 51.5786 1.92172 50.8284 1.17157C50.0783 0.421427 49.0609 0 48 0ZM48 20H33V4H48V20Z" fill="#090C10"/>
+                </svg>                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider section start -->
+        <div class="swiper brandslider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/google-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/dropbox-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/loom-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/discord-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/shopify-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/feedly-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/google-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/dropbox-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/loom-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="!w-[160px] !h-[70px]">
+                <img src="assets/images/sponsor/discord-logo.png" alt="img" class="!w-[140px] h-full">
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <img src="assets/images/element/footer-ele.png" alt="img" class="absolute xxl:block hidden start-[-0px] top-[150px] z-[-1]">
     </section>
-    <!-- Testimonial section end -->
+    <!-- Testimonial section End -->
 
-    <!-- Feature section start -->
-    <section class="bg-neutral-20 py-120">
-      <div class="cont">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-6">
-          <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
-            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
-              <i class="hgi-stroke hgi-leaf-01 relative z-[1]"></i>
-            </div>
-            <h5 class="mb-4">Natural Farming</h5>
-            <p class="text-neutral-600">Growing crops with organic, eco-friendly farming methods.</p>
+    <!-- Day section Start -->
+    <section class="relative bg-cover z-[1] after:absolute after:z-[-1] after:inset-0 after:w-full after:h-full after:bg-gradient-to after:bg-black/80" data-bg="assets/images/global/daytrial-thumb.webp">
+      <div class="cont py-28">
+          <div class="text-center max-w-[700px] mx-auto">
+              <h1 class="uppercase text-neutral-0 font-bold mb-8">BOOK A SESSION AND START  DAY TRIAL</h1>
+              <a href="about-us.html" class="btn-primary">GET STARTED <i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
           </div>
-          <div data-delay=".3" class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
-            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
-              <i class="hgi-stroke hgi-checkmark-badge-03 relative z-[1]"></i>
-            </div>
-            <h5 class="mb-4">Quality Products</h5>
-            <p class="text-neutral-600">Bringing you the freshest, highest-quality produce right to you.</p>
-          </div>
-          <div data-delay=".6" class="fade_anim p-4 md:p-6 xxl:p-8 border border-neutral-40 rounded-2xl flex flex-col items-center bg-neutral-0">
-            <div class="relative mb-5 xl:mb-8 size-20 f-center text-4xl xl:text-6xl text-green-500 after:size-20 after:rounded-full after:bg-green-50 after:-left-5 after:top-0 after:absolute">
-              <i class="hgi-stroke hgi-recycle-02 relative z-[1]"></i>
-            </div>
-            <h5 class="mb-4">Sustainable Process</h5>
-            <p class="text-neutral-600">Using sustainable techniques for long-term environmental health.</p>
-          </div>
-        </div>
       </div>
     </section>
-    <!-- Feature section end -->
+    <!-- Day section end -->
 
     <!-- Footer section start -->
-    <include-footer />
+    <footer class="bg-neutral-20 pt-120 relative overflow-hidden z-[1]">
+      <div class="cont border-b border-neutral-40 lg:pb-14 pb-10">
+          <div class="flex justify-between md:flex-nowrap flex-wrap gap-5">
+              <div class="md:max-w-[637px] ">
+                <h2 class="h1 reveal_anim lg:mb-3 mb-2 text-neutral-900">Reach Out Anytime for Expert Support</h2>
+                <p class="xl:mb-8 lg:mb-6 mb-5 md:text-lg text-base text-gray-800">Our team is here to assist you with personalized care, expert guidance, and support whenever you need it.</p>
+                <a href="#0" type="submit" class="btn-primary">GET IN TOUCH<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+              </div>
+              <div class="md:max-w-[384px] w-full">
+                <h4 class="xl:mb-5 lg:mb-4 mb-4">Operational Hour</h4>
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">Monday - Friday</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">07AM - 11PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SATURDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">09AM - 10PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SUNBDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">CLOSED</span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="cont grid grid-cols-12 lg:gap-4 gap-7 relative z-[2] pb-12 xl:pb-20 pt-120">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 reveal_anim" data-reveal-from="right">
+          <img src="./assets/images/logo.png" class="mb-4" alt="" />
+          <p class="mb-6 max-w-[348px] md:text-lg text-base text-neutral-400">Welcome to WellHub, your space for healing, growth, and personalized mental health support.</p>
+          <div class="flex items-center gap-2 lg:mb-10 md:mb-8 sm:mb-6 mb-5">
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-facebook-01"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-twitter-square"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-instagram"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-youtube"></i>
+            </a>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="assets/images/sponsor/visa.png" alt="img">
+            <img src="assets/images/sponsor/shopify.png" alt="img">
+            <img src="assets/images/sponsor/mastercard.png" alt="img">
+            <img src="assets/images/sponsor/paypal.png" alt="img">
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-2 reveal_anim">
+          <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Quick Links</p>
+          <ul class="space-y-4">
+            <li><a href="index.html" class="link xxl:text-lg text-base" >Home</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >About Us</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >Services</a></li>
+            <li><a href="blogs.html" class="link xxl:text-lg text-base" >Blogs</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Shop</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Contact Us</a></li>
+          </ul>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Services</p>
+            <ul class="space-y-4">
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Physiotherapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Rehabilitation Center</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Massage Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Group Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Chiropractic Care</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Psychological Counseling</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim xs:me-0 me-4">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Newsletter</p>
+            <p class="text-base text-neutral-900 xl:mb-8 mb-6">Stay informed with cargolog by subscribing to our newsletter.</p>
+            <form action="#0" class="fade_anim bg-neutral-0 border border-neutral-40 flex items-center justify-between p-2">
+              <div class="flex items-center gap-2 ps-3">
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 0.5H1C0.801088 0.5 0.610322 0.579018 0.46967 0.71967C0.329018 0.860322 0.25 1.05109 0.25 1.25V14C0.25 14.3978 0.408035 14.7794 0.68934 15.0607C0.970644 15.342 1.35218 15.5 1.75 15.5H18.25C18.6478 15.5 19.0294 15.342 19.3107 15.0607C19.592 14.7794 19.75 14.3978 19.75 14V1.25C19.75 1.05109 19.671 0.860322 19.5303 0.71967C19.3897 0.579018 19.1989 0.5 19 0.5ZM18.25 14H1.75V2.95531L9.49281 10.0531C9.63118 10.1801 9.81217 10.2506 10 10.2506C10.1878 10.2506 10.3688 10.1801 10.5072 10.0531L18.25 2.95531V14Z" fill="#505255"/>
+                  </svg>                  
+                  <input type="email" placeholder="Enter Email.." class="border-none py-3 w-full text-neutral-900 bg-transparent placeholder:text-neutral-900 border border-neutral-40 rounded-full" />
+              </div>
+              <button type="submit" class="w-[46px] h-[46px] min-w-[46px] flex items-center justify-center bg-green-300 hover:bg-green-500 duration-300"><i class="hgi hgi-stroke hgi-arrow-up-right-01 duration-300 text-xl text-neutral-0"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 xl:py-6 border-t border-neutral-40">
+        <div class="cont">
+          <div class="grid sm:flex sm:justify-between justify-center gap-y-2 sm:gap-y-0">
+            <p>Copyright © <span id="year"></span> <a href="index.html" class="text-green-500 font-semibold underline">WellHub</a> All Rights Reserved</p>
+            <div class="flex sm:justify-start justify-center gap-x-3 md:gap-x-5">
+              <a href="privacy-policy.html" class="link">Privacy Policy</a>
+              <a href="terms-conditions.html" class="link">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ele -->
+      <img src="assets/images/element/dots-ele.png" alt="img" class="absolute start-0 bottom-[140px] updown z-[-1] xxl:block hidden">
+      <img src="assets/images/element/flower-circle.png" alt="img" class="absolute max-w-[250px] end-[-80px] bottom-[220px] circle z-[-1]">
+      <img src="assets/images/element/footer-ele.png" alt="img" class="absolute xxl:block hidden start-[-0px] top-[150px] z-[-1]">
+    </footer>
     <!-- Footer section end -->
+
   </body>
 </html>

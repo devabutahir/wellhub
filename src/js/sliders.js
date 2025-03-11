@@ -151,6 +151,30 @@ if (document.querySelector('.projectSlider')) {
     })
   }
   
+  if (document.querySelector('.testimonial-slidem')) {
+    new Swiper('.testimonial-slidem', {
+      slidesPerView: 'auto',
+      spaceBetween: 24,
+      loop: true,
+      speed: 1000,
+      modules:[Autoplay,Navigation],
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".client-next",
+        prevEl: ".client-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 1,
+        },
+  
+      }
+    })
+  }
+  
   if (document.querySelector('.clientSlider2')) {
     new Swiper('.clientSlider2', {
       slidesPerView: 'auto',
