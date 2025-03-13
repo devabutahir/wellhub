@@ -9,162 +9,447 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="assets/fonts/hugeicon.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="./assets/css/glightbox.css" />
-    <title>Our Services - WellHub - Physiotherapy &amp; Psychology Rehabilitation HTML Theme</title>
+    <link rel="stylesheet" href="./assets/css/slim-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/ui-range.min.css" />
+    <title>Shop - WellHub - Physiotherapy &amp; Psychology Rehabilitation HTML Theme</title>
   </head>
 
   <body>
-    <!-- Mobile Menu -->
-    <include-mobile-menu />
-    <!-- loader  -->
-    <include-loader />
 
-    <!-- header section start -->
-    <include-header />
-    <!-- header section end -->
-
-    <!-- banner section start -->
-    <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative after:absolute after:size-full after:inset-0 after:bg-black/70" data-bg="assets/images/breadcrumb-bg.webp">
-      <div class="cont py-16 xl:py-20 flex justify-center text-center">
-        <div class="text-neutral-0 relative z-[1] reveal_anim" data-reveal-from="bottom">
-          <h2 class="mb-5">Our Services</h2>
-          <div class="font-semibold flex justify-center items-center gap-2">
-            <a href="index.html" class="uppercase">Home</a> <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
-            <span class="text-yellow-200 uppercase">Our Services</span>
+      <!-- header section start -->
+      <header class="z-10 py-3 lg:py-4 xxl:py-6 w-full px-3 absolute top-0">
+        <div class="max-w-[1800px] mx-auto flex justify-between items-center">
+          <a href="./index.html" aria-label="site logo">
+            <img src="./assets/images/logo.png" class="max-sm:hidden" alt="" />
+            <img src="./assets/images/favicon-black.png" class="sm:hidden" alt="" />
+          </a>
+          <ul class="menu">
+            <a class="flex mb-4 lg:hidden" href="index.html">
+              <img src="./assets/images/logo.png" alt="" />
+            </a>
+            <li class="dropdown-item">
+              <button class="dropdown-btn">Home <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+              <ul class="dropdown-menu">
+                <li><a class="menu-link" href="index.html">Physiotherapy</a></li>
+                <li><a class="menu-link" href="index-2.html">Agro Service</a></li>
+                <li><a class="menu-link" href="index-3.html">Dairy Farm</a></li>
+                <li><a class="menu-link" href="index-4.html">Organic Farm</a></li>
+                <li><a class="menu-link" href="index-5.html">Equipment Store</a></li>
+                <li><a class="menu-link" href="index-6.html">Farm Shop</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="py-2 inline-flex uppercase font-semibold" href="about-us.html">About</a>
+            </li>
+            <li class="dropdown-item">
+              <button class="dropdown-btn">Services <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+  
+              <ul class="dropdown-menu">
+                <li><a class="menu-link" href="services.html">Service</a></li>
+              <li><a class="menu-link" href="service-plan.html">Service Plan</a></li>
+                <li><a class="menu-link" href="service-details.html">Service Details</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-item">
+              <button class="dropdown-btn">Portfoio <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+  
+              <ul class="dropdown-menu">
+                <li><a class="menu-link" href="portfolio-1.html">Portfolio 1</a></li>
+                <li><a class="menu-link" href="portfolio-2.html">Portfolio 2</a></li>
+                <li><a class="menu-link" href="portfolio-details.html">Portfolio Details</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-item">
+              <button class="dropdown-btn">Shop <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+  
+              <ul class="dropdown-menu">
+                <li><a class="menu-link" href="shop.html">Shop</a></li>
+                <li><a class="menu-link" href="shop-details.html">Shop Details</a></li>
+                <li><a class="menu-link" href="wishlist.html">Wishlist</a></li>
+                <li><a class="menu-link" href="cart.html">Cart</a></li>
+                <li><a class="menu-link" href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+  
+            <li class="dropdown-item">
+              <button class="dropdown-btn">Pages <i class="hgi-stroke hgi-arrow-down-01 text-lg"></i></button>
+              <ul class="dropdown-menu">
+                <li><a class="menu-link" href="blogs.html">Blogs</a></li>
+                <li><a class="menu-link" href="blog-details.html">Blog Details</a></li>
+                <li><a class="menu-link" href="farmers.html">Farmers</a></li>
+                <li><a class="menu-link" href="faqs.html">Faqs</a></li>
+                <li><a class="menu-link" href="pricing.html">Pricing</a></li>
+                <li><a class="menu-link" href="contact-us.html">Contact</a></li>
+                <li><a class="menu-link" href="request-quote.html">Request Quote</a></li>
+                <li><a class="menu-link" href="privacy-policy.html">Privacy Policy</a></li>
+  
+                <li><a class="menu-link" href="sign-up.html">Sign Up</a></li>
+                <li><a class="menu-link" href="sign-in.html">Sign In</a></li>
+                <li><a class="menu-link" href="404.html">404</a></li>
+              </ul>
+            </li>
+            <li class="xl:block hidden">
+              <div class="relative">
+                <a href="cart.html" aria-label="Cart Link" class="f-center">
+                  <i class="hgi hgi-stroke hgi-sharp hgi-shopping-bag-02 text-2xl"></i>
+                </a>
+                <span class="cart-count absolute bottom-[-4px] end-[-2px] w-[18px] h-[18px] bg-green-300 rounded-full flex justify-center items-center text-[12px] text-neutral-0">0</span>
+              </div>
+            </li>
+            <li class="xl:block hidden">
+              <div class="mt-1">
+                <button aria-label="Search Button" class="search-btn"><i class="hgi-stroke hgi-search-01 text-2xl"></i></button>              
+              </div>
+            </li>
+          </ul>
+          <div class="flex items-center xl:gap-4 sm:gap-3 gap-2">
+            <a href="#" class="sm:flex hidden items-center xxl:gap-3 gap-2 text-base text-neutral-900 font-medium pe-4">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.2753 1.55575C11.3008 1.46056 11.3447 1.37133 11.4047 1.29315C11.4647 1.21496 11.5394 1.14935 11.6248 1.10008C11.7101 1.0508 11.8043 1.01882 11.902 1.00596C11.9996 0.993095 12.0989 0.999608 12.1941 1.02512C13.5844 1.38789 14.853 2.11473 15.869 3.13078C16.8851 4.14684 17.6119 5.41537 17.9747 6.80575C18.0002 6.90092 18.0067 7.00018 17.9939 7.09786C17.981 7.19555 17.949 7.28974 17.8997 7.37506C17.8505 7.46039 17.7849 7.53516 17.7067 7.59512C17.6285 7.65508 17.5393 7.69904 17.4441 7.7245C17.3807 7.74114 17.3155 7.74964 17.25 7.74981C17.0847 7.74981 16.9241 7.69521 16.793 7.59451C16.662 7.4938 16.5679 7.35263 16.5253 7.19293C16.2295 6.05792 15.6363 5.02235 14.8069 4.19296C13.9775 3.36356 12.9419 2.77036 11.8069 2.4745C11.7116 2.44914 11.6223 2.40525 11.544 2.34533C11.4657 2.28542 11.4 2.21066 11.3506 2.12533C11.3013 2.04 11.2692 1.94577 11.2563 1.84803C11.2433 1.7503 11.2498 1.65098 11.2753 1.55575ZM11.0569 5.4745C12.3497 5.8195 13.1803 6.65012 13.5253 7.94293C13.5679 8.10263 13.662 8.2438 13.793 8.34451C13.9241 8.44521 14.0847 8.49981 14.25 8.49981C14.3155 8.49964 14.3807 8.49114 14.4441 8.4745C14.5393 8.44904 14.6285 8.40508 14.7067 8.34512C14.7849 8.28516 14.8505 8.21039 14.8997 8.12506C14.949 8.03974 14.981 7.94555 14.9939 7.84786C15.0067 7.75018 15.0002 7.65092 14.9747 7.55575C14.4947 5.7595 13.2403 4.50512 11.4441 4.02512C11.3489 3.9997 11.2497 3.99327 11.152 4.0062C11.0544 4.01913 10.9602 4.05117 10.8749 4.10049C10.7897 4.1498 10.7149 4.21543 10.655 4.29363C10.5951 4.37182 10.5512 4.46105 10.5258 4.55622C10.5004 4.65138 10.4939 4.75063 10.5069 4.84828C10.5198 4.94593 10.5518 5.04008 10.6012 5.12535C10.6505 5.21062 10.7161 5.28534 10.7943 5.34525C10.8725 5.40516 10.9617 5.44907 11.0569 5.4745ZM18.7388 14.4136C18.5716 15.6839 17.9477 16.85 16.9837 17.6939C16.0196 18.5379 14.7813 19.0021 13.5 18.9998C6.05626 18.9998 8.4831e-06 12.9436 8.4831e-06 5.49981C-0.00228837 4.21852 0.461903 2.98021 1.30588 2.01615C2.14986 1.05209 3.31592 0.428223 4.58626 0.26106C4.9075 0.221836 5.2328 0.287556 5.51362 0.448409C5.79444 0.609262 6.0157 0.856621 6.14438 1.15356L8.12438 5.57387V5.58512C8.2229 5.81242 8.26359 6.06058 8.24281 6.30744C8.22204 6.5543 8.14044 6.79217 8.00532 6.99981C7.98845 7.02512 7.97063 7.04856 7.95188 7.072L6.00001 9.38575C6.7022 10.8126 8.1947 12.292 9.64032 12.9961L11.9222 11.0545C11.9446 11.0357 11.9681 11.0181 11.9925 11.002C12.2 10.8636 12.4387 10.7792 12.687 10.7562C12.9353 10.7333 13.1854 10.7727 13.4147 10.8707L13.4269 10.8764L17.8434 12.8554C18.1409 12.9837 18.3889 13.2047 18.5503 13.4856C18.7116 13.7664 18.7778 14.092 18.7388 14.4136ZM17.25 14.2261C17.25 14.2261 17.2434 14.2261 17.2397 14.2261L12.8334 12.2526L10.5506 14.1942C10.5285 14.2129 10.5053 14.2305 10.4813 14.2467C10.2654 14.3907 10.0159 14.4762 9.75708 14.495C9.49828 14.5137 9.23904 14.465 9.0047 14.3536C7.24876 13.5051 5.49845 11.7679 4.64907 10.0307C4.5366 9.79811 4.48613 9.54037 4.50255 9.28249C4.51898 9.02462 4.60174 8.77536 4.74282 8.55887C4.75872 8.53345 4.77659 8.50932 4.79626 8.48668L6.75001 6.17012L4.78126 1.76387C4.78089 1.76013 4.78089 1.75636 4.78126 1.75262C3.87212 1.87122 3.03739 2.31715 2.43339 3.00692C1.8294 3.69668 1.49755 4.58297 1.50001 5.49981C1.50348 8.68134 2.76888 11.7316 5.01856 13.9813C7.26825 16.2309 10.3185 17.4963 13.5 17.4998C14.4163 17.503 15.3023 17.1723 15.9925 16.5696C16.6827 15.9669 17.1297 15.1335 17.25 14.2251V14.2261Z" fill="#505255"/>
+              </svg>
+              <span class="xxl:block hidden">+6846541631564</span>
+            </a>
+            <a href="services.html" class="learn-more bg-green-300 py-3 px-7 sm:flex hidden items-center text-neutral-0 justify-center group hover:bg-green-500 duration-500 font-semibold">Let’s Talk</a>
+            <div>
+              <div class="search-bar">
+                <button aria-label="search bar close button" class="absolute top-4 right-4 search-bar-close">
+                  <i class="hgi-stroke hgi-cancel-01 text-2xl"></i>
+                </button>
+                <div class="px-4 flex items-center justify-center cont w-full">
+                  <div class="flex items-center gap-4 w-full h-12">
+                    <input type="text" class="w-full h-full py-3.5 px-4 rounded-lg border border-neutral-40 focus:border-green-300" placeholder="Search" />
+                    <button class="bg-green-300 py-3 px-6 text-neutral-0 rounded-lg xl:px-8">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative topbar-btn xl:hidden flex">
+              <a href="cart.html" aria-label="Cart Link" class="f-center"><i class="hgi-stroke hgi-shopping-cart-01"></i></a>
+            </div>
+            <button aria-label="Menu Button" class="topbar-btn bg-green-500 text-neutral-0 border-green-500 lg:!hidden menu-btn">
+              <i class="hgi-stroke hgi-menu-01"></i>
+            </button>
           </div>
+        </div>
+      </header>
+      <!-- header section end -->
+  
+      <!-- Mobile Menu -->
+      <include-mobile-menu />
+  
+      <!-- loader  -->
+      <include-loader />
+  
+      <!-- banner section start -->
+      <section class="pt-[72px] lg:pt-[81px] xxl:pt-[112px] relative" data-bg="assets/images/home1/breadcrumb-banner.png">
+        <div class="cont py-16 xl:py-20 flex justify-center text-center">
+          <div class="text-neutral-900 relative z-[1] reveal_anim" data-reveal-from="bottom">
+            <h2 class="mb-5">Our Services</h2>
+            <div class="font-semibold flex justify-center items-center gap-2">
+              <a href="index.html" class="uppercase">Home</a> <i class="hgi hgi-stroke hgi-arrow-right-01"></i>
+              <span class="text-yellow-200 uppercase">Our Services</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+    
+      <!-- slider section start -->
+      <section class="bg-green-300 py-5 xl:py-7 reveal_anim" data-reveal-from="right">
+        <div class="swiper brandslider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text1-pain.png" alt="icon" />
+                <h2 class="capitalize">Pain Relief</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text2-mobility.png" alt="icon" />
+                <h2 class="capitalize">Mobility Restoration</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text3-therapy.png" alt="icon" />
+                <h2 class="capitalize">Therapy Plans</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text4-expert.png" alt="icon" />
+                <h2 class="capitalize">Expert Care</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text5-personalized.png" alt="icon" />
+                <h2 class="capitalize">Personalized Treatment</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text6-muscle.png" alt="icon" />
+                <h2 class="capitalize">Muscle Strength</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text7-rehabilitation.png" alt="icon" />
+                <h2 class="capitalize">Rehabilitation Support</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text8-injury.png" alt="icon" />
+                <h2 class="capitalize">Injury Recovery </h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text9-physical.png" alt="icon" />
+                <h2 class="capitalize">Physical Health</h2>
+              </div>
+            </div>
+            <div class="swiper-slide max-w-max">
+              <div class="inline-flex items-center gap-4">
+                <img src="./assets/images/icon/text10-joint.png" alt="icon" />
+                <h2 class="capitalize">Physical Health</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slider section end --> 
+
+    <!-- Services section start -->
+    <section class="py-120 bg-neutral-20">
+      <div class="cont">
+        <div class="flex justify-between flex-wrap items-end gap-5 mb-10 xl:mb-14">
+          <div class="max-w-[500px] fade_anim">
+            <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> What We Offer</p>
+            <h2>Our Service</h2>
+          </div>
+          <a href="service-details.html" type="submit" class="btn-primary">VIEW ALL<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+        </div>
+        <div class="relative">
+          <div class="swiper clientSlider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8676 27.2489C32.2512 25.5531 37.8021 19.9574 46.7163 26.1461C46.8025 26.206 46.876 26.2824 46.9326 26.3708C46.9892 26.4592 47.0279 26.5579 47.0464 26.6612C47.0649 26.7645 47.0629 26.8705 47.0405 26.973C47.018 27.0756 46.9756 27.1727 46.9156 27.2589C46.8556 27.345 46.7793 27.4185 46.6909 27.4752C46.6025 27.5318 46.5038 27.5705 46.4005 27.589C46.2971 27.6075 46.1912 27.6055 46.0886 27.583C45.9861 27.5606 45.8889 27.5182 45.8028 27.4582C37.1576 21.4539 32.2778 27.9831 31.8725 28.5577C31.7852 28.7043 31.6533 28.819 31.4961 28.8854C31.339 28.9517 31.1648 28.9661 30.9988 28.9265C27.7285 28.1508 24.6308 27.9914 21.5581 29.5958C18.9288 30.9694 16.8576 33.4741 15.489 36.9737C14.5788 41.4815 17.7379 45.0874 18.105 45.4877C21.671 48.8245 29.984 49.4075 33.8141 46.8579C34.7642 46.2251 37.5928 44.5044 40.9861 43.9795C41.9527 43.7935 43.24 43.7836 44.2166 43.8965C45.6732 44.0643 46.4788 43.5477 47.3574 42.983C49.5366 41.5878 52.0795 39.9568 62.4221 44.3516C65.1261 43.7703 67.3086 43.0694 68.8699 41.8602C70.4179 40.6593 71.3879 38.9037 71.7018 36.1682C72.6984 27.4549 71.157 20.1268 67.4066 14.4447C63.5981 8.67963 57.4958 4.58376 49.4502 2.43949C39.2288 -0.28445 28.7682 -0.17815 20.035 2.48267C11.6805 5.03055 4.92046 9.92367 1.51222 16.9162C0.322922 19.3632 -0.179947 22.0871 0.0572336 24.7974C0.286443 27.3336 1.19332 29.7885 2.8393 31.7982C6.46015 36.2213 12.4644 36.1283 14.1603 36.0054C15.675 32.338 17.9422 29.6872 20.8206 28.1824C23.6542 26.7041 27.0491 26.3487 30.8676 27.2489ZM43.8562 33.5638C45.8294 33.9375 49.2658 34.5869 51.0995 31.6305C52.0712 30.0659 53.1724 29.0461 54.1606 28.1309C55.5641 26.832 56.7068 25.7723 56.6354 23.4603C56.6286 23.3534 56.6434 23.2462 56.6789 23.1451C56.7145 23.044 56.77 22.9511 56.8423 22.8719C56.9145 22.7928 57.002 22.729 57.0994 22.6844C57.1969 22.6399 57.3023 22.6154 57.4094 22.6125C57.5166 22.6096 57.6232 22.6283 57.7229 22.6675C57.8226 22.7068 57.9134 22.7657 57.9898 22.8408C58.0663 22.9159 58.1268 23.0057 58.1678 23.1047C58.2087 23.2037 58.2293 23.31 58.2283 23.4171C58.3229 26.4467 56.9394 27.7273 55.2419 29.2985C54.335 30.1389 53.3252 31.0757 52.4565 32.4742C50.0448 36.3592 45.929 35.5802 43.5622 35.1317C40.1224 34.484 38.0113 32.9061 34.3108 34.4076C32.3176 35.2181 29.6718 35.831 27.5408 35.2264C25.3367 34.6019 23.0413 37.4089 23.7372 39.6212C23.8002 39.8234 23.7803 40.0424 23.6819 40.2299C23.5835 40.4174 23.4146 40.5581 23.2124 40.6211C23.0102 40.6841 22.7912 40.6642 22.6037 40.5658C22.4162 40.4674 22.2755 40.2985 22.2125 40.0963C21.1445 36.6963 24.5328 32.7151 27.971 33.69C29.7382 34.1916 32.0685 33.5937 33.7112 32.926C38.0794 31.1521 39.9314 32.823 43.8562 33.5638ZM61.4472 40.4517C60.7911 39.6545 60.3509 38.4054 60.5519 37.3757C60.6566 36.8425 60.9306 36.4156 61.3857 36.1897C62.4995 35.6396 63.5182 34.9151 64.4036 34.0438C64.5563 33.9081 64.7551 33.8359 64.9593 33.842C65.1635 33.8481 65.3576 33.932 65.502 34.0765C65.6463 34.2211 65.7299 34.4154 65.7357 34.6195C65.7415 34.8237 65.669 35.0224 65.5331 35.1749C64.9251 35.7764 64.2585 36.3155 63.5433 36.7844C62.3557 37.5683 61.8292 37.2262 62.1946 38.4985C62.3989 39.2093 62.9403 40.0016 63.7559 40.0016C63.864 39.9967 63.9719 40.0137 64.0732 40.0517C64.1746 40.0896 64.2671 40.1478 64.3454 40.2225C64.4236 40.2973 64.4859 40.3871 64.5284 40.4866C64.571 40.5861 64.5929 40.6931 64.5929 40.8013C64.5929 40.9095 64.571 41.0166 64.5284 41.1161C64.4859 41.2156 64.4236 41.3054 64.3454 41.3802C64.2671 41.4549 64.1746 41.513 64.0732 41.551C63.9719 41.589 63.864 41.606 63.7559 41.6011C62.7776 41.6011 62.0003 41.1211 61.4472 40.4517ZM52.7704 22.198C52.5638 22.2469 52.3463 22.2117 52.1656 22.1002C51.985 21.9887 51.856 21.81 51.8071 21.6034C50.2923 15.2486 44.4823 19.881 44.4657 19.8926C44.2992 20.0237 44.0875 20.0832 43.8771 20.0581C43.6666 20.0331 43.4748 19.9254 43.3438 19.7589C43.2127 19.5924 43.1532 19.3807 43.1783 19.1702C43.2033 18.9598 43.311 18.768 43.4775 18.637C43.5007 18.6203 51.2623 12.4284 53.3634 21.2347C53.3878 21.3369 53.3919 21.4429 53.3753 21.5466C53.3587 21.6504 53.3218 21.7499 53.2668 21.8393C53.2117 21.9288 53.1395 22.0066 53.0543 22.0681C52.9692 22.1297 52.8727 22.1738 52.7704 22.198ZM61.4953 21.615C61.5757 21.5476 61.6685 21.4967 61.7685 21.4652C61.8685 21.4337 61.9738 21.4223 62.0782 21.4316C62.1827 21.4408 62.2843 21.4706 62.3772 21.5192C62.4701 21.5677 62.5526 21.6342 62.6198 21.7147C62.6264 21.723 64.6245 24.0533 64.4103 27.2041C65.2341 27.2157 66.2307 27.8751 67.0711 30.3117C67.14 30.5121 67.1265 30.7317 67.0336 30.9222C66.9406 31.1127 66.7757 31.2584 66.5753 31.3274C66.3749 31.3963 66.1553 31.3828 65.9648 31.2898C65.7743 31.1968 65.6286 31.032 65.5596 30.8316C64.7624 28.5229 64.1113 28.9348 63.9768 29.0544C63.8606 29.1983 63.6982 29.2975 63.5172 29.3353C63.3361 29.373 63.1476 29.3469 62.9836 29.2614C62.8196 29.1759 62.6903 29.0362 62.6176 28.8662C62.5449 28.6961 62.5334 28.5061 62.5849 28.3285C63.1363 26.4234 62.668 24.2626 61.3957 22.7395C61.3283 22.6591 61.2774 22.5663 61.2459 22.4663C61.2144 22.3663 61.203 22.261 61.2122 22.1566C61.2215 22.0521 61.2512 21.9505 61.2998 21.8576C61.3484 21.7647 61.4148 21.6822 61.4953 21.615ZM32.8076 39.2808C32.9253 39.1042 33.1083 38.9816 33.3163 38.9398C33.5243 38.8981 33.7404 38.9407 33.9171 39.0582C35.9767 40.4318 39.1225 36.8442 41.7734 37.8125C44.2398 38.7144 47.0219 38.7227 49.4718 37.7693C49.6673 37.7005 49.8819 37.7105 50.0701 37.7973C50.2583 37.884 50.4053 38.0406 50.4801 38.2339C50.5548 38.4272 50.5513 38.6419 50.4704 38.8327C50.3894 39.0235 50.2374 39.1752 50.0465 39.2558C47.2412 40.3471 44.0538 40.3454 41.2302 39.3123C39.4115 38.6479 36.0514 42.4033 33.0302 40.3903C32.8536 40.2726 32.731 40.0896 32.6893 39.8816C32.6475 39.6735 32.6901 39.4574 32.8076 39.2808ZM61.791 19.1867C61.5978 19.2716 61.3788 19.2765 61.182 19.2002C60.9852 19.1239 60.8267 18.9727 60.7413 18.7798C58.7847 14.3783 55.2286 14.1408 55.2187 14.1408C55.0072 14.1252 54.8106 14.0262 54.6722 13.8656C54.5337 13.705 54.4647 13.496 54.4804 13.2846C54.496 13.0731 54.595 12.8766 54.7556 12.7381C54.9161 12.5997 55.1251 12.5307 55.3366 12.5463C55.3499 12.5463 59.8477 12.8486 62.1963 18.1354C62.2818 18.3285 62.2872 18.5478 62.2112 18.7449C62.1352 18.942 61.984 19.1009 61.791 19.1867ZM39.9048 19.8926C39.6945 19.9125 39.4849 19.8481 39.322 19.7136C39.1591 19.5791 39.0563 19.3854 39.0361 19.1751C39.0345 19.1452 38.1907 11.2275 43.1104 9.2211C42.6287 6.18822 45.64 5.28467 45.6516 5.28135C45.8538 5.21858 46.0727 5.2387 46.26 5.33729C46.4474 5.43587 46.5879 5.60485 46.6507 5.80704C46.7135 6.00923 46.6934 6.22808 46.5948 6.41544C46.4962 6.6028 46.3272 6.74332 46.125 6.80609C46.12 6.80775 44.5886 7.26617 44.685 8.82081C46.0702 8.64974 47.7909 8.85403 49.9186 9.59813C50.1184 9.66773 50.2823 9.81384 50.3743 10.0043C50.4664 10.1948 50.479 10.414 50.4094 10.6138C50.3398 10.8136 50.1937 10.9775 50.0032 11.0695C49.8127 11.1616 49.5935 11.1742 49.3937 11.1046C39.4115 7.61663 40.6207 18.9924 40.624 19.024C40.6338 19.1282 40.623 19.2334 40.5922 19.3335C40.5614 19.4336 40.5111 19.5266 40.4444 19.6073C40.3776 19.688 40.2955 19.7547 40.203 19.8036C40.1104 19.8526 40.0091 19.8828 39.9048 19.8926ZM18.5883 19.7448C18.5377 19.9503 18.4074 20.1273 18.2263 20.2367C18.0452 20.3462 17.828 20.3793 17.6225 20.3286C17.417 20.278 17.24 20.1477 17.1305 19.9666C17.0211 19.7855 16.988 19.5683 17.0387 19.3628C17.0436 19.3462 18.5402 12.9183 25.8333 15.0809C25.9339 15.1103 26.0277 15.1593 26.1093 15.225C26.1909 15.2907 26.2588 15.3718 26.3091 15.4637C26.3594 15.5556 26.391 15.6566 26.4023 15.7607C26.4136 15.8649 26.4042 15.9703 26.3748 16.0708C26.3454 16.1714 26.2964 16.2651 26.2307 16.3468C26.165 16.4284 26.0839 16.4963 25.992 16.5466C25.9001 16.5968 25.7991 16.6285 25.695 16.6398C25.5908 16.6511 25.4854 16.6417 25.3849 16.6123C19.7078 14.9297 18.5916 19.7315 18.5883 19.7448ZM11.3267 17.9144C11.2919 18.1232 11.1756 18.3097 11.0033 18.4327C10.8311 18.5557 10.617 18.6053 10.4082 18.5705C10.1994 18.5357 10.013 18.4194 9.88994 18.2471C9.7669 18.0749 9.71733 17.8608 9.75213 17.652C9.75545 17.6271 11.1041 9.13141 18.2379 8.9022C18.4505 7.0652 19.9985 3.31314 29.6552 6.80277C29.7536 6.83854 29.8441 6.89336 29.9214 6.9641C29.9987 7.03483 30.0613 7.1201 30.1056 7.21503C30.15 7.30996 30.1752 7.41269 30.1798 7.51737C30.1845 7.62204 30.1684 7.7266 30.1327 7.82508C30.0969 7.92356 30.0421 8.01403 29.9713 8.09132C29.9006 8.16862 29.8153 8.23122 29.7204 8.27557C29.6255 8.31991 29.5227 8.34512 29.4181 8.34976C29.3134 8.35439 29.2088 8.33837 29.1104 8.3026C19.6762 4.89269 19.7726 9.12144 19.8091 9.57986C19.8284 9.69656 19.8215 9.8161 19.7889 9.92981C19.7563 10.0435 19.6988 10.1485 19.6205 10.2373C19.5423 10.326 19.4453 10.3962 19.3366 10.4428C19.2279 10.4894 19.1101 10.5112 18.9919 10.5067C14.5805 10.3588 11.9944 13.9166 11.3267 17.9144ZM30.9523 18.5871C29.8927 14.8799 30.1169 14.6723 31.8692 13.0562L32.3226 12.6343C35.5315 9.59481 35.7691 4.74487 35.7691 4.72826C35.781 4.51682 35.8764 4.31876 36.0343 4.17765C36.1922 4.03655 36.3997 3.96396 36.6112 3.97586C36.8226 3.98775 37.0207 4.08315 37.1618 4.24108C37.3029 4.399 37.3755 4.60651 37.3636 4.81795C37.3636 4.8329 37.0962 10.3107 33.4222 13.7903C33.2262 13.9764 33.0817 14.1092 32.9505 14.2305C31.8426 15.2536 31.6998 15.3848 32.4904 18.1503C32.5483 18.3543 32.5228 18.5729 32.4196 18.758C32.3163 18.9432 32.1437 19.0798 31.9398 19.1377C31.7358 19.1957 31.5172 19.1702 31.332 19.0669C31.1468 18.9637 31.0103 18.7911 30.9523 18.5871ZM10.1391 29.9131C10.0376 30.0992 9.86646 30.2375 9.66312 30.2976C9.45979 30.3577 9.24092 30.3347 9.05453 30.2336C9.03793 30.2253 3.19973 27.1509 7.13615 20.6384C7.24562 20.4569 7.4227 20.3263 7.62843 20.2754C7.83417 20.2245 8.05171 20.2574 8.2332 20.3668C8.41469 20.4763 8.54526 20.6534 8.59619 20.8591C8.64712 21.0648 8.61423 21.2824 8.50476 21.4639C5.44366 26.5281 9.80528 28.8218 9.81691 28.8285C10.2056 29.0377 10.3484 29.5261 10.1391 29.9131Z" fill="#526250"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M61.4405 50.3963C62.6414 48.3865 61.9587 46.8253 62.3474 45.9848C62.2186 45.9858 62.0916 45.9556 61.977 45.8968C52.2622 41.7395 50.0864 43.1346 48.2244 44.3289C47.095 45.053 46.0569 45.7174 44.0389 45.4849C43.2678 45.399 42.4894 45.4001 41.7186 45.4882C40.1506 50.4494 48.1414 54.8991 49.4768 55.6033C56.7019 55.0834 60.0437 52.7365 61.4405 50.3963Z" fill="#526250"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M46.5475 55.7066C43.6525 53.7899 39.256 50.1093 40.0034 45.8008C37.5818 46.407 35.6119 47.583 34.8047 48.1111C35.1369 50.4431 35.2382 51.8034 35.3046 52.692C35.3661 53.5109 35.3943 53.8796 35.5421 54.2118C35.6833 54.524 35.9574 54.916 36.454 55.6286C37.4506 57.057 39.2892 59.6912 42.7539 65.561C44.7188 65.4895 45.727 64.3368 46.1356 63.7057C45.4646 62.8187 44.3634 61.0548 43.7405 59.5251C43.1609 58.0967 42.6642 55.6252 44.9514 55.6883C45.4995 55.7033 46.031 55.7083 46.5475 55.7066Z" fill="#526250"/>
+                    </svg>                      
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neurological Rehabilitation</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Rebuilding motor skills and cognitive function for recovery.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z" fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">                    
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_9534_17572)">
+                      <path d="M69.8247 71.0869H2.17558C1.01291 71.0869 0.0703125 70.1443 0.0703125 68.9816C0.0703125 64.3308 3.84056 60.5605 8.49137 60.5605H63.5089C68.1597 60.5605 71.93 64.3308 71.93 68.9816C71.93 70.1443 70.9874 71.0869 69.8247 71.0869Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M7.78961 56.3507C3.53319 56.3507 0.0703125 52.8878 0.0703125 48.6314C0.0703125 44.375 3.53319 40.9121 7.78961 40.9121C12.046 40.9121 15.5089 44.375 15.5089 48.6314C15.5089 52.8878 12.046 56.3507 7.78961 56.3507Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M55.9844 42.9669V43.7193H62.3006V39.3203L55.9844 42.9669Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M67.7167 47.929H51.771V40.5352L61.7455 34.7765C63.7323 33.6294 64.5125 31.1018 63.4203 29.0843C62.2871 26.9909 59.6587 26.2575 57.6107 27.4398L45.4559 34.4573C44.1065 35.2366 43.3695 36.6507 43.3682 38.1045H43.3501V43.7185H20.9799C20.2211 43.7185 19.4937 43.8526 18.8197 44.0979C19.413 45.5355 19.7177 47.0756 19.7167 48.6308C19.7167 51.1342 18.94 53.4587 17.6172 55.3796C18.6235 56.015 19.7897 56.3516 20.9799 56.3501H67.6291C69.9234 56.3501 71.8628 54.5512 71.9255 52.2579C71.9908 49.8784 70.0815 47.929 67.7167 47.929Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M55.4772 20.0562C54.1494 19.2097 52.694 18.5827 51.1668 18.199C48.8748 20.5224 45.6921 21.9651 42.1784 21.9651C38.6208 21.9651 35.4024 20.4861 33.1044 18.1113C26.5213 19.5854 21.6016 25.4635 21.6016 32.4914V35.2984C21.6016 37.6239 23.4866 39.5089 25.8121 39.5089H37.0399C38.2025 39.5089 39.1451 38.5663 39.1451 37.4037V37.4028C39.1451 36.2406 38.203 35.2984 37.0407 35.2984H30.0226C28.8599 35.2984 27.9174 34.3558 27.9174 33.1932V29.0421C27.9174 27.9085 28.7885 26.9331 29.9209 26.8797C31.1298 26.8228 32.1279 27.7861 32.1279 28.9826V31.0879H37.0399C38.6208 31.0879 40.0668 31.6732 41.1759 32.6365C41.7867 31.9169 42.5193 31.2953 43.3564 30.812L55.5112 23.7944L58.1691 22.2598C57.3616 21.4219 56.4581 20.6823 55.4772 20.0562Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M42.1789 17.7542C37.5355 17.7542 33.7578 13.9765 33.7578 9.33316C33.7578 4.68979 37.5355 0.912109 42.1789 0.912109C46.8222 0.912109 50.5999 4.68979 50.5999 9.33316C50.5999 13.9765 46.8222 17.7542 42.1789 17.7542Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_9534_17572">
+                      <rect width="72" height="72" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>                                            
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Physical Therapy</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Rebuild strength and improve movement with expert-guided therapy.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z"  fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">                                        
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M36.98 16.1319C41.3355 16.1319 44.8662 12.6011 44.8662 8.24562C44.8662 3.89017 41.3355 0.359375 36.98 0.359375C32.6245 0.359375 29.0938 3.89017 29.0938 8.24562C29.0938 12.6011 32.6245 16.1319 36.98 16.1319Z" fill="#526250"/>
+                      <path d="M48.2778 36.3323C48.2778 36.3323 47.4633 35.9948 46.9526 35.7518C46.0155 35.294 45.0926 34.8078 44.1851 34.2938C41.6246 32.8786 38.5983 31.4026 36.8186 29.0063C35.9811 27.8577 35.2902 26.6091 34.7621 25.2893C34.9713 24.4681 35.1896 23.6198 35.4303 22.7131C37.0616 16.5908 26.8241 13.5196 20.5286 19.9051C14.2331 26.2951 13.3758 34.7663 13.0248 42.8483C12.9367 44.7354 13.2615 46.619 13.9766 48.3676C14.3636 49.3216 15.2051 51.9878 15.4188 52.5458C16.0646 54.2468 15.3063 54.8476 14.9958 55.1513C14.4671 55.6733 13.9203 56.2066 13.3736 56.7376C10.8446 59.1811 8.22106 61.6246 6.62581 63.1973C2.67706 67.0898 8.74981 73.1603 12.6963 69.2701C16.2851 65.7286 22.2498 61.8563 24.0206 56.9603C24.5943 55.3831 24.5606 53.6416 24.2186 51.8753C24.7811 52.3726 25.3256 52.8811 25.8521 53.4098C26.2751 53.8351 26.4618 54.2446 26.4618 55.3336C26.4618 59.3858 26.4326 63.4336 26.4303 67.4836C26.4281 73.0163 35.0096 73.0163 35.0163 67.4836C35.0186 64.2323 35.0343 60.9833 35.0411 57.7276C35.0456 55.3808 35.3336 52.8406 34.3278 50.6513C33.6528 49.1753 32.5931 47.8703 31.3758 46.6733C31.9676 45.7193 32.2691 44.4706 32.2691 42.8416C32.2691 40.7356 32.3546 38.8253 32.5436 36.8903C36.0423 40.1078 40.6751 42.4546 44.9096 44.1623C50.0508 46.2481 53.3471 38.3776 48.2778 36.3323Z" fill="#526250"/>
+                      <path d="M62.2021 60.3593L60.6834 49.5008C59.9229 44.0738 56.2149 40.9666 52.4439 39.3398C52.7184 40.7416 52.3966 42.2671 51.6091 43.5113C53.8951 44.6588 56.1136 46.6456 56.5974 50.0768L56.6829 50.6911H46.1416L46.9606 46.3306C46.2881 46.3181 45.6234 46.1839 44.9986 45.9346C44.3439 45.6758 43.6666 45.3586 43.0006 45.0638L38.5704 68.8081C38.5704 68.8081 37.7896 71.2426 40.1296 71.6026C42.4696 71.9716 42.6699 69.2963 42.6699 69.2963L45.3676 54.8153H57.2566L58.1184 60.9713C57.2384 61.4651 56.5055 62.1839 55.9947 63.0541C55.4839 63.9242 55.2135 64.9146 55.2114 65.9236C55.2114 67.4399 55.8137 68.8941 56.8859 69.9663C57.9581 71.0385 59.4123 71.6408 60.9286 71.6408C62.4449 71.6408 63.8991 71.0385 64.9713 69.9663C66.0435 68.8941 66.6459 67.4399 66.6459 65.9236C66.6454 64.6298 66.2054 63.3746 65.398 62.3636C64.5906 61.3526 63.4638 60.6459 62.2021 60.3593ZM60.9309 67.9103C60.404 67.9092 59.8991 67.6987 59.5274 67.3253C59.1556 66.9518 58.9474 66.446 58.9486 65.9191C58.9498 65.3922 59.1603 64.8873 59.5337 64.5156C59.9071 64.1438 60.413 63.9357 60.9399 63.9368C61.4668 63.938 61.9717 64.1485 62.3434 64.5219C62.7151 64.8954 62.9233 65.4012 62.9221 65.9281C62.9209 66.455 62.7105 66.9599 62.337 67.3316C61.9636 67.7034 61.4578 67.9115 60.9309 67.9103Z" fill="#526250"/>
+                    </svg>                                                                  
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Geriatric Rehabilitation</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Helping seniors regain independence and improve mobility safely.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z"  fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8676 27.2489C32.2512 25.5531 37.8021 19.9574 46.7163 26.1461C46.8025 26.206 46.876 26.2824 46.9326 26.3708C46.9892 26.4592 47.0279 26.5579 47.0464 26.6612C47.0649 26.7645 47.0629 26.8705 47.0405 26.973C47.018 27.0756 46.9756 27.1727 46.9156 27.2589C46.8556 27.345 46.7793 27.4185 46.6909 27.4752C46.6025 27.5318 46.5038 27.5705 46.4005 27.589C46.2971 27.6075 46.1912 27.6055 46.0886 27.583C45.9861 27.5606 45.8889 27.5182 45.8028 27.4582C37.1576 21.4539 32.2778 27.9831 31.8725 28.5577C31.7852 28.7043 31.6533 28.819 31.4961 28.8854C31.339 28.9517 31.1648 28.9661 30.9988 28.9265C27.7285 28.1508 24.6308 27.9914 21.5581 29.5958C18.9288 30.9694 16.8576 33.4741 15.489 36.9737C14.5788 41.4815 17.7379 45.0874 18.105 45.4877C21.671 48.8245 29.984 49.4075 33.8141 46.8579C34.7642 46.2251 37.5928 44.5044 40.9861 43.9795C41.9527 43.7935 43.24 43.7836 44.2166 43.8965C45.6732 44.0643 46.4788 43.5477 47.3574 42.983C49.5366 41.5878 52.0795 39.9568 62.4221 44.3516C65.1261 43.7703 67.3086 43.0694 68.8699 41.8602C70.4179 40.6593 71.3879 38.9037 71.7018 36.1682C72.6984 27.4549 71.157 20.1268 67.4066 14.4447C63.5981 8.67963 57.4958 4.58376 49.4502 2.43949C39.2288 -0.28445 28.7682 -0.17815 20.035 2.48267C11.6805 5.03055 4.92046 9.92367 1.51222 16.9162C0.322922 19.3632 -0.179947 22.0871 0.0572336 24.7974C0.286443 27.3336 1.19332 29.7885 2.8393 31.7982C6.46015 36.2213 12.4644 36.1283 14.1603 36.0054C15.675 32.338 17.9422 29.6872 20.8206 28.1824C23.6542 26.7041 27.0491 26.3487 30.8676 27.2489ZM43.8562 33.5638C45.8294 33.9375 49.2658 34.5869 51.0995 31.6305C52.0712 30.0659 53.1724 29.0461 54.1606 28.1309C55.5641 26.832 56.7068 25.7723 56.6354 23.4603C56.6286 23.3534 56.6434 23.2462 56.6789 23.1451C56.7145 23.044 56.77 22.9511 56.8423 22.8719C56.9145 22.7928 57.002 22.729 57.0994 22.6844C57.1969 22.6399 57.3023 22.6154 57.4094 22.6125C57.5166 22.6096 57.6232 22.6283 57.7229 22.6675C57.8226 22.7068 57.9134 22.7657 57.9898 22.8408C58.0663 22.9159 58.1268 23.0057 58.1678 23.1047C58.2087 23.2037 58.2293 23.31 58.2283 23.4171C58.3229 26.4467 56.9394 27.7273 55.2419 29.2985C54.335 30.1389 53.3252 31.0757 52.4565 32.4742C50.0448 36.3592 45.929 35.5802 43.5622 35.1317C40.1224 34.484 38.0113 32.9061 34.3108 34.4076C32.3176 35.2181 29.6718 35.831 27.5408 35.2264C25.3367 34.6019 23.0413 37.4089 23.7372 39.6212C23.8002 39.8234 23.7803 40.0424 23.6819 40.2299C23.5835 40.4174 23.4146 40.5581 23.2124 40.6211C23.0102 40.6841 22.7912 40.6642 22.6037 40.5658C22.4162 40.4674 22.2755 40.2985 22.2125 40.0963C21.1445 36.6963 24.5328 32.7151 27.971 33.69C29.7382 34.1916 32.0685 33.5937 33.7112 32.926C38.0794 31.1521 39.9314 32.823 43.8562 33.5638ZM61.4472 40.4517C60.7911 39.6545 60.3509 38.4054 60.5519 37.3757C60.6566 36.8425 60.9306 36.4156 61.3857 36.1897C62.4995 35.6396 63.5182 34.9151 64.4036 34.0438C64.5563 33.9081 64.7551 33.8359 64.9593 33.842C65.1635 33.8481 65.3576 33.932 65.502 34.0765C65.6463 34.2211 65.7299 34.4154 65.7357 34.6195C65.7415 34.8237 65.669 35.0224 65.5331 35.1749C64.9251 35.7764 64.2585 36.3155 63.5433 36.7844C62.3557 37.5683 61.8292 37.2262 62.1946 38.4985C62.3989 39.2093 62.9403 40.0016 63.7559 40.0016C63.864 39.9967 63.9719 40.0137 64.0732 40.0517C64.1746 40.0896 64.2671 40.1478 64.3454 40.2225C64.4236 40.2973 64.4859 40.3871 64.5284 40.4866C64.571 40.5861 64.5929 40.6931 64.5929 40.8013C64.5929 40.9095 64.571 41.0166 64.5284 41.1161C64.4859 41.2156 64.4236 41.3054 64.3454 41.3802C64.2671 41.4549 64.1746 41.513 64.0732 41.551C63.9719 41.589 63.864 41.606 63.7559 41.6011C62.7776 41.6011 62.0003 41.1211 61.4472 40.4517ZM52.7704 22.198C52.5638 22.2469 52.3463 22.2117 52.1656 22.1002C51.985 21.9887 51.856 21.81 51.8071 21.6034C50.2923 15.2486 44.4823 19.881 44.4657 19.8926C44.2992 20.0237 44.0875 20.0832 43.8771 20.0581C43.6666 20.0331 43.4748 19.9254 43.3438 19.7589C43.2127 19.5924 43.1532 19.3807 43.1783 19.1702C43.2033 18.9598 43.311 18.768 43.4775 18.637C43.5007 18.6203 51.2623 12.4284 53.3634 21.2347C53.3878 21.3369 53.3919 21.4429 53.3753 21.5466C53.3587 21.6504 53.3218 21.7499 53.2668 21.8393C53.2117 21.9288 53.1395 22.0066 53.0543 22.0681C52.9692 22.1297 52.8727 22.1738 52.7704 22.198ZM61.4953 21.615C61.5757 21.5476 61.6685 21.4967 61.7685 21.4652C61.8685 21.4337 61.9738 21.4223 62.0782 21.4316C62.1827 21.4408 62.2843 21.4706 62.3772 21.5192C62.4701 21.5677 62.5526 21.6342 62.6198 21.7147C62.6264 21.723 64.6245 24.0533 64.4103 27.2041C65.2341 27.2157 66.2307 27.8751 67.0711 30.3117C67.14 30.5121 67.1265 30.7317 67.0336 30.9222C66.9406 31.1127 66.7757 31.2584 66.5753 31.3274C66.3749 31.3963 66.1553 31.3828 65.9648 31.2898C65.7743 31.1968 65.6286 31.032 65.5596 30.8316C64.7624 28.5229 64.1113 28.9348 63.9768 29.0544C63.8606 29.1983 63.6982 29.2975 63.5172 29.3353C63.3361 29.373 63.1476 29.3469 62.9836 29.2614C62.8196 29.1759 62.6903 29.0362 62.6176 28.8662C62.5449 28.6961 62.5334 28.5061 62.5849 28.3285C63.1363 26.4234 62.668 24.2626 61.3957 22.7395C61.3283 22.6591 61.2774 22.5663 61.2459 22.4663C61.2144 22.3663 61.203 22.261 61.2122 22.1566C61.2215 22.0521 61.2512 21.9505 61.2998 21.8576C61.3484 21.7647 61.4148 21.6822 61.4953 21.615ZM32.8076 39.2808C32.9253 39.1042 33.1083 38.9816 33.3163 38.9398C33.5243 38.8981 33.7404 38.9407 33.9171 39.0582C35.9767 40.4318 39.1225 36.8442 41.7734 37.8125C44.2398 38.7144 47.0219 38.7227 49.4718 37.7693C49.6673 37.7005 49.8819 37.7105 50.0701 37.7973C50.2583 37.884 50.4053 38.0406 50.4801 38.2339C50.5548 38.4272 50.5513 38.6419 50.4704 38.8327C50.3894 39.0235 50.2374 39.1752 50.0465 39.2558C47.2412 40.3471 44.0538 40.3454 41.2302 39.3123C39.4115 38.6479 36.0514 42.4033 33.0302 40.3903C32.8536 40.2726 32.731 40.0896 32.6893 39.8816C32.6475 39.6735 32.6901 39.4574 32.8076 39.2808ZM61.791 19.1867C61.5978 19.2716 61.3788 19.2765 61.182 19.2002C60.9852 19.1239 60.8267 18.9727 60.7413 18.7798C58.7847 14.3783 55.2286 14.1408 55.2187 14.1408C55.0072 14.1252 54.8106 14.0262 54.6722 13.8656C54.5337 13.705 54.4647 13.496 54.4804 13.2846C54.496 13.0731 54.595 12.8766 54.7556 12.7381C54.9161 12.5997 55.1251 12.5307 55.3366 12.5463C55.3499 12.5463 59.8477 12.8486 62.1963 18.1354C62.2818 18.3285 62.2872 18.5478 62.2112 18.7449C62.1352 18.942 61.984 19.1009 61.791 19.1867ZM39.9048 19.8926C39.6945 19.9125 39.4849 19.8481 39.322 19.7136C39.1591 19.5791 39.0563 19.3854 39.0361 19.1751C39.0345 19.1452 38.1907 11.2275 43.1104 9.2211C42.6287 6.18822 45.64 5.28467 45.6516 5.28135C45.8538 5.21858 46.0727 5.2387 46.26 5.33729C46.4474 5.43587 46.5879 5.60485 46.6507 5.80704C46.7135 6.00923 46.6934 6.22808 46.5948 6.41544C46.4962 6.6028 46.3272 6.74332 46.125 6.80609C46.12 6.80775 44.5886 7.26617 44.685 8.82081C46.0702 8.64974 47.7909 8.85403 49.9186 9.59813C50.1184 9.66773 50.2823 9.81384 50.3743 10.0043C50.4664 10.1948 50.479 10.414 50.4094 10.6138C50.3398 10.8136 50.1937 10.9775 50.0032 11.0695C49.8127 11.1616 49.5935 11.1742 49.3937 11.1046C39.4115 7.61663 40.6207 18.9924 40.624 19.024C40.6338 19.1282 40.623 19.2334 40.5922 19.3335C40.5614 19.4336 40.5111 19.5266 40.4444 19.6073C40.3776 19.688 40.2955 19.7547 40.203 19.8036C40.1104 19.8526 40.0091 19.8828 39.9048 19.8926ZM18.5883 19.7448C18.5377 19.9503 18.4074 20.1273 18.2263 20.2367C18.0452 20.3462 17.828 20.3793 17.6225 20.3286C17.417 20.278 17.24 20.1477 17.1305 19.9666C17.0211 19.7855 16.988 19.5683 17.0387 19.3628C17.0436 19.3462 18.5402 12.9183 25.8333 15.0809C25.9339 15.1103 26.0277 15.1593 26.1093 15.225C26.1909 15.2907 26.2588 15.3718 26.3091 15.4637C26.3594 15.5556 26.391 15.6566 26.4023 15.7607C26.4136 15.8649 26.4042 15.9703 26.3748 16.0708C26.3454 16.1714 26.2964 16.2651 26.2307 16.3468C26.165 16.4284 26.0839 16.4963 25.992 16.5466C25.9001 16.5968 25.7991 16.6285 25.695 16.6398C25.5908 16.6511 25.4854 16.6417 25.3849 16.6123C19.7078 14.9297 18.5916 19.7315 18.5883 19.7448ZM11.3267 17.9144C11.2919 18.1232 11.1756 18.3097 11.0033 18.4327C10.8311 18.5557 10.617 18.6053 10.4082 18.5705C10.1994 18.5357 10.013 18.4194 9.88994 18.2471C9.7669 18.0749 9.71733 17.8608 9.75213 17.652C9.75545 17.6271 11.1041 9.13141 18.2379 8.9022C18.4505 7.0652 19.9985 3.31314 29.6552 6.80277C29.7536 6.83854 29.8441 6.89336 29.9214 6.9641C29.9987 7.03483 30.0613 7.1201 30.1056 7.21503C30.15 7.30996 30.1752 7.41269 30.1798 7.51737C30.1845 7.62204 30.1684 7.7266 30.1327 7.82508C30.0969 7.92356 30.0421 8.01403 29.9713 8.09132C29.9006 8.16862 29.8153 8.23122 29.7204 8.27557C29.6255 8.31991 29.5227 8.34512 29.4181 8.34976C29.3134 8.35439 29.2088 8.33837 29.1104 8.3026C19.6762 4.89269 19.7726 9.12144 19.8091 9.57986C19.8284 9.69656 19.8215 9.8161 19.7889 9.92981C19.7563 10.0435 19.6988 10.1485 19.6205 10.2373C19.5423 10.326 19.4453 10.3962 19.3366 10.4428C19.2279 10.4894 19.1101 10.5112 18.9919 10.5067C14.5805 10.3588 11.9944 13.9166 11.3267 17.9144ZM30.9523 18.5871C29.8927 14.8799 30.1169 14.6723 31.8692 13.0562L32.3226 12.6343C35.5315 9.59481 35.7691 4.74487 35.7691 4.72826C35.781 4.51682 35.8764 4.31876 36.0343 4.17765C36.1922 4.03655 36.3997 3.96396 36.6112 3.97586C36.8226 3.98775 37.0207 4.08315 37.1618 4.24108C37.3029 4.399 37.3755 4.60651 37.3636 4.81795C37.3636 4.8329 37.0962 10.3107 33.4222 13.7903C33.2262 13.9764 33.0817 14.1092 32.9505 14.2305C31.8426 15.2536 31.6998 15.3848 32.4904 18.1503C32.5483 18.3543 32.5228 18.5729 32.4196 18.758C32.3163 18.9432 32.1437 19.0798 31.9398 19.1377C31.7358 19.1957 31.5172 19.1702 31.332 19.0669C31.1468 18.9637 31.0103 18.7911 30.9523 18.5871ZM10.1391 29.9131C10.0376 30.0992 9.86646 30.2375 9.66312 30.2976C9.45979 30.3577 9.24092 30.3347 9.05453 30.2336C9.03793 30.2253 3.19973 27.1509 7.13615 20.6384C7.24562 20.4569 7.4227 20.3263 7.62843 20.2754C7.83417 20.2245 8.05171 20.2574 8.2332 20.3668C8.41469 20.4763 8.54526 20.6534 8.59619 20.8591C8.64712 21.0648 8.61423 21.2824 8.50476 21.4639C5.44366 26.5281 9.80528 28.8218 9.81691 28.8285C10.2056 29.0377 10.3484 29.5261 10.1391 29.9131Z" fill="#526250"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M61.4405 50.3963C62.6414 48.3865 61.9587 46.8253 62.3474 45.9848C62.2186 45.9858 62.0916 45.9556 61.977 45.8968C52.2622 41.7395 50.0864 43.1346 48.2244 44.3289C47.095 45.053 46.0569 45.7174 44.0389 45.4849C43.2678 45.399 42.4894 45.4001 41.7186 45.4882C40.1506 50.4494 48.1414 54.8991 49.4768 55.6033C56.7019 55.0834 60.0437 52.7365 61.4405 50.3963Z" fill="#526250"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M46.5475 55.7066C43.6525 53.7899 39.256 50.1093 40.0034 45.8008C37.5818 46.407 35.6119 47.583 34.8047 48.1111C35.1369 50.4431 35.2382 51.8034 35.3046 52.692C35.3661 53.5109 35.3943 53.8796 35.5421 54.2118C35.6833 54.524 35.9574 54.916 36.454 55.6286C37.4506 57.057 39.2892 59.6912 42.7539 65.561C44.7188 65.4895 45.727 64.3368 46.1356 63.7057C45.4646 62.8187 44.3634 61.0548 43.7405 59.5251C43.1609 58.0967 42.6642 55.6252 44.9514 55.6883C45.4995 55.7033 46.031 55.7083 46.5475 55.7066Z" fill="#526250"/>
+                    </svg>                      
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neurological Rehabilitation</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Rebuilding motor skills and cognitive function for recovery.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z" fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">                    
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_9534_17572)">
+                      <path d="M69.8247 71.0869H2.17558C1.01291 71.0869 0.0703125 70.1443 0.0703125 68.9816C0.0703125 64.3308 3.84056 60.5605 8.49137 60.5605H63.5089C68.1597 60.5605 71.93 64.3308 71.93 68.9816C71.93 70.1443 70.9874 71.0869 69.8247 71.0869Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M7.78961 56.3507C3.53319 56.3507 0.0703125 52.8878 0.0703125 48.6314C0.0703125 44.375 3.53319 40.9121 7.78961 40.9121C12.046 40.9121 15.5089 44.375 15.5089 48.6314C15.5089 52.8878 12.046 56.3507 7.78961 56.3507Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M55.9844 42.9669V43.7193H62.3006V39.3203L55.9844 42.9669Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M67.7167 47.929H51.771V40.5352L61.7455 34.7765C63.7323 33.6294 64.5125 31.1018 63.4203 29.0843C62.2871 26.9909 59.6587 26.2575 57.6107 27.4398L45.4559 34.4573C44.1065 35.2366 43.3695 36.6507 43.3682 38.1045H43.3501V43.7185H20.9799C20.2211 43.7185 19.4937 43.8526 18.8197 44.0979C19.413 45.5355 19.7177 47.0756 19.7167 48.6308C19.7167 51.1342 18.94 53.4587 17.6172 55.3796C18.6235 56.015 19.7897 56.3516 20.9799 56.3501H67.6291C69.9234 56.3501 71.8628 54.5512 71.9255 52.2579C71.9908 49.8784 70.0815 47.929 67.7167 47.929Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M55.4772 20.0562C54.1494 19.2097 52.694 18.5827 51.1668 18.199C48.8748 20.5224 45.6921 21.9651 42.1784 21.9651C38.6208 21.9651 35.4024 20.4861 33.1044 18.1113C26.5213 19.5854 21.6016 25.4635 21.6016 32.4914V35.2984C21.6016 37.6239 23.4866 39.5089 25.8121 39.5089H37.0399C38.2025 39.5089 39.1451 38.5663 39.1451 37.4037V37.4028C39.1451 36.2406 38.203 35.2984 37.0407 35.2984H30.0226C28.8599 35.2984 27.9174 34.3558 27.9174 33.1932V29.0421C27.9174 27.9085 28.7885 26.9331 29.9209 26.8797C31.1298 26.8228 32.1279 27.7861 32.1279 28.9826V31.0879H37.0399C38.6208 31.0879 40.0668 31.6732 41.1759 32.6365C41.7867 31.9169 42.5193 31.2953 43.3564 30.812L55.5112 23.7944L58.1691 22.2598C57.3616 21.4219 56.4581 20.6823 55.4772 20.0562Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      <path d="M42.1789 17.7542C37.5355 17.7542 33.7578 13.9765 33.7578 9.33316C33.7578 4.68979 37.5355 0.912109 42.1789 0.912109C46.8222 0.912109 50.5999 4.68979 50.5999 9.33316C50.5999 13.9765 46.8222 17.7542 42.1789 17.7542Z" fill="#526250" stroke="#526250" stroke-width="0.998051" stroke-miterlimit="10"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_9534_17572">
+                      <rect width="72" height="72" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>                                            
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Physical Therapy</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Rebuild strength and improve movement with expert-guided therapy.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z"  fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim text-center p-6 md:p-7 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-green-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <div class="mx-auto text-center xxl:w-[140px] w-[90px] xxl:h-[140px] h-[90px] border-dashed border-green-500 border-[2px] rounded-full f-center bg-green-50">                                        
+                    <svg class="xxl:w-[70px] xxl:h-[66px] w-[50px] h-[50px]" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M36.98 16.1319C41.3355 16.1319 44.8662 12.6011 44.8662 8.24562C44.8662 3.89017 41.3355 0.359375 36.98 0.359375C32.6245 0.359375 29.0938 3.89017 29.0938 8.24562C29.0938 12.6011 32.6245 16.1319 36.98 16.1319Z" fill="#526250"/>
+                      <path d="M48.2778 36.3323C48.2778 36.3323 47.4633 35.9948 46.9526 35.7518C46.0155 35.294 45.0926 34.8078 44.1851 34.2938C41.6246 32.8786 38.5983 31.4026 36.8186 29.0063C35.9811 27.8577 35.2902 26.6091 34.7621 25.2893C34.9713 24.4681 35.1896 23.6198 35.4303 22.7131C37.0616 16.5908 26.8241 13.5196 20.5286 19.9051C14.2331 26.2951 13.3758 34.7663 13.0248 42.8483C12.9367 44.7354 13.2615 46.619 13.9766 48.3676C14.3636 49.3216 15.2051 51.9878 15.4188 52.5458C16.0646 54.2468 15.3063 54.8476 14.9958 55.1513C14.4671 55.6733 13.9203 56.2066 13.3736 56.7376C10.8446 59.1811 8.22106 61.6246 6.62581 63.1973C2.67706 67.0898 8.74981 73.1603 12.6963 69.2701C16.2851 65.7286 22.2498 61.8563 24.0206 56.9603C24.5943 55.3831 24.5606 53.6416 24.2186 51.8753C24.7811 52.3726 25.3256 52.8811 25.8521 53.4098C26.2751 53.8351 26.4618 54.2446 26.4618 55.3336C26.4618 59.3858 26.4326 63.4336 26.4303 67.4836C26.4281 73.0163 35.0096 73.0163 35.0163 67.4836C35.0186 64.2323 35.0343 60.9833 35.0411 57.7276C35.0456 55.3808 35.3336 52.8406 34.3278 50.6513C33.6528 49.1753 32.5931 47.8703 31.3758 46.6733C31.9676 45.7193 32.2691 44.4706 32.2691 42.8416C32.2691 40.7356 32.3546 38.8253 32.5436 36.8903C36.0423 40.1078 40.6751 42.4546 44.9096 44.1623C50.0508 46.2481 53.3471 38.3776 48.2778 36.3323Z" fill="#526250"/>
+                      <path d="M62.2021 60.3593L60.6834 49.5008C59.9229 44.0738 56.2149 40.9666 52.4439 39.3398C52.7184 40.7416 52.3966 42.2671 51.6091 43.5113C53.8951 44.6588 56.1136 46.6456 56.5974 50.0768L56.6829 50.6911H46.1416L46.9606 46.3306C46.2881 46.3181 45.6234 46.1839 44.9986 45.9346C44.3439 45.6758 43.6666 45.3586 43.0006 45.0638L38.5704 68.8081C38.5704 68.8081 37.7896 71.2426 40.1296 71.6026C42.4696 71.9716 42.6699 69.2963 42.6699 69.2963L45.3676 54.8153H57.2566L58.1184 60.9713C57.2384 61.4651 56.5055 62.1839 55.9947 63.0541C55.4839 63.9242 55.2135 64.9146 55.2114 65.9236C55.2114 67.4399 55.8137 68.8941 56.8859 69.9663C57.9581 71.0385 59.4123 71.6408 60.9286 71.6408C62.4449 71.6408 63.8991 71.0385 64.9713 69.9663C66.0435 68.8941 66.6459 67.4399 66.6459 65.9236C66.6454 64.6298 66.2054 63.3746 65.398 62.3636C64.5906 61.3526 63.4638 60.6459 62.2021 60.3593ZM60.9309 67.9103C60.404 67.9092 59.8991 67.6987 59.5274 67.3253C59.1556 66.9518 58.9474 66.446 58.9486 65.9191C58.9498 65.3922 59.1603 64.8873 59.5337 64.5156C59.9071 64.1438 60.413 63.9357 60.9399 63.9368C61.4668 63.938 61.9717 64.1485 62.3434 64.5219C62.7151 64.8954 62.9233 65.4012 62.9221 65.9281C62.9209 66.455 62.7105 66.9599 62.337 67.3316C61.9636 67.7034 61.4578 67.9115 60.9309 67.9103Z" fill="#526250"/>
+                    </svg>                                                                  
+                  </div>
+                  <span class="w-[40px] h-[2px] mx-auto bg-green-300 block xl:my-6 my-4"></span>
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Geriatric Rehabilitation</a></h4>
+                  <p class="text-neutral-600 lg:text-lg text-base lg:mb-6 mb-5">Helping seniors regain independence and improve mobility safely.</p>
+                  <a href="#0" class="flex justify-center items-center gap-2 group-hover:bg-green-400 duration-500 w-[48px] h-[48px] min-w-[48px] rounded-full bg-neutral-0 group mx-auto">
+                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="group-hover:fill-neutral-0 group-hover:stroke-neutral-0 duration-500" d="M17.7365 8.48682L17.7364 8.48685L10.9864 15.2368C10.8574 15.3659 10.6824 15.4383 10.5 15.4383C10.3176 15.4383 10.1426 15.3659 10.0136 15.2368C9.88456 15.1078 9.81208 14.9329 9.81208 14.7504C9.81208 14.568 9.88456 14.393 10.0136 14.264L15.4839 8.79461L15.5906 8.68792H15.4397H0.75C0.567664 8.68792 0.392795 8.61548 0.263864 8.48655C0.134933 8.35762 0.0625 8.18275 0.0625 8.00042C0.0625 7.81808 0.134933 7.64321 0.263864 7.51428C0.392796 7.38535 0.567664 7.31292 0.75 7.31292H15.4397H15.5906L15.4839 7.20622L10.0136 1.73684C9.88456 1.60784 9.81208 1.43286 9.81208 1.25042C9.81208 1.06797 9.88456 0.892996 10.0136 0.763986C10.1426 0.634977 10.3176 0.5625 10.5 0.5625C10.6824 0.5625 10.8574 0.634977 10.9864 0.763986L17.7364 7.51399L17.7365 7.51401C17.8004 7.57786 17.8511 7.65368 17.8857 7.73714C17.9203 7.82061 17.9381 7.91007 17.9381 8.00042C17.9381 8.09076 17.9203 8.18023 17.8857 8.26369C17.8511 8.34715 17.8004 8.42297 17.7365 8.48682Z"  fill="#090C10" stroke="#090C10" stroke-width="0.125"/>
+                    </svg>                      
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="client4-pagination"></div>
+          </div>          
         </div>
       </div>
     </section>
-    <!-- banner section end -->
+    <!-- Services section end -->
 
     <!-- Services section start -->
-    <section class="bg-neutral-0 py-120">
+    <section class="py-120 bg-neutral-20">
       <div class="cont">
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <div data-delay="0" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/fertizer.png" alt="" />
-              <h4>Organic Fertilizers</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-1.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
+        <div class="flex justify-between flex-wrap items-end gap-5 mb-10 xl:mb-14">
+          <div class="max-w-[500px] fade_anim">
+            <p class="sub-heading mb-4 fade_anim"><span class="bg-yellow-300 w-2 h-2 block rounded-full"></span> TRY TODAY</p>
+            <h2>Exceptional experience Service</h2>
           </div>
-          <div data-delay=".2" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/crop.png" alt="" />
-              <h4>Green Packaging</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-2.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay=".4" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/soil.png" alt="" />
-              <h4>Soil Health Improvement</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-2.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay="0" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/fertizer.png" alt="" />
-              <h4>Organic Seed Supply</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-4.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay=".2" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/crop.png" alt="" />
-              <h4>Sustainable Pest Control</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-5.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay=".4" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/soil.png" alt="" />
-              <h4>Farm Equipment Rental</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-6.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay="0" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/fertizer.png" alt="" />
-              <h4>Composting Services</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-7.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay=".2" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/crop.png" alt="" />
-              <h4>Greenhouse Farming</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-8.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
-          </div>
-          <div data-delay=".4" class="fade_anim group p-3 md:p-4 xl:p-5 rounded-2xl bg-neutral-0 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]">
-            <div class="flex items-center gap-4 mb-6">
-              <img src="./assets/images/soil.png" alt="" />
-              <h4>Community Support</h4>
-            </div>
-            <div class="rounded-2xl overflow-hidden">
-              <img src="./assets/images/blog-9.webp" class="group-hover:scale-105 duration-500 w-full rounded-2xl mb-6" alt="" />
-            </div>
-            <div>
-              <p class="text-lg text-neutral-600 mb-6 pb-6 border-b border-dashed border-neutral-30">Supplying natural fertilizers for healthy plant growth.</p>
-              <a href="service-details.html" class="text-green-500 underline text-lg">Read More</a>
-            </div>
+          <div class="flex items-center gap-4">
+            <button class="client-prev navigation-btn">
+              <i class="hgi-stroke hgi-arrow-left-02"></i>
+            </button>
+            <button class="client-next navigation-btn">
+              <i class="hgi-stroke hgi-arrow-right-02"></i>
+            </button>
           </div>
         </div>
-        <div class="pt-10 xl:pt-14 flex justify-center gap-2">
-          <a href="#" class="navigation-btn size-10 text-base active">1</a>
-          <a href="#" class="navigation-btn size-10 text-base">2</a>
-          <a href="#" class="navigation-btn size-10 text-base">3</a>
-          <a href="#" class="navigation-btn size-10 text-base">4</a>
-          <a href="#" class="navigation-btn size-10 text-base">5</a>
+        <div class="relative">
+          <div class="swiper clientSlider2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <img src="assets/images/services/ser-neek.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neck Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Effective neck pain relief through personalized physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">02</span>
+                  <img src="assets/images/services/ser-shoulder.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Shoulder Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Relieve shoulder pain with targeted physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">03</span>
+                  <img src="assets/images/services/ser-knee.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Knee Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Relieve knee pain with targeted physiotherapy treatments today.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="fade_anim p-4 md:p-6 xxl:p-8 border border-green-800 bg-neutral-0 relative group hover:border-yellow-300 duration-300">                   
+                  <span class="display-3 text-green-700 font-playfair absolute top-2 end-7 block">01</span>
+                  <img src="assets/images/services/ser-neek.png" alt="icon" class="lg:mb-8 mb-6">
+                  <h4 class="lg:mb-4 mb-3"><a href="#0">Neck Pain</a></h4>
+                  <p class="text-neutral-600 lg:mb-6 mb-5">Effective neck pain relief through personalized physiotherapy treatments.</p>
+                  <a href="#0" class="flex items-center gap-2 text-green-300 font-semibold uppercase hover:text-yellow-300 duration-500">
+                    READ MORE <i class="hgi-stroke hgi-arrow-up-right-01 text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>          
         </div>
       </div>
     </section>
@@ -175,144 +460,160 @@
       <div class="swiper instagramImgSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-1.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-2.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-3.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-4.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-2.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-5.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-1.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-1.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-3.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-2.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="flip-card">
+            <div class="flip-card rounded-2xl">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="./assets/images/photo-4.webp" class="w-full" alt="instagram image" />
+                  <img src="./assets/images/global/insta-3.webp" class="w-full" alt="instagram image" />
                 </div>
-                <div class="flip-card-back">
-                  <div class="bg-green-500 h-full p-5 md:p-8 flex flex-col items-center text-neutral-0">
-                    <i class="hgi-stroke hgi-instagram text-yellow-200 text-4xl"></i>
-                    <h2 class="mt-4 mb-7 xl:mb-10">Follow Our Instagram</h2>
-                    <span class="w-20 h-0.5 bg-yellow-200 block mb-7 xl:mb-10"></span>
-                    <p class="text-sm mb-1">Make a Call:</p>
-                    <a href="#" class="text-2xl font-semibold">+1 (555) 123-4567</a>
+                <div class="flip-card-back w-full">
+                  <div class="bg-green-500 h-full p-5 md:p-10 flex flex-col items-center justify-between text-neutral-0 w-full">
+                    <div>
+                      <i class="hgi-stroke hgi-instagram text-yellow-200 xl:text-6xl text-4xl"></i>
+                      <h2 class="mt-4 mb-7 xl:mb-10">Follow</h2>
+                    </div>
+                    <a href="#" class="flex items-center justify-center rounded-full bg-yellow-300 w-[52px] h-[52px] min-h-[52px] min-w-[52px] text-neutral-900">
+                      <i class="hgi hgi-stroke hgi-arrow-up-right-01 text-2xl"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -324,7 +625,117 @@
     <!-- instagram image section end -->
 
     <!-- Footer section start -->
-    <include-footer />
+    <footer class="bg-neutral-20 pt-120 relative overflow-hidden z-[1]">
+      <div class="cont border-b border-neutral-40 lg:pb-14 pb-10">
+          <div class="flex justify-between md:flex-nowrap flex-wrap gap-5">
+              <div class="md:max-w-[637px] ">
+                <h2 class="h1 reveal_anim lg:mb-3 mb-2 text-neutral-900">Reach Out Anytime for Expert Support</h2>
+                <p class="xl:mb-8 lg:mb-6 mb-5 md:text-lg text-base text-gray-800">Our team is here to assist you with personalized care, expert guidance, and support whenever you need it.</p>
+                <a href="#0" type="submit" class="btn-primary">GET IN TOUCH<i class="hgi-stroke hgi-arrow-up-right-01 text-neutral-700"></i></a>
+              </div>
+              <div class="md:max-w-[384px] w-full">
+                <h4 class="xl:mb-5 lg:mb-4 mb-4">Operational Hour</h4>
+                <ul class="flex flex-col gap-3">
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">Monday - Friday</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">07AM - 11PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SATURDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">09AM - 10PM</span>
+                  </li>
+                  <li class="border-b border-neutral-40"></li>
+                  <li class="flex items-center justify-between">
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">SUNBDAY:</span>
+                    <span class="uppercase text-neutral-400 xxl:text-lg xl:text-base text-sm">CLOSED</span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="cont grid grid-cols-12 lg:gap-4 gap-7 relative z-[2] pb-12 xl:pb-20 pt-120">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4 reveal_anim" data-reveal-from="right">
+          <img src="./assets/images/logo.png" class="mb-4" alt="" />
+          <p class="mb-6 max-w-[348px] md:text-lg text-base text-neutral-400">Welcome to WellHub, your space for healing, growth, and personalized mental health support.</p>
+          <div class="flex items-center gap-2 lg:mb-10 md:mb-8 sm:mb-6 mb-5">
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-facebook-01"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-twitter-square"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-instagram"></i>
+            </a>
+            <a href="#" aria-label="social site link" class="social-icon two">
+              <i class="hgi-stroke hgi-youtube"></i>
+            </a>
+          </div>
+          <div class="flex items-center gap-4">
+            <img src="assets/images/sponsor/visa.png" alt="img">
+            <img src="assets/images/sponsor/shopify.png" alt="img">
+            <img src="assets/images/sponsor/mastercard.png" alt="img">
+            <img src="assets/images/sponsor/paypal.png" alt="img">
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-2 reveal_anim">
+          <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Quick Links</p>
+          <ul class="space-y-4">
+            <li><a href="index.html" class="link xxl:text-lg text-base" >Home</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >About Us</a></li>
+            <li><a href="about.html" class="link xxl:text-lg text-base" >Services</a></li>
+            <li><a href="blogs.html" class="link xxl:text-lg text-base" >Blogs</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Shop</a></li>
+            <li><a href="#0" class="link xxl:text-lg text-base" >Contact Us</a></li>
+          </ul>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Services</p>
+            <ul class="space-y-4">
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Physiotherapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Rehabilitation Center</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Massage Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Group Therapy</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Chiropractic Care</a></li>
+              <li><a href="index.html" class="link xxl:text-lg text-base" >Psychological Counseling</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-reveal-from="bottom" class="col-span-12 sm:col-span-6 lg:col-span-3 flex lg:justify-center reveal_anim xs:me-0 me-4">
+          <div>
+            <p class="mb-4 h4 xl:mb-6 xl:text-neutral-800 font-playfair">Newsletter</p>
+            <p class="text-base text-neutral-900 xl:mb-8 mb-6">Stay informed with cargolog by subscribing to our newsletter.</p>
+            <form action="#0" class="fade_anim bg-neutral-0 border border-neutral-40 flex items-center justify-between p-2">
+              <div class="flex items-center gap-2 ps-3">
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 0.5H1C0.801088 0.5 0.610322 0.579018 0.46967 0.71967C0.329018 0.860322 0.25 1.05109 0.25 1.25V14C0.25 14.3978 0.408035 14.7794 0.68934 15.0607C0.970644 15.342 1.35218 15.5 1.75 15.5H18.25C18.6478 15.5 19.0294 15.342 19.3107 15.0607C19.592 14.7794 19.75 14.3978 19.75 14V1.25C19.75 1.05109 19.671 0.860322 19.5303 0.71967C19.3897 0.579018 19.1989 0.5 19 0.5ZM18.25 14H1.75V2.95531L9.49281 10.0531C9.63118 10.1801 9.81217 10.2506 10 10.2506C10.1878 10.2506 10.3688 10.1801 10.5072 10.0531L18.25 2.95531V14Z" fill="#505255"/>
+                  </svg>                  
+                  <input type="email" placeholder="Enter Email.." class="border-none py-3 w-full text-neutral-900 bg-transparent placeholder:text-neutral-900 border border-neutral-40 rounded-full" />
+              </div>
+              <button type="submit" class="w-[46px] h-[46px] min-w-[46px] flex items-center justify-center bg-green-300 hover:bg-green-500 duration-300"><i class="hgi hgi-stroke hgi-arrow-up-right-01 duration-300 text-xl text-neutral-0"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 xl:py-6 border-t border-neutral-40">
+        <div class="cont">
+          <div class="grid sm:flex sm:justify-between justify-center gap-y-2 sm:gap-y-0">
+            <p>Copyright © <span id="year"></span> <a href="index.html" class="text-green-500 font-semibold underline">WellHub</a> All Rights Reserved</p>
+            <div class="flex sm:justify-start justify-center gap-x-3 md:gap-x-5">
+              <a href="privacy-policy.html" class="link">Privacy Policy</a>
+              <a href="terms-conditions.html" class="link">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ele -->
+      <img src="assets/images/element/dots-ele.png" alt="img" class="absolute start-0 bottom-[140px] updown z-[-1] xxl:block hidden">
+      <img src="assets/images/element/flower-circle.png" alt="img" class="absolute max-w-[250px] end-[-80px] bottom-[220px] circle z-[-1]">
+      <img src="assets/images/element/footer-ele.png" alt="img" class="absolute xxl:block hidden start-[-0px] top-[150px] z-[-1]">
+    </footer>
     <!-- Footer section end -->
+
   </body>
 </html>
