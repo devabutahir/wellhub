@@ -111,7 +111,6 @@ if (document.querySelector('.client-slider1')) {
     })
   }
 
-
 // project slider
 if (document.querySelector('.projectSlider')) {
     new Swiper('.projectSlider', {
@@ -181,13 +180,17 @@ if (document.querySelector('.projectSlider')) {
       spaceBetween: 24,
       loop: true,
       speed: 1000,
-      modules:[Autoplay,Navigation],
+      modules:[Autoplay,Navigation,Pagination],
       autoplay:true,
       slidesPerView: 1,
       centeredSlides: true,
       navigation: {
         nextEl: ".client-next",
         prevEl: ".client-prev",
+      },
+      pagination: {
+        el: ".client4-pagination",
+        clickable: true,
       },
       breakpoints: {
         768: {
