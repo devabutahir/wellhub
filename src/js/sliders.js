@@ -1,6 +1,37 @@
 import Swiper from 'swiper';
 import { Autoplay, EffectFade, FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules';
 
+ //Testimonial5
+//  const testimonial5__wrappers = new Swiper(".", {
+//   spaceBetween: 100,
+//   speed: 600,
+//   loop: true,
+//   effect: "cards",
+//   grabCursor: true,
+//   pagination: {
+//     el: ".test5-pagination",
+//     clickable: true,
+//   },
+// });
+
+if (document.querySelector('.testimonial5-wrappers')) {
+  new Swiper('.testimonial5-wrappers', {
+    slidesPerView:1,
+    spaceBetween: 24,
+    loop: true, 
+    effect: "cards",
+    grabCursor: true,  
+    modules: [Navigation],
+    autoplay: {
+      delay: 1500,      
+    },
+    speed: 500,
+    navigation: {
+      nextEl: ".next-review",
+      prevEl: ".prev-review",
+    },
+  })
+}
 
 if (document.querySelector('.brandslider')) {
   new Swiper('.brandslider', {
