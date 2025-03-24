@@ -105,6 +105,76 @@ if (document.querySelector('.client-slider1')) {
   })
 }
 
+if (document.querySelector('.client-slider2')) {
+    new Swiper('.client-slider2', {
+    spaceBetween: 24,
+    loop: true,
+    modules: [Navigation],
+    speed: 2000,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".client-next",
+      prevEl: ".client-prev",
+    },
+    breakpoints: {
+      1024: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+    }
+  })
+}
+if (document.querySelector('.client-slider3')) {
+    new Swiper('.client-slider3', {
+    spaceBetween: 24,
+    loop: true,
+    centeredSlides: true,
+    modules: [Navigation],
+    speed: 2000,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".client-next",
+      prevEl: ".client-prev",
+    },
+    breakpoints: {
+      400: {
+        spaceBetween: 20,
+        slidesPerView: 1.2
+      },
+      767: {
+        spaceBetween: 20,
+        slidesPerView: 2.2
+      },
+      1024: {
+        spaceBetween: 20,
+        slidesPerView: 2.2
+      },
+      1024: {
+        spaceBetween: 20,
+        slidesPerView: 3.2
+      },
+      1200: {
+        slidesPerView: 4.2,
+        spaceBetween: 20
+      },
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
   if (document.querySelector('.processSlider')) {
     new Swiper('.processSlider', {
       slidesPerView:1,
